@@ -57,11 +57,11 @@ ProjectGenerator</h2>
  &#160;&#160;Specify output file path (Required)<br/>
  &#160;&#160;For example, when output file is <em>test.xml</em>, ProjectGenerator generates <em>test.xml</em>, <em>test.conf</em>, and <em>test.RobotHardware.conf</em>.<br/>
  --integrate [true or false]<br/>
- &#160;&#160;Use forward dynamics mode or kinematics mode.<br/>
+ &#160;&#160;Use forward dynamics mode or kinematics mode (by default, true).<br/>
  --dt [dt]<br/>
- &#160;&#160;<em>dt</em> is controllers' time step[s].<br/>
+ &#160;&#160;<em>dt</em> is controllers' time step[s] (by default, 0.005[s]).<br/>
  --timestep [timestep]<br/>
- &#160;&#160;<em>timestep</em> is simulator time step[s].<br/>
+ &#160;&#160;<em>timestep</em> is simulator time step[s] (by default, 0.005[s]).<br/>
  --conf-file-option [conf file option]<br/>
  &#160;&#160;<em>conf file option</em> is added to controller's config file such as <em>test.conf</em>.<br/>
  --robothardware-conf-file-option [robothardware conf file option]<br/>
@@ -69,6 +69,8 @@ ProjectGenerator</h2>
  --joint-properties [joint properties]<br/>
  &#160;&#160;<em>joint properties</em> are properties for each joint. Specify property name and property value.<br/>
  &#160;&#160;For example, <em>--joint-properties RLEG_JOINT0.angle,0,RLEG_JOINT1.mode,Torque</em><br/>
+ --use-highgain-mode [true or false]<br/>
+ &#160;&#160;Use HighGain mode for robot's joints or Torque mode (by default, use true, use HighGain mode).<br/>
 </p>
 <h2><a class="anchor" id="hrpsys-simulator"></a>
 hrpsys-simulator</h2>
@@ -149,7 +151,7 @@ Python bindings</h2>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 19 2014 04:21:48 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 19 2014 11:18:45 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
