@@ -118,6 +118,11 @@ Public Attributes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Margin for transition time for single=&gt;double support phase gain interpolation [s].  <a href="#ad3030bb6efd71b4d07a41f9d85b6a5d9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#ab6583a158de8e16f93769334261e8376">eefm_leg_inside_margin</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Inside foot margine [m]. Distance between foot end effector position and foot inside edge.  <a href="#ab6583a158de8e16f93769334261e8376"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#ad92adefd999b8d6606673674199e607d">DblArray2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a2140d786ab00111b97e0ec6042db73b1">eefm_body_attitude_control_gain</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Body attitude control gain [rad/s] (roll, pitch) for EEFM.  <a href="#a2140d786ab00111b97e0ec6042db73b1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#ad92adefd999b8d6606673674199e607d">DblArray2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a4c9669ba5113e8c527e610a06e88189e">eefm_body_attitude_control_time_const</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Time constant for body attitude control [s] (roll, pitch) for EEFM.  <a href="#a4c9669ba5113e8c527e610a06e88189e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#a4b982d83bcae44b2d304a6425cef5204">STAlgorithm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a24a9083c44fb2e97b9b3a5d0308a73bb">st_algorithm</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Stabilizer Parameters. </p>
@@ -158,6 +163,36 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2140d786ab00111b97e0ec6042db73b1"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::eefm_body_attitude_control_gain" ref="a2140d786ab00111b97e0ec6042db73b1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#ad92adefd999b8d6606673674199e607d">DblArray2</a> <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a2140d786ab00111b97e0ec6042db73b1">OpenHRP::StabilizerService::stParam::eefm_body_attitude_control_gain</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Body attitude control gain [rad/s] (roll, pitch) for EEFM. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4c9669ba5113e8c527e610a06e88189e"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::eefm_body_attitude_control_time_const" ref="a4c9669ba5113e8c527e610a06e88189e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#ad92adefd999b8d6606673674199e607d">DblArray2</a> <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a4c9669ba5113e8c527e610a06e88189e">OpenHRP::StabilizerService::stParam::eefm_body_attitude_control_time_const</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Time constant for body attitude control [s] (roll, pitch) for EEFM. </p>
 
 </div>
 </div>
@@ -455,6 +490,19 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a24a9083c44fb2e97b9b3a5d0308a73bb"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::st_algorithm" ref="a24a9083c44fb2e97b9b3a5d0308a73bb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#a4b982d83bcae44b2d304a6425cef5204">STAlgorithm</a> <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a24a9083c44fb2e97b9b3a5d0308a73bb">OpenHRP::StabilizerService::stParam::st_algorithm</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a7e6f9b08d5700e10818ef3226c27c24f"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::tdfke" ref="a7e6f9b08d5700e10818ef3226c27c24f" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -488,7 +536,7 @@ Public Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 22 2014 03:51:36 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 24 2014 07:35:06 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
