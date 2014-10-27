@@ -77,9 +77,13 @@ Input Ports</h3>
 <tr>
 <th>port name</th><th>data type</th><th>unit</th><th>description </th></tr>
 <tr>
-<td>qCurrent</td><td>RTC::TimedDoubleSeq</td><td>[rad]</td><td>Actual joint angles </td></tr>
-<tr>
 <td>qRef</td><td>RTC::TimedDoubleSeq</td><td>[rad]</td><td>Reference joint angles </td></tr>
+<tr>
+<td>zmpIn</td><td>RTC::TimedPoint3D</td><td>[m]</td><td>Input ZMP in base frame </td></tr>
+<tr>
+<td>basePosIn</td><td>RTC::TimedPoint3D</td><td>[m]</td><td>Input base position </td></tr>
+<tr>
+<td>baseRpyIn</td><td>RTC::TimedOrientation3D</td><td>[rad]</td><td>Input base orientation (RPY) </td></tr>
 </table>
 <h3><a class="anchor" id="outports"></a>
 Output Ports</h3>
@@ -89,11 +93,11 @@ Output Ports</h3>
 <tr>
 <td>q</td><td>RTC::TimedDoubleSeq</td><td>[rad]</td><td>Output reference joint angles </td></tr>
 <tr>
-<td>zmpRef</td><td>RTC::TimedPoint3D</td><td>[m]</td><td>Output ZMP in base frame </td></tr>
+<td>zmpOut</td><td>RTC::TimedPoint3D</td><td>[m]</td><td>Output ZMP in base frame </td></tr>
 <tr>
-<td>basePos</td><td>RTC::TimedPoint3D</td><td>[m]</td><td>Output base position </td></tr>
+<td>basePosOut</td><td>RTC::TimedPoint3D</td><td>[m]</td><td>Output base position </td></tr>
 <tr>
-<td>baseRpy</td><td>RTC::TimedOrientation3D</td><td>[rad]</td><td>Output base orientation (RPY) </td></tr>
+<td>baseRpyOut</td><td>RTC::TimedOrientation3D</td><td>[rad]</td><td>Output base orientation (RPY) </td></tr>
 <tr>
 <td>baseTformOut</td><td>RTC::TimedDoubleSeq</td><td>[m], [rad]</td><td>Output base position and orientation (RPY) </td></tr>
 <tr>
@@ -131,7 +135,7 @@ Configuration File</h2>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 25 2014 12:13:48 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 27 2014 02:34:46 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
