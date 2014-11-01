@@ -59,6 +59,34 @@ Partial interpolation</h3>
 <h3><a class="anchor" id="inversekinematics"></a>
 Simple inverse kinematics</h3>
 <p>Simple inverse kinematics is implemented (<a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a0738917d889768654b6a89be73a13822">OpenHRP::SequencePlayerService::setTargetPose</a>).</p>
+<h3><a class="anchor" id="loadpattern"></a>
+LoadPattern</h3>
+<p>This component can output reference motion sequence from input motion sequence files using (<a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#ad6b1cfa16bc8539a09f4c0b84f71fb75">OpenHRP::SequencePlayerService::loadPattern</a>). <br/>
+ Input files should be <code>[basename].[extensions]</code>. Not all files are required, for example, users can use loadPattern just for <code>.pos</code>. <br/>
+ All files includes timestamp in seconds and data sequence. If the differences between timestamps <code>dt</code>, data sequence is interpolated.<br/>
+ Basically, all data corresponds to Output Ports. To learn more about this, please see Output Ports in this page. </p>
+<table class="doxtable">
+<tr>
+<td>Extention</td><td>Description</td><td>Data length</td><td>Data format</td><td>unit of data sequence </td></tr>
+<tr>
+<td>.pos</td><td>Reference joint angles</td><td>Length of joint angles</td><td>TimeStamp JointAngle1 ... JointAngleN</td><td>[rad] </td></tr>
+<tr>
+<td>.zmp</td><td>Reference ZMP in the base frame</td><td>3</td><td>TimeStamp ZMPx ZMPy ZMPz</td><td>[m] </td></tr>
+<tr>
+<td>.gsens</td><td>Reference acceleration in the sensor frame</td><td>3</td><td>TimeStamp AccelX AccelY AccelZ</td><td>[m/^2] </td></tr>
+<tr>
+<td>.hip</td><td>Reference base link RPY in the world frame</td><td>3</td><td>TimeStamp Roll Pitch Yaw</td><td>[rad] </td></tr>
+<tr>
+<td>.waist</td><td>Reference base link 3D pos and RPY in the world frame</td><td>6</td><td>TimeStamp X Y Z Roll Pitch Yaw</td><td>[m] and [rad] </td></tr>
+<tr>
+<td>.torque</td><td>Reference joint torques</td><td>Length of joint torques</td><td>TimeStamp JointTorque1 ... JointTorqueN</td><td>[Nm] </td></tr>
+<tr>
+<td>.wrenches</td><td>Reference force/torque in the sensor frame</td><td>6 x [force/torque sensor number]</td><td>TimeStamp Fx0 Fy0 Fz0 Tx0 Ty0 Tz0 ... </td><td>[N] and [Nm] </td></tr>
+<tr>
+<td>.optionalData</td><td>Optional data</td><td></td><td>TimeStamp Data1 ... DataN </td><td></td></tr>
+</table>
+<p><br/>
+</p>
 <table class="doxtable">
 <tr>
 <th>implementation_id</th><td>SequencePlayer </td></tr>
@@ -138,7 +166,7 @@ Configuration File</h2>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 29 2014 12:08:11 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 1 2014 08:00:25 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
