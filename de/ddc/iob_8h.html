@@ -200,7 +200,7 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddc/iob_8h.html#a9d18b241a6450f49e567b87f0fa2ee98">read_force_offset</a> (int id, double *offsets)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">read offset values for force sensor output  <a href="#a9d18b241a6450f49e567b87f0fa2ee98"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddc/iob_8h.html#a1dd5f5fa099b780233ec73786886f4a3">write_force_offset</a> (int id, double *offsets)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">write offset values for forcesensor output  <a href="#a1dd5f5fa099b780233ec73786886f4a3"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">write offset values for force sensor output  <a href="#a1dd5f5fa099b780233ec73786886f4a3"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">gyro sensor</div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddc/iob_8h.html#aba69dbd63b69a21b18eaec82b6e171d7">read_gyro_sensor</a> (int id, double *rates)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">read output of gyro sensor  <a href="#aba69dbd63b69a21b18eaec82b6e171d7"></a><br/></td></tr>
@@ -954,7 +954,7 @@ Functions</h2></td></tr>
   <table class="retval">
     <tr><td class="paramname">TRUE</td><td>offset values are read successfully </td></tr>
     <tr><td class="paramname">E_ID</td><td>invalid id is specified </td></tr>
-    <tr><td class="paramname">this</td><td>function is not supported </td></tr>
+    <tr><td class="paramname">FALSE</td><td>this function is not supported </td></tr>
   </table>
   </dd>
 </dl>
@@ -1175,7 +1175,7 @@ Functions</h2></td></tr>
   <table class="retval">
     <tr><td class="paramname">TRUE</td><td>offset value is read successfully </td></tr>
     <tr><td class="paramname">E_ID</td><td>invalid id is specified </td></tr>
-    <tr><td class="paramname">this</td><td>function is not supported </td></tr>
+    <tr><td class="paramname">FALSE</td><td>this function is not supported </td></tr>
   </table>
   </dd>
 </dl>
@@ -1219,7 +1219,7 @@ Functions</h2></td></tr>
   <table class="retval">
     <tr><td class="paramname">TRUE</td><td>sensor values are read successfully </td></tr>
     <tr><td class="paramname">E_ID</td><td>invalid id is specified </td></tr>
-    <tr><td class="paramname">this</td><td>function is not supported </td></tr>
+    <tr><td class="paramname">FALSE</td><td>this function is not supported </td></tr>
   </table>
   </dd>
 </dl>
@@ -1741,7 +1741,7 @@ Functions</h2></td></tr>
   <table class="retval">
     <tr><td class="paramname">TRUE</td><td>offset values are read successfully </td></tr>
     <tr><td class="paramname">E_ID</td><td>invalid id is specified </td></tr>
-    <tr><td class="paramname">this</td><td>function is not supported </td></tr>
+    <tr><td class="paramname">FALSE</td><td>this function is not supported </td></tr>
   </table>
   </dd>
 </dl>
@@ -1859,7 +1859,7 @@ Functions</h2></td></tr>
   <table class="retval">
     <tr><td class="paramname">TRUE</td><td>offset values are read successfully </td></tr>
     <tr><td class="paramname">E_ID</td><td>invalid id is specified </td></tr>
-    <tr><td class="paramname">this</td><td>function is not supported </td></tr>
+    <tr><td class="paramname">FALSE</td><td>this function is not supported </td></tr>
   </table>
   </dd>
 </dl>
@@ -2188,7 +2188,7 @@ Functions</h2></td></tr>
   <table class="retval">
     <tr><td class="paramname">TRUE</td><td>temperature is read successfully </td></tr>
     <tr><td class="paramname">E_ID</td><td>invalid thermometer id is specified </td></tr>
-    <tr><td class="paramname">this</td><td>function is not supported </td></tr>
+    <tr><td class="paramname">FALSE</td><td>this function is not supported </td></tr>
   </table>
   </dd>
 </dl>
@@ -2416,7 +2416,7 @@ Functions</h2></td></tr>
   <table class="retval">
     <tr><td class="paramname">TRUE</td><td>offset values are written successfully </td></tr>
     <tr><td class="paramname">E_ID</td><td>invalid id is specified </td></tr>
-    <tr><td class="paramname">this</td><td>function is not supported </td></tr>
+    <tr><td class="paramname">FALSE</td><td>this function is not supported </td></tr>
   </table>
   </dd>
 </dl>
@@ -2460,7 +2460,7 @@ Functions</h2></td></tr>
   <table class="retval">
     <tr><td class="paramname">TRUE</td><td>offset values are written successfully </td></tr>
     <tr><td class="paramname">E_ID</td><td>invalid id is specified </td></tr>
-    <tr><td class="paramname">this</td><td>function is not supported </td></tr>
+    <tr><td class="paramname">FALSE</td><td>this function is not supported </td></tr>
   </table>
   </dd>
 </dl>
@@ -2870,10 +2870,10 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>write offset values for forcesensor output </p>
+<p>write offset values for force sensor output </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>accelerometer id </td></tr>
+    <tr><td class="paramname">id</td><td>force/torque id </td></tr>
     <tr><td class="paramname">offsets</td><td>offset values[N][Nm], length of array must be 6. </td></tr>
   </table>
   </dd>
@@ -2882,7 +2882,7 @@ Functions</h2></td></tr>
   <table class="retval">
     <tr><td class="paramname">TRUE</td><td>offset values are written successfully </td></tr>
     <tr><td class="paramname">E_ID</td><td>invalid id is specified </td></tr>
-    <tr><td class="paramname">this</td><td>function is not supported </td></tr>
+    <tr><td class="paramname">FALSE</td><td>this function is not supported </td></tr>
   </table>
   </dd>
 </dl>
@@ -2926,7 +2926,7 @@ Functions</h2></td></tr>
   <table class="retval">
     <tr><td class="paramname">TRUE</td><td>offset values are written successfully </td></tr>
     <tr><td class="paramname">E_ID</td><td>invalid id is specified </td></tr>
-    <tr><td class="paramname">this</td><td>function is not supported </td></tr>
+    <tr><td class="paramname">FALSE</td><td>this function is not supported </td></tr>
   </table>
   </dd>
 </dl>
@@ -3055,7 +3055,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 25 2014 08:03:39 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 25 2014 13:50:50 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
