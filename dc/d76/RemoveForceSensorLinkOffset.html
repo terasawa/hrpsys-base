@@ -57,6 +57,10 @@ Feature</h3>
 <h3><a class="anchor" id="frame"></a>
 Frame</h3>
 <p>This component requires robot's attitude sensing to know the direction of gravity to remove weight force/torque offset. If the robot has imu sensors, this component uses estimated attitude value from "rpy" input data port. Otherwise, this component assumes that the robot's rpy equals zero.</p>
+<h3><a class="anchor" id="parameterfile"></a>
+Parameter File</h3>
+<p>This component can load parameters from a file through <a class="el" href="../../d6/d02/interfaceOpenHRP_1_1RemoveForceSensorLinkOffsetService.html#a270ed03d52dc61f8f516271773f89e8e" title="loadForceMomentOffsetParams from file">OpenHRP::RemoveForceSensorLinkOffsetService::loadForceMomentOffsetParams()</a>. This component can also dump parameter through <a class="el" href="../../d6/d02/interfaceOpenHRP_1_1RemoveForceSensorLinkOffsetService.html#ace16a66baff1ed8dfed60700a78049df" title="dumpForceMomentOffsetParams from file">OpenHRP::RemoveForceSensorLinkOffsetService::dumpForceMomentOffsetParams()</a>.</p>
+<p>Each line of file should be 11 components, "sensorname force_offset_x force_offset_y force_offset_z moment_offset_x moment_offset_y moment_offset_z link_offset_centroid_x link_offset_centroid_y link_offset_centroid_z link_offset_mass".</p>
 <table class="doxtable">
 <tr>
 <th>implementation_id</th><td>RemoveForceSensorLinkOffset </td></tr>
@@ -113,7 +117,7 @@ Configuration File</h2>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 5 2014 03:01:41 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 5 2014 21:52:13 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
