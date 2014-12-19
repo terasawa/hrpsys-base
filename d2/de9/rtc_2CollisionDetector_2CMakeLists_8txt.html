@@ -62,15 +62,37 @@
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de9/rtc_2CollisionDetector_2CMakeLists_8txt.html#af7c45b01f6841e9edea102a7caf7ccc4">set</a> (seq_dir ${PROJECT_SOURCE_DIR}/rtc/SequencePlayer) <a class="el" href="../../da/de5/idl_2CMakeLists_8txt.html#ad00cebb7acaba72a40cade1519f00dbc">set</a>(comp_sources $</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de9/rtc_2CollisionDetector_2CMakeLists_8txt.html#aa431626870d5da94c2b0a4098571e6f2">set</a> (seq_dir ${PROJECT_SOURCE_DIR}/rtc/SequencePlayer) <a class="el" href="../../d3/da8/rtc_2Joystick_2CMakeLists_8txt.html#a1427e8cbc75c2e709e8db96523129efb">if</a>(USE_HRPSYSUTIL) <a class="el" href="../../da/de5/idl_2CMakeLists_8txt.html#ad00cebb7acaba72a40cade1519f00dbc">set</a>(comp_sources $</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">interpolator cpp <br class="typebreak"/>
 CollisionDetector cpp <br class="typebreak"/>
 CollisionDetectorService_impl <br class="typebreak"/>
 cpp GLscene cpp VclipLinkPair <br class="typebreak"/>
-cpp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de9/rtc_2CollisionDetector_2CMakeLists_8txt.html#aa70c3fb08f0b73e0d3ceeae49f43caf6">set</a> (vclip_dir vclip_1.0/) <a class="el" href="../../da/de5/idl_2CMakeLists_8txt.html#ad00cebb7acaba72a40cade1519f00dbc">set</a>(vclip_sources $</td></tr>
+cpp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de9/rtc_2CollisionDetector_2CMakeLists_8txt.html#a3fe2eb8250050a2308cf0f736df7fb7e">add_definitions</a> (-DUSE_HRPSYSUTIL) else() <a class="el" href="../../da/de5/idl_2CMakeLists_8txt.html#ad00cebb7acaba72a40cade1519f00dbc">set</a>(comp_sources $</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">interpolator cpp <br class="typebreak"/>
+CollisionDetector cpp <br class="typebreak"/>
+CollisionDetectorService_impl <br class="typebreak"/>
+cpp VclipLinkPair cpp lib util <br class="typebreak"/>
+BVutil cpp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de9/rtc_2CollisionDetector_2CMakeLists_8txt.html#ae439d54e6924c4a88d804e07a51e5246">set</a> (libs hrpModel-3.1 hrpCollision-3.1 hrpsysBaseStub) endif() <a class="el" href="../../da/de5/idl_2CMakeLists_8txt.html#ad00cebb7acaba72a40cade1519f00dbc">set</a>(vclip_dir vclip_1.0/) <a class="el" href="../../da/de5/idl_2CMakeLists_8txt.html#ad00cebb7acaba72a40cade1519f00dbc">set</a>(vclip_sources $</td></tr>
 </table>
 <hr/><h2>Function Documentation</h2>
-<a class="anchor" id="af7c45b01f6841e9edea102a7caf7ccc4"></a><!-- doxytag: member="rtc/CollisionDetector/CMakeLists.txt::set" ref="af7c45b01f6841e9edea102a7caf7ccc4" args="(seq_dir ${PROJECT_SOURCE_DIR}/rtc/SequencePlayer) set(comp_sources $" -->
+<a class="anchor" id="a3fe2eb8250050a2308cf0f736df7fb7e"></a><!-- doxytag: member="rtc/CollisionDetector/CMakeLists.txt::add_definitions" ref="a3fe2eb8250050a2308cf0f736df7fb7e" args="(&#45;DUSE_HRPSYSUTIL) else() set(comp_sources $" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interpolator cpp CollisionDetector cpp CollisionDetectorService_impl cpp GLscene cpp VclipLinkPair cpp <a class="el" href="../../d2/dae/rtc_2SORFilter_2CMakeLists_8txt.html#ab94ca8909cf80ae141a0c7473ee32e3c">add_definitions</a> </td>
+          <td>(</td>
+          <td class="paramtype">-&#160;</td>
+          <td class="paramname"><em>DUSE_HRPSYSUTIL</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa431626870d5da94c2b0a4098571e6f2"></a><!-- doxytag: member="rtc/CollisionDetector/CMakeLists.txt::set" ref="aa431626870d5da94c2b0a4098571e6f2" args="(seq_dir ${PROJECT_SOURCE_DIR}/rtc/SequencePlayer) if(USE_HRPSYSUTIL) set(comp_sources $" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -86,15 +108,15 @@ cpp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 
 </div>
 </div>
-<a class="anchor" id="aa70c3fb08f0b73e0d3ceeae49f43caf6"></a><!-- doxytag: member="rtc/CollisionDetector/CMakeLists.txt::set" ref="aa70c3fb08f0b73e0d3ceeae49f43caf6" args="(vclip_dir vclip_1.0/) set(vclip_sources $" -->
+<a class="anchor" id="ae439d54e6924c4a88d804e07a51e5246"></a><!-- doxytag: member="rtc/CollisionDetector/CMakeLists.txt::set" ref="ae439d54e6924c4a88d804e07a51e5246" args="(libs hrpModel&#45;3.1 hrpCollision&#45;3.1 hrpsysBaseStub) endif() set(vclip_dir vclip_1.0/) set(vclip_sources $" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">interpolator cpp CollisionDetector cpp CollisionDetectorService_impl cpp GLscene cpp VclipLinkPair cpp <a class="el" href="../../da/de5/idl_2CMakeLists_8txt.html#ad00cebb7acaba72a40cade1519f00dbc">set</a> </td>
+          <td class="memname">interpolator cpp CollisionDetector cpp CollisionDetectorService_impl cpp VclipLinkPair cpp lib util BVutil cpp <a class="el" href="../../da/de5/idl_2CMakeLists_8txt.html#ad00cebb7acaba72a40cade1519f00dbc">set</a> </td>
           <td>(</td>
-          <td class="paramtype">vclip_dir vclip_1.0/&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">libs hrpModel-3.1 hrpCollision-3.1&#160;</td>
+          <td class="paramname"><em>hrpsysBaseStub</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -107,7 +129,7 @@ cpp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 19 2014 13:04:37 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 19 2014 13:38:32 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
