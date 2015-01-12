@@ -2109,7 +2109,7 @@ hironx' designated issue tracker.
     <tr><td class="paramname">gname</td><td>str: Name of the joint group. </td></tr>
     <tr><td class="paramname">pose</td><td>list of float: list of positions and orientations </td></tr>
     <tr><td class="paramname">tm</td><td>float: Time to complete. </td></tr>
-    <tr><td class="paramname">wait</td><td>bool: If true, SequencePlayer.waitInterpolationOfGroup gets run. (TODO: Elaborate what this means...Even after having taken a look at its source code I can't tell exactly what it means) </td></tr>
+    <tr><td class="paramname">wait</td><td>bool: If true, all other subsequent commands wait until the movement commanded by this method call finishes. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2303,7 +2303,7 @@ hironx' designated issue tracker.
     <tr><td class="paramname">dp</td><td>float: In radian. </td></tr>
     <tr><td class="paramname">dw</td><td>float: In radian. </td></tr>
     <tr><td class="paramname">tm</td><td>float: Second to complete. </td></tr>
-    <tr><td class="paramname">wait</td><td>bol: If true, SequencePlayer.waitInterpolationOfGroup gets run. </td></tr>
+    <tr><td class="paramname">wait</td><td>bool: If true, all other subsequent commands wait until the movement commanded by this method call finishes. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3425,7 +3425,7 @@ hironx' designated issue tracker.
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 12 2015 12:52:20 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 12 2015 23:50:14 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
