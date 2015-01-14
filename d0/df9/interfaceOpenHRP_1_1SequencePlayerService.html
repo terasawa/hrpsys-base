@@ -271,7 +271,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">gname</td><td>name of the joint group </td></tr>
-    <tr><td class="paramname">tm</td><td>duration toward termination </td></tr>
+    <tr><td class="paramname">tm</td><td>duration toward termination [s] </td></tr>
   </table>
   </dd>
 </dl>
@@ -328,7 +328,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">basename</td><td>basename of the pattern files. &lt;basename&gt;.pos, &lt;basename&gt;.zmp, &lt;basename&gt;.waist and &lt;basename&gt;.gsens are used. </td></tr>
-    <tr><td class="paramname">tm</td><td>Duration to the initial posture in &lt;basename&gt;.pos </td></tr>
+    <tr><td class="paramname">tm</td><td>Duration to the initial posture in &lt;basename&gt;.pos [s] </td></tr>
   </table>
   </dd>
 </dl>
@@ -376,9 +376,9 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">pos</td><td>sequence of joint angles </td></tr>
-    <tr><td class="paramname">rpy</td><td>sequence of Roll-Pitch-Yaw angles of the base link </td></tr>
-    <tr><td class="paramname">zmp</td><td>sequence of ZMP </td></tr>
-    <tr><td class="paramname">tm</td><td>sequence of duration beetween postures </td></tr>
+    <tr><td class="paramname">rpy</td><td>sequence of Roll-Pitch-Yaw angles of the base link [rad] </td></tr>
+    <tr><td class="paramname">zmp</td><td>sequence of ZMP [m] </td></tr>
+    <tr><td class="paramname">tm</td><td>sequence of duration beetween postures [s] </td></tr>
   </table>
   </dd>
 </dl>
@@ -421,7 +421,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">gname</td><td>name of the joint group </td></tr>
     <tr><td class="paramname">pos</td><td>sequence of joint angles </td></tr>
-    <tr><td class="paramname">tm</td><td>sequence of duration beetween postures </td></tr>
+    <tr><td class="paramname">tm</td><td>sequence of duration beetween postures [s] </td></tr>
   </table>
   </dd>
 </dl>
@@ -484,8 +484,8 @@ Public Member Functions</h2></td></tr>
 <p>Function returns without waiting for interpolation to finish </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">pos</td><td>position of the base link </td></tr>
-    <tr><td class="paramname">tm</td><td>duration </td></tr>
+    <tr><td class="paramname">pos</td><td>position of the base link [m] </td></tr>
+    <tr><td class="paramname">tm</td><td>duration [s] </td></tr>
   </table>
   </dd>
 </dl>
@@ -522,8 +522,8 @@ Public Member Functions</h2></td></tr>
 <p>Function returns without waiting for interpolation to finish </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">rpy</td><td>Roll-Pitch-Yaw angles of the base link </td></tr>
-    <tr><td class="paramname">tm</td><td>duration </td></tr>
+    <tr><td class="paramname">rpy</td><td>Roll-Pitch-Yaw angles of the base link [rad] </td></tr>
+    <tr><td class="paramname">tm</td><td>duration [s] </td></tr>
   </table>
   </dd>
 </dl>
@@ -613,7 +613,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">jname</td><td>joint name </td></tr>
     <tr><td class="paramname">jv</td><td>joint angle </td></tr>
-    <tr><td class="paramname">tm</td><td>duration </td></tr>
+    <tr><td class="paramname">tm</td><td>duration [s] </td></tr>
   </table>
   </dd>
 </dl>
@@ -651,7 +651,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">jvs</td><td>sequence of joint angles </td></tr>
-    <tr><td class="paramname">tm</td><td>duration </td></tr>
+    <tr><td class="paramname">tm</td><td>duration [s] </td></tr>
   </table>
   </dd>
 </dl>
@@ -696,7 +696,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">gname</td><td>name of the joint group </td></tr>
     <tr><td class="paramname">jvs</td><td>sequence of joint angles </td></tr>
-    <tr><td class="paramname">tm</td><td>duration </td></tr>
+    <tr><td class="paramname">tm</td><td>duration [s] </td></tr>
   </table>
   </dd>
 </dl>
@@ -851,9 +851,9 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">gname</td><td>name of the joint group </td></tr>
-    <tr><td class="paramname">xyz</td><td>: X,Y,Z position of the target link </td></tr>
-    <tr><td class="paramname">rpy</td><td>: Roll-Pitch-Yaw angles of the target link </td></tr>
-    <tr><td class="paramname">tm</td><td>duration </td></tr>
+    <tr><td class="paramname">xyz</td><td>: X,Y,Z position of the target link [m] </td></tr>
+    <tr><td class="paramname">rpy</td><td>: Roll-Pitch-Yaw angles of the target link [rad] </td></tr>
+    <tr><td class="paramname">tm</td><td>duration [s] </td></tr>
   </table>
   </dd>
 </dl>
@@ -890,8 +890,8 @@ Public Member Functions</h2></td></tr>
 <p>Function returns without waiting for interpolation to finish </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">wrenches</td><td>Wrenches </td></tr>
-    <tr><td class="paramname">tm</td><td>duration </td></tr>
+    <tr><td class="paramname">wrenches</td><td>Wrenches [N], [Nm] </td></tr>
+    <tr><td class="paramname">tm</td><td>duration [s] </td></tr>
   </table>
   </dd>
 </dl>
@@ -928,8 +928,8 @@ Public Member Functions</h2></td></tr>
 <p>Function returns without waiting for interpolation to finish </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">zmp</td><td>ZMP </td></tr>
-    <tr><td class="paramname">tm</td><td>duration </td></tr>
+    <tr><td class="paramname">zmp</td><td>ZMP in the base link frame [m] </td></tr>
+    <tr><td class="paramname">tm</td><td>duration [s] </td></tr>
   </table>
   </dd>
 </dl>
@@ -987,7 +987,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 14 2015 01:02:21 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 14 2015 08:44:48 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
