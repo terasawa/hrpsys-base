@@ -66,7 +66,7 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">rtc KalmanFilter kalman&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d9e/rtc_2KalmanFilter_2CMakeLists_8txt.html#acfde18213dd4e22a8dd51ce51c52f2c5">add_library</a> (KalmanFilter SHARED ${comp_sources}) <a class="el" href="../../da/d36/rtc_2WavPlayer_2CMakeLists_8txt.html#a74dfd86b7486019d8e4f1d6a9a419b42">target_link_libraries</a>(KalmanFilter $</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d9e/rtc_2KalmanFilter_2CMakeLists_8txt.html#a2a0dac6f018aeb2bcb3d77808bd4baba">set_target_properties</a> (KalmanFilter PROPERTIES PREFIX&quot;&quot;) <a class="el" href="../../db/def/rtc_2DataLogger_2CMakeLists_8txt.html#a796bc9370f7163c1a3976b6ac775046f">add_executable</a>(KalmanFilterComp KalmanFilterComp.cpp $</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d9e/rtc_2KalmanFilter_2CMakeLists_8txt.html#a6e4238d4db96c05dacbbe0a2a292702f">target_link_libraries</a> (KalmanFilterComp ${libs}) <a class="el" href="../../db/def/rtc_2DataLogger_2CMakeLists_8txt.html#a796bc9370f7163c1a3976b6ac775046f">add_executable</a>(testKalmanFilterEstimation testKalmanFilterEstimation.cpp) <a class="el" href="../../da/d36/rtc_2WavPlayer_2CMakeLists_8txt.html#a74dfd86b7486019d8e4f1d6a9a419b42">target_link_libraries</a>(testKalmanFilterEstimation $</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d9e/rtc_2KalmanFilter_2CMakeLists_8txt.html#ad2e77be6878f140170dcfacc84599b81">set</a> (target KalmanFilter KalmanFilterComp) install(TARGETS $</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d9e/rtc_2KalmanFilter_2CMakeLists_8txt.html#abbbf11525174bf7577a620c92b021a26">set</a> (target KalmanFilter KalmanFilterComp testKalmanFilterEstimation) install(TARGETS $</td></tr>
 </table>
 <hr/><h2>Function Documentation</h2>
 <a class="anchor" id="acfde18213dd4e22a8dd51ce51c52f2c5"></a><!-- doxytag: member="rtc/KalmanFilter/CMakeLists.txt::add_library" ref="acfde18213dd4e22a8dd51ce51c52f2c5" args="(KalmanFilter SHARED ${comp_sources}) target_link_libraries(KalmanFilter $" -->
@@ -102,15 +102,15 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad2e77be6878f140170dcfacc84599b81"></a><!-- doxytag: member="rtc/KalmanFilter/CMakeLists.txt::set" ref="ad2e77be6878f140170dcfacc84599b81" args="(target KalmanFilter KalmanFilterComp) install(TARGETS $" -->
+<a class="anchor" id="abbbf11525174bf7577a620c92b021a26"></a><!-- doxytag: member="rtc/KalmanFilter/CMakeLists.txt::set" ref="abbbf11525174bf7577a620c92b021a26" args="(target KalmanFilter KalmanFilterComp testKalmanFilterEstimation) install(TARGETS $" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../da/de5/idl_2CMakeLists_8txt.html#ad00cebb7acaba72a40cade1519f00dbc">set</a> </td>
           <td>(</td>
-          <td class="paramtype">target KalmanFilter&#160;</td>
-          <td class="paramname"><em>KalmanFilterComp</em></td><td>)</td>
+          <td class="paramtype">target KalmanFilter KalmanFilterComp&#160;</td>
+          <td class="paramname"><em>testKalmanFilterEstimation</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -156,7 +156,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 6 2015 10:33:16 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 6 2015 15:44:51 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
