@@ -193,6 +193,14 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Play motion pattern using a given trajectory that is represented by a list of joint angles, rpy, zmp and time.  <a href="#a058380ea61f117e5acc457255d1dcd0b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a9033a252c2115ae66c21b5ff0bb585c0">playPatternOfGroup</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Play motion pattern using a given trajectory that is represented by a list of joint angles.  <a href="#a9033a252c2115ae66c21b5ff0bb585c0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a947ce52b0cfa902f704b412a2f084034">startAutoBalancer</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Start AutoBalancer mode.  <a href="#a947ce52b0cfa902f704b412a2f084034"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a1173d431fb7a66e0501b9c993112df79">stopAutoBalancer</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop AutoBalancer mode.  <a href="#a1173d431fb7a66e0501b9c993112df79"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#af76f90aeb2d6b366b04fc7d4291135d4">startStabilizer</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Start Stabilzier mode.  <a href="#af76f90aeb2d6b366b04fc7d4291135d4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aec66d7aadd0afeb61b56b1b83c07c7f8">stopStabilizer</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop Stabilzier mode.  <a href="#aec66d7aadd0afeb61b56b1b83c07c7f8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aaa5eac878da20d174d8e171d39f1f102">init</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls init from its superclass, which tries to connect RTCManager, looks for ModelLoader, and starts necessary RTC components.  <a href="#aaa5eac878da20d174d8e171d39f1f102"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aea38aea442c7f0ae757ef2e6274362b5">__init__</a></td></tr>
@@ -2336,6 +2344,104 @@ hironx' designated issue tracker.
 
 </div>
 </div>
+<a class="anchor" id="a947ce52b0cfa902f704b412a2f084034"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::startAutoBalancer" ref="a947ce52b0cfa902f704b412a2f084034" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a947ce52b0cfa902f704b412a2f084034">python.hrpsys_config.HrpsysConfigurator.startAutoBalancer</a> </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>limbs</em> = <code>[&quot;rleg&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>lleg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Start AutoBalancer mode. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">limbs</td><td>list of end-effector name to control. rleg and lleg by default. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af76f90aeb2d6b366b04fc7d4291135d4"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::startStabilizer" ref="af76f90aeb2d6b366b04fc7d4291135d4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#af76f90aeb2d6b366b04fc7d4291135d4">python.hrpsys_config.HrpsysConfigurator.startStabilizer</a> </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Start Stabilzier mode. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1173d431fb7a66e0501b9c993112df79"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::stopAutoBalancer" ref="a1173d431fb7a66e0501b9c993112df79" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a1173d431fb7a66e0501b9c993112df79">python.hrpsys_config.HrpsysConfigurator.stopAutoBalancer</a> </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Stop AutoBalancer mode. </p>
+
+</div>
+</div>
+<a class="anchor" id="aec66d7aadd0afeb61b56b1b83c07c7f8"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::stopStabilizer" ref="aec66d7aadd0afeb61b56b1b83c07c7f8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aec66d7aadd0afeb61b56b1b83c07c7f8">python.hrpsys_config.HrpsysConfigurator.stopStabilizer</a> </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Stop Stabilzier mode. </p>
+
+</div>
+</div>
 <a class="anchor" id="a5c188c1a3fa0340af4c886580dc6497c"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::waitForModelLoader" ref="a5c188c1a3fa0340af4c886580dc6497c" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -3425,7 +3531,7 @@ hironx' designated issue tracker.
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 13 2015 23:52:10 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 14 2015 00:19:27 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
