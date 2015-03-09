@@ -150,9 +150,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#abc57d31eb67be2e63d6a9f1f4f01f6be">getReferenceRPY</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current commanded rotation in RPY of the specified joint.  <a href="#abc57d31eb67be2e63d6a9f1f4f01f6be"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a918664913b98e332ef8a6a23f5da379c">setTargetPose</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set absolute pose to a joint.  <a href="#a918664913b98e332ef8a6a23f5da379c"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Move the end-effector to the given absolute pose.  <a href="#a918664913b98e332ef8a6a23f5da379c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a80adfd1ebcbe0fe9c0d564faaaaf5279">setTargetPoseRelative</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set angles to a joint group relative to its current pose.  <a href="#a80adfd1ebcbe0fe9c0d564faaaaf5279"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Move the end-effector's location relative to its current pose.  <a href="#a80adfd1ebcbe0fe9c0d564faaaaf5279"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ada2c78801370e83914ad7d4cd53ea2b2">clear</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the Sequencer's current operation.  <a href="#ada2c78801370e83914ad7d4cd53ea2b2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ab271d08b0e642142172b7e49b8fb3142">clearOfGroup</a></td></tr>
@@ -2198,15 +2198,15 @@ hironx' designated issue tracker.
 </div>
 <div class="memdoc">
 
-<p>Set absolute pose to a joint. </p>
+<p>Move the end-effector to the given absolute pose. </p>
 <p>All d* arguments are in meter.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">gname</td><td>str: Name of the joint group. </td></tr>
     <tr><td class="paramname">pos</td><td>list of float: In meter. </td></tr>
     <tr><td class="paramname">rpy</td><td>list of float: In radian. </td></tr>
-    <tr><td class="paramname">tm</td><td>float: Second to complete. </td></tr>
-    <tr><td class="paramname">frame_name</td><td>str: Name of the frame that this particular command reference to. </td></tr>
+    <tr><td class="paramname">tm</td><td>float: Second to complete the command. </td></tr>
+    <tr><td class="paramname">frame_name</td><td>str: Name of the frame that this particular command references to. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2295,7 +2295,7 @@ hironx' designated issue tracker.
 </div>
 <div class="memdoc">
 
-<p>Set angles to a joint group relative to its current pose. </p>
+<p>Move the end-effector's location relative to its current pose. </p>
 <p>For d*, distance arguments are in meter while rotations are in degree.</p>
 <p>Example usage: The following moves RARM_JOINT5 joint 0.1mm forward within 0.1sec. </p>
 <div class="fragment"><pre class="fragment">
@@ -2310,7 +2310,7 @@ hironx' designated issue tracker.
     <tr><td class="paramname">dr</td><td>float: In radian. </td></tr>
     <tr><td class="paramname">dp</td><td>float: In radian. </td></tr>
     <tr><td class="paramname">dw</td><td>float: In radian. </td></tr>
-    <tr><td class="paramname">tm</td><td>float: Second to complete. </td></tr>
+    <tr><td class="paramname">tm</td><td>float: Second to complete the command. </td></tr>
     <tr><td class="paramname">wait</td><td>bool: If true, all other subsequent commands wait until the movement commanded by this method call finishes. </td></tr>
   </table>
   </dd>
@@ -3531,7 +3531,7 @@ hironx' designated issue tracker.
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 9 2015 03:08:38 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 9 2015 10:03:40 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
