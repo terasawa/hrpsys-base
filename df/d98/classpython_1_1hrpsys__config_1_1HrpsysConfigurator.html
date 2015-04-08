@@ -167,6 +167,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Save log to the given file name.  <a href="#a6d34c3fe52755fc48b5e5c41f97a4d53"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a90cef79ac8c9512d2a889fabf658631d">clearLog</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear logger's buffer.  <a href="#a90cef79ac8c9512d2a889fabf658631d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ad7022f7e901b18ff2e8a9784b0272587">setMaxLogLength</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set logger's buffer.  <a href="#ad7022f7e901b18ff2e8a9784b0272587"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a8021904625e4a79ca79baa94b64aa44e">lengthDigitalInput</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of digital input port.  <a href="#a8021904625e4a79ca79baa94b64aa44e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a63f6c66893eacce5bd110c5ec5ae74d1">lengthDigitalOutput</a></td></tr>
@@ -2217,6 +2219,41 @@ hironx' designated issue tracker.
 
 </div>
 </div>
+<a class="anchor" id="ad7022f7e901b18ff2e8a9784b0272587"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::setMaxLogLength" ref="ad7022f7e901b18ff2e8a9784b0272587" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ad7022f7e901b18ff2e8a9784b0272587">python.hrpsys_config.HrpsysConfigurator.setMaxLogLength</a> </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set logger's buffer. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">length</td><td>int: length of log, if the system runs at 500hz and you want to store 2min, set 2*60*500. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a3f293baa2650df980ffedb0fd868f45d"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::setSelfGroups" ref="a3f293baa2650df980ffedb0fd868f45d" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -3680,7 +3717,7 @@ hironx' designated issue tracker.
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 8 2015 00:09:59 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 8 2015 00:56:23 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
