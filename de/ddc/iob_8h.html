@@ -224,8 +224,8 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">read output of attitude sensor  <a href="#a6dcd7d1e10307176fedd6d764af5090b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddc/iob_8h.html#ac0be7df9c9e8ceace4d242a7b444ca3d">write_attitude_sensor_offset</a> (int id, double *offset)</td></tr>
 <tr><td colspan="2"><div class="groupHeader">power supply</div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddc/iob_8h.html#ac3b9e8b877ca9fd036f88fe61cb66233">read_power</a> (double *v, double *a)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">read status of power source  <a href="#ac3b9e8b877ca9fd036f88fe61cb66233"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddc/iob_8h.html#a3457e577a8a742d90c37d4573b66ccb7">read_power</a> (double *v, double *a, double *b)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">read status of power source  <a href="#a3457e577a8a742d90c37d4573b66ccb7"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">thermometer</div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddc/iob_8h.html#add8cc7eecf598a2b95959bc962fe974a">read_temperature</a> (int id, double *v)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">read thermometer  <a href="#add8cc7eecf598a2b95959bc962fe974a"></a><br/></td></tr>
@@ -1994,12 +1994,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac3b9e8b877ca9fd036f88fe61cb66233"></a><!-- doxytag: member="iob.h::read_power" ref="ac3b9e8b877ca9fd036f88fe61cb66233" args="(double *v, double *a)" -->
+<a class="anchor" id="a3457e577a8a742d90c37d4573b66ccb7"></a><!-- doxytag: member="iob.h::read_power" ref="a3457e577a8a742d90c37d4573b66ccb7" args="(double *v, double *a, double *b)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="../../de/ddc/iob_8h.html#ac3b9e8b877ca9fd036f88fe61cb66233">read_power</a> </td>
+          <td class="memname">int <a class="el" href="../../de/ddc/iob_8h.html#a3457e577a8a742d90c37d4573b66ccb7">read_power</a> </td>
           <td>(</td>
           <td class="paramtype">double *&#160;</td>
           <td class="paramname"><em>v</em>, </td>
@@ -2008,7 +2008,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>a</em>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2024,6 +2030,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">v</td><td>voltage[V] </td></tr>
     <tr><td class="paramname">a</td><td>current[A] </td></tr>
+    <tr><td class="paramname">b</td><td>remaining battery level[%] </td></tr>
   </table>
   </dd>
 </dl>
@@ -3111,7 +3118,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 18 2015 05:15:18 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 18 2015 05:50:46 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
