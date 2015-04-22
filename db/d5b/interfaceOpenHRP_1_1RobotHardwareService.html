@@ -77,6 +77,8 @@
 Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d17/structOpenHRP_1_1RobotHardwareService_1_1RobotState.html">RobotState</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">status of the robot  <a href="../../df/d17/structOpenHRP_1_1RobotHardwareService_1_1RobotState.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d58/structOpenHRP_1_1RobotHardwareService_1_1RobotState2.html">RobotState2</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">status of the robot  <a href="../../d2/d58/structOpenHRP_1_1RobotHardwareService_1_1RobotState2.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a964318a5e25b451367366c874005b066">SwitchStatus</a> { <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a964318a5e25b451367366c874005b066aa67be1278ddee1f7376e1a325ce57ac7">SWITCH_ON</a>, 
@@ -123,6 +125,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">get digital output length of robot, non-applicable bits are nop  <a href="#a0814aa28267b239a9a44e4a864868f5f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#aaba4677011ba992f3db5483d1cebd0ac">readDigitalOutput</a> (out <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#ac9bc3059c88f9ac697069e58259e176e">OctSequence</a> dOut)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">get digital output to robot  <a href="#aaba4677011ba992f3db5483d1cebd0ac"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a3c317a45e58eb7de52e29bcbe48a18b3">getStatus2</a> (out <a class="el" href="../../d2/d58/structOpenHRP_1_1RobotHardwareService_1_1RobotState2.html">RobotState2</a> rs)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">get status of the robot  <a href="#a3c317a45e58eb7de52e29bcbe48a18b3"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a905446e4fe65187d6d090db8a2df2133">CALIB_STATE_MASK</a> = 0x00000001</td></tr>
@@ -340,6 +344,31 @@ Public Attributes</h2></td></tr>
           <td class="memname">void <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a0ddb8aaa8375a755f919bf23e9fa63ab">OpenHRP::RobotHardwareService::getStatus</a> </td>
           <td>(</td>
           <td class="paramtype">out <a class="el" href="../../df/d17/structOpenHRP_1_1RobotHardwareService_1_1RobotState.html">RobotState</a>&#160;</td>
+          <td class="paramname"><em>rs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>get status of the robot </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rs</td><td>status of the robot </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3c317a45e58eb7de52e29bcbe48a18b3"></a><!-- doxytag: member="OpenHRP::RobotHardwareService::getStatus2" ref="a3c317a45e58eb7de52e29bcbe48a18b3" args="(out RobotState2 rs)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a3c317a45e58eb7de52e29bcbe48a18b3">OpenHRP::RobotHardwareService::getStatus2</a> </td>
+          <td>(</td>
+          <td class="paramtype">out <a class="el" href="../../d2/d58/structOpenHRP_1_1RobotHardwareService_1_1RobotState2.html">RobotState2</a>&#160;</td>
           <td class="paramname"><em>rs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -860,7 +889,7 @@ Public Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 18 2015 05:50:46 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 22 2015 14:15:47 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
