@@ -266,7 +266,7 @@ Public Attributes</h2></td></tr>
 
 <p>References <a class="el" href="../../dc/d21/classpython_1_1rtm_1_1RTcomponent.html#a07cfdf85127640531d05cd21a37e6fcf">python.rtm.RTcomponent.getLifeCycleState()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/d21/classpython_1_1rtm_1_1RTcomponent.html#a5388d4577d063ad6acb9b09a29ff44e1">python.rtm.RTcomponent.stop()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d21/classpython_1_1rtm_1_1RTcomponent.html#a51e3de3494262b7110a46aa3a6b2857b">python.rtm.RTcomponent.start()</a>.</p>
 
 </div>
 </div>
@@ -312,7 +312,7 @@ Public Attributes</h2></td></tr>
 
 <p>References <a class="el" href="../../dc/d21/classpython_1_1rtm_1_1RTcomponent.html#a07cfdf85127640531d05cd21a37e6fcf">python.rtm.RTcomponent.getLifeCycleState()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/d21/classpython_1_1rtm_1_1RTcomponent.html#a51e3de3494262b7110a46aa3a6b2857b">python.rtm.RTcomponent.start()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d21/classpython_1_1rtm_1_1RTcomponent.html#a5388d4577d063ad6acb9b09a29ff44e1">python.rtm.RTcomponent.stop()</a>.</p>
 
 </div>
 </div>
@@ -529,7 +529,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>ec</em> = <code>None</code>&#160;</td>
+          <td class="paramname"><em>ec</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>3.0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -545,11 +551,13 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">self</td><td>this object </td></tr>
     <tr><td class="paramname">ec</td><td>execution context used to activate this component </td></tr>
+    <tr><td class="paramname">timeout</td><td>maximum duration to wait for activation </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>True if activated successfully, False otherwise </dd></dl>
 
-<p>References <a class="el" href="../../dc/d21/classpython_1_1rtm_1_1RTcomponent.html#a65f375f51c89dc8b3dafff40ab8ed2fe">python.rtm.RTcomponent.ec</a>, <a class="el" href="../../dc/d21/classpython_1_1rtm_1_1RTcomponent.html#a94e3af6991d4eb0b47fce287f27ca60d">python.rtm.RTcomponent.isInactive()</a>, and <a class="el" href="../../dc/d21/classpython_1_1rtm_1_1RTcomponent.html#a9ef0fb38e7b6f6275eb68d3475d54bf0">python.rtm.RTcomponent.ref</a>.</p>
+<p>References <a class="el" href="../../dc/d21/classpython_1_1rtm_1_1RTcomponent.html#a65f375f51c89dc8b3dafff40ab8ed2fe">python.rtm.RTcomponent.ec</a>, <a class="el" href="../../dc/d21/classpython_1_1rtm_1_1RTcomponent.html#af28c2afa9a0c73ab941c8d02ef3b4d6e">python.rtm.RTcomponent.isActive()</a>, and <a class="el" href="../../dc/d21/classpython_1_1rtm_1_1RTcomponent.html#a9ef0fb38e7b6f6275eb68d3475d54bf0">python.rtm.RTcomponent.ref</a>.</p>
 
 </div>
 </div>
@@ -567,7 +575,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>ec</em> = <code>None</code>&#160;</td>
+          <td class="paramname"><em>ec</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>3.0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -583,11 +597,13 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">self</td><td>this object </td></tr>
     <tr><td class="paramname">ec</td><td>execution context used to deactivate this component </td></tr>
+    <tr><td class="paramname">timeout</td><td>maximum duration to wait for deactivation </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>True if deactivated successfully, False otherwise </dd></dl>
 
-<p>References <a class="el" href="../../dc/d21/classpython_1_1rtm_1_1RTcomponent.html#a65f375f51c89dc8b3dafff40ab8ed2fe">python.rtm.RTcomponent.ec</a>, <a class="el" href="../../dc/d21/classpython_1_1rtm_1_1RTcomponent.html#af28c2afa9a0c73ab941c8d02ef3b4d6e">python.rtm.RTcomponent.isActive()</a>, and <a class="el" href="../../dc/d21/classpython_1_1rtm_1_1RTcomponent.html#a9ef0fb38e7b6f6275eb68d3475d54bf0">python.rtm.RTcomponent.ref</a>.</p>
+<p>References <a class="el" href="../../dc/d21/classpython_1_1rtm_1_1RTcomponent.html#a65f375f51c89dc8b3dafff40ab8ed2fe">python.rtm.RTcomponent.ec</a>, <a class="el" href="../../dc/d21/classpython_1_1rtm_1_1RTcomponent.html#a94e3af6991d4eb0b47fce287f27ca60d">python.rtm.RTcomponent.isInactive()</a>, and <a class="el" href="../../dc/d21/classpython_1_1rtm_1_1RTcomponent.html#a9ef0fb38e7b6f6275eb68d3475d54bf0">python.rtm.RTcomponent.ref</a>.</p>
 
 </div>
 </div>
@@ -657,7 +673,7 @@ Public Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 25 2015 22:29:41 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 26 2015 21:46:46 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
