@@ -108,6 +108,8 @@ Public Attributes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sequence of phase ratio of toe-off and heel-contact. Sum of toe_heel_phase_ratio should be 1.0.  <a href="#a02aade19e1b4e4320880f2e13026b393"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dab/structOpenHRP_1_1AutoBalancerService_1_1GaitGeneratorParam.html#a1e8c57a68b9a9d897935236f5abbe203">use_toe_joint</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Use toe joint or not in toe-off heel-contact motion.  <a href="#a1e8c57a68b9a9d897935236f5abbe203"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dab/structOpenHRP_1_1AutoBalancerService_1_1GaitGeneratorParam.html#a1f0d7b967fc6e1008bd2d3524a0c8c74">use_toe_heel_transition</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Use toe heel zmp transition. If true, zmp moves among default position, toe position (described by toe_zmp_offset_x), and heel position (described by heel_zmp_offset_x).  <a href="#a1f0d7b967fc6e1008bd2d3524a0c8c74"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Parameters for GaitGenerator. </p>
@@ -337,6 +339,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a1f0d7b967fc6e1008bd2d3524a0c8c74"></a><!-- doxytag: member="OpenHRP::AutoBalancerService::GaitGeneratorParam::use_toe_heel_transition" ref="a1f0d7b967fc6e1008bd2d3524a0c8c74" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../d9/dab/structOpenHRP_1_1AutoBalancerService_1_1GaitGeneratorParam.html#a1f0d7b967fc6e1008bd2d3524a0c8c74">OpenHRP::AutoBalancerService::GaitGeneratorParam::use_toe_heel_transition</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Use toe heel zmp transition. If true, zmp moves among default position, toe position (described by toe_zmp_offset_x), and heel position (described by heel_zmp_offset_x). </p>
+
+</div>
+</div>
 <a class="anchor" id="a1e8c57a68b9a9d897935236f5abbe203"></a><!-- doxytag: member="OpenHRP::AutoBalancerService::GaitGeneratorParam::use_toe_joint" ref="a1e8c57a68b9a9d897935236f5abbe203" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -359,7 +376,7 @@ Public Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 27 2015 23:06:22 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 28 2015 13:02:58 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
