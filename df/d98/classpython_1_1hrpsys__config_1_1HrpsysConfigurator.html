@@ -216,6 +216,12 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Start Stabilzier mode.  <a href="#af76f90aeb2d6b366b04fc7d4291135d4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aec66d7aadd0afeb61b56b1b83c07c7f8">stopStabilizer</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop Stabilzier mode.  <a href="#aec66d7aadd0afeb61b56b1b83c07c7f8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ab1a842b4ecdd5e02df662980313cda02">startImpedance_315_4</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">start impedance mode  <a href="#ab1a842b4ecdd5e02df662980313cda02"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a6e065034a919cd10440af068f1942fdb">stopImpedance_315_4</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">stop impedance mode  <a href="#a6e065034a919cd10440af068f1942fdb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a674ebd1e5ceb45288a54e6ba4c28a01c">startImpedance</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a6c01ad619bbca43ef0c5b41c49be0a55">stopImpedance</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aaa5eac878da20d174d8e171d39f1f102">init</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls init from its superclass, which tries to connect RTCManager, looks for ModelLoader, and starts necessary RTC components.  <a href="#aaa5eac878da20d174d8e171d39f1f102"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aea38aea442c7f0ae757ef2e6274362b5">__init__</a></td></tr>
@@ -282,6 +288,7 @@ Static Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a1580154e16fe81c23a5f85bed7b75200">simulation_mode</a> = None</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a53a33e0976e9b1568f4005e023dbde03">sensors</a> = None</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5447b10b79e7eb78539857dff86f3d65">Groups</a> = []</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a05ecb1abf027c83ed71c601a6e2f60e3">hrpsys_version</a> = None</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aea38aea442c7f0ae757ef2e6274362b5"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::__init__" ref="aea38aea442c7f0ae757ef2e6274362b5" args="" -->
@@ -1650,7 +1657,7 @@ Static Public Attributes</h2></td></tr>
 <p>Also runs config, logger. Also internally calls <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a3f293baa2650df980ffedb0fd868f45d" title="Set to the hrpsys.SequencePlayer the groups of links and joints that are statically defined as member...">setSelfGroups()</a>.</p>
 <p>robotname: str  url: str </p>
 
-<p>References <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ad98413b9fb389ad68f672f590c9dbc59">python.hrpsys_config.HrpsysConfigurator.activateComps()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5c980e85f79eacb738a648b4b9a04a09">python.hrpsys_config.HrpsysConfigurator.configurator_name</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a8f29c2453c7bc9112d9ff70a46a85b23">python.hrpsys_config.HrpsysConfigurator.connectComps()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a031f86b5f3951cdaca859e7a8ad6b2a8">python.hrpsys_config.HrpsysConfigurator.createComps()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5d85768a0fb0e98c61970f33952d49a7">python.hrpsys_config.HrpsysConfigurator.getSensors()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a53a33e0976e9b1568f4005e023dbde03">python.hrpsys_config.HrpsysConfigurator.sensors</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a3f293baa2650df980ffedb0fd868f45d">python.hrpsys_config.HrpsysConfigurator.setSelfGroups()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#afd84812123c88ce5dd5ba51f7e183d44">python.hrpsys_config.HrpsysConfigurator.setupLogger()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5c188c1a3fa0340af4c886580dc6497c">python.hrpsys_config.HrpsysConfigurator.waitForModelLoader()</a>, and <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a264cdc9d12e801c07b3d9619e8c73d6a">python.hrpsys_config.HrpsysConfigurator.waitForRTCManagerAndRoboHardware()</a>.</p>
+<p>References <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ad98413b9fb389ad68f672f590c9dbc59">python.hrpsys_config.HrpsysConfigurator.activateComps()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5c980e85f79eacb738a648b4b9a04a09">python.hrpsys_config.HrpsysConfigurator.configurator_name</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a8f29c2453c7bc9112d9ff70a46a85b23">python.hrpsys_config.HrpsysConfigurator.connectComps()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a031f86b5f3951cdaca859e7a8ad6b2a8">python.hrpsys_config.HrpsysConfigurator.createComps()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5d85768a0fb0e98c61970f33952d49a7">python.hrpsys_config.HrpsysConfigurator.getSensors()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a05ecb1abf027c83ed71c601a6e2f60e3">python.hrpsys_config.HrpsysConfigurator.hrpsys_version</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a53a33e0976e9b1568f4005e023dbde03">python.hrpsys_config.HrpsysConfigurator.sensors</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a3f293baa2650df980ffedb0fd868f45d">python.hrpsys_config.HrpsysConfigurator.setSelfGroups()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#afd84812123c88ce5dd5ba51f7e183d44">python.hrpsys_config.HrpsysConfigurator.setupLogger()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5c188c1a3fa0340af4c886580dc6497c">python.hrpsys_config.HrpsysConfigurator.waitForModelLoader()</a>, and <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a264cdc9d12e801c07b3d9619e8c73d6a">python.hrpsys_config.HrpsysConfigurator.waitForRTCManagerAndRoboHardware()</a>.</p>
 
 </div>
 </div>
@@ -2667,6 +2674,159 @@ hironx' designated issue tracker.
 
 </div>
 </div>
+<a class="anchor" id="a674ebd1e5ceb45288a54e6ba4c28a01c"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::startImpedance" ref="a674ebd1e5ceb45288a54e6ba4c28a01c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a674ebd1e5ceb45288a54e6ba4c28a01c">python.hrpsys_config.HrpsysConfigurator.startImpedance</a> </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>arm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>kwargs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5c980e85f79eacb738a648b4b9a04a09">python.hrpsys_config.HrpsysConfigurator.configurator_name</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a05ecb1abf027c83ed71c601a6e2f60e3">python.hrpsys_config.HrpsysConfigurator.hrpsys_version</a>, and <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ab1a842b4ecdd5e02df662980313cda02">python.hrpsys_config.HrpsysConfigurator.startImpedance_315_4()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab1a842b4ecdd5e02df662980313cda02"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::startImpedance_315_4" ref="ab1a842b4ecdd5e02df662980313cda02" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ab1a842b4ecdd5e02df662980313cda02">python.hrpsys_config.HrpsysConfigurator.startImpedance_315_4</a> </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>arm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>M_p</em> = <code>100.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>D_p</em> = <code>100.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>K_p</em> = <code>100.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>M_r</em> = <code>100.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>D_r</em> = <code>2000.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>K_r</em> = <code>2000.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>force_gain</em> = <code>[1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>moment_gain</em> = <code>[0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>sr_gain</em> = <code>1.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>avoid_gain</em> = <code>0.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>reference_gain</em> = <code>0.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>manipulability_limit</em> = <code>0.1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>controller_mode</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>ik_optional_weight_vector</em> = <code>None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>start impedance mode </p>
+<p>arm: str name of artm to be controlled, this must be initialized using <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a3f293baa2650df980ffedb0fd868f45d" title="Set to the hrpsys.SequencePlayer the groups of links and joints that are statically defined as member...">setSelfGroups()</a> </p>
+
+<p>References <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5c980e85f79eacb738a648b4b9a04a09">python.hrpsys_config.HrpsysConfigurator.configurator_name</a>.</p>
+
+<p>Referenced by <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a674ebd1e5ceb45288a54e6ba4c28a01c">python.hrpsys_config.HrpsysConfigurator.startImpedance()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="af76f90aeb2d6b366b04fc7d4291135d4"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::startStabilizer" ref="af76f90aeb2d6b366b04fc7d4291135d4" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -2702,6 +2862,66 @@ hironx' designated issue tracker.
 <div class="memdoc">
 
 <p>Stop AutoBalancer mode. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6c01ad619bbca43ef0c5b41c49be0a55"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::stopImpedance" ref="a6c01ad619bbca43ef0c5b41c49be0a55" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a6c01ad619bbca43ef0c5b41c49be0a55">python.hrpsys_config.HrpsysConfigurator.stopImpedance</a> </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>arm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5c980e85f79eacb738a648b4b9a04a09">python.hrpsys_config.HrpsysConfigurator.configurator_name</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a05ecb1abf027c83ed71c601a6e2f60e3">python.hrpsys_config.HrpsysConfigurator.hrpsys_version</a>, and <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a6e065034a919cd10440af068f1942fdb">python.hrpsys_config.HrpsysConfigurator.stopImpedance_315_4()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e065034a919cd10440af068f1942fdb"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::stopImpedance_315_4" ref="a6e065034a919cd10440af068f1942fdb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a6e065034a919cd10440af068f1942fdb">python.hrpsys_config.HrpsysConfigurator.stopImpedance_315_4</a> </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>arm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>stop impedance mode </p>
+
+<p>Referenced by <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a6c01ad619bbca43ef0c5b41c49be0a55">python.hrpsys_config.HrpsysConfigurator.stopImpedance()</a>.</p>
 
 </div>
 </div>
@@ -3117,7 +3337,7 @@ hironx' designated issue tracker.
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a38fa6df60028ac7e3ab0ba4e91596b1b">python.hrpsys_config.HrpsysConfigurator::checkEncoders()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a37cba25450691eb8333081cbf6654d1b">python.hrpsys_config.HrpsysConfigurator::checkSimulationMode()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a8f29c2453c7bc9112d9ff70a46a85b23">python.hrpsys_config.HrpsysConfigurator::connectComps()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a576bbf4e3d1ea794dbcd1cd5dc1ddcd8">python.hrpsys_config.HrpsysConfigurator::connectLoggerPort()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a1bad278d449b6a23ad452faae6df5aba">python.hrpsys_config.HrpsysConfigurator::createComp()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a031f86b5f3951cdaca859e7a8ad6b2a8">python.hrpsys_config.HrpsysConfigurator::createComps()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a86d088b1cc051f3d95405aa930bb44c0">python.hrpsys_config.HrpsysConfigurator::deleteComps()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a26ec89e951906084fa5f97f2df25e24d">python.hrpsys_config.HrpsysConfigurator::findComp()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#adee0dbcb780e4caa9d041acf2160a9fc">python.hrpsys_config.HrpsysConfigurator::findComps()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a6ef847050cf1f1416fb490dccb3877d0">python.hrpsys_config.HrpsysConfigurator::getBodyInfo()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a888185b5cff537487c060f77f2e8ef26">python.hrpsys_config.HrpsysConfigurator::getRTCInstanceList()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aaa5eac878da20d174d8e171d39f1f102">python.hrpsys_config.HrpsysConfigurator::init()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a15e75328813c5822552a07327b3d2a28">python.hrpsys_config.HrpsysConfigurator::isServoOn()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a6d34c3fe52755fc48b5e5c41f97a4d53">python.hrpsys_config.HrpsysConfigurator::saveLog()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aea42f3b3e5b42d1de1fa0ac74fa040d3">python.hrpsys_config.HrpsysConfigurator::servoOff()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a7c9f3ce63fc519151651e2402a11b9f4">python.hrpsys_config.HrpsysConfigurator::servoOn()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#afd84812123c88ce5dd5ba51f7e183d44">python.hrpsys_config.HrpsysConfigurator::setupLogger()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5c188c1a3fa0340af4c886580dc6497c">python.hrpsys_config.HrpsysConfigurator::waitForModelLoader()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a434d433145d575859e48889962ed2f84">python.hrpsys_config.HrpsysConfigurator::waitForRobotHardware()</a>, and <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a87ca6029b9de3df71f3a1067bc5c8176">python.hrpsys_config.HrpsysConfigurator::waitForRTCManager()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a38fa6df60028ac7e3ab0ba4e91596b1b">python.hrpsys_config.HrpsysConfigurator::checkEncoders()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a37cba25450691eb8333081cbf6654d1b">python.hrpsys_config.HrpsysConfigurator::checkSimulationMode()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a8f29c2453c7bc9112d9ff70a46a85b23">python.hrpsys_config.HrpsysConfigurator::connectComps()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a576bbf4e3d1ea794dbcd1cd5dc1ddcd8">python.hrpsys_config.HrpsysConfigurator::connectLoggerPort()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a1bad278d449b6a23ad452faae6df5aba">python.hrpsys_config.HrpsysConfigurator::createComp()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a031f86b5f3951cdaca859e7a8ad6b2a8">python.hrpsys_config.HrpsysConfigurator::createComps()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a86d088b1cc051f3d95405aa930bb44c0">python.hrpsys_config.HrpsysConfigurator::deleteComps()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a26ec89e951906084fa5f97f2df25e24d">python.hrpsys_config.HrpsysConfigurator::findComp()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#adee0dbcb780e4caa9d041acf2160a9fc">python.hrpsys_config.HrpsysConfigurator::findComps()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a6ef847050cf1f1416fb490dccb3877d0">python.hrpsys_config.HrpsysConfigurator::getBodyInfo()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a888185b5cff537487c060f77f2e8ef26">python.hrpsys_config.HrpsysConfigurator::getRTCInstanceList()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aaa5eac878da20d174d8e171d39f1f102">python.hrpsys_config.HrpsysConfigurator::init()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a15e75328813c5822552a07327b3d2a28">python.hrpsys_config.HrpsysConfigurator::isServoOn()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a6d34c3fe52755fc48b5e5c41f97a4d53">python.hrpsys_config.HrpsysConfigurator::saveLog()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aea42f3b3e5b42d1de1fa0ac74fa040d3">python.hrpsys_config.HrpsysConfigurator::servoOff()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a7c9f3ce63fc519151651e2402a11b9f4">python.hrpsys_config.HrpsysConfigurator::servoOn()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#afd84812123c88ce5dd5ba51f7e183d44">python.hrpsys_config.HrpsysConfigurator::setupLogger()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a674ebd1e5ceb45288a54e6ba4c28a01c">python.hrpsys_config.HrpsysConfigurator::startImpedance()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ab1a842b4ecdd5e02df662980313cda02">python.hrpsys_config.HrpsysConfigurator::startImpedance_315_4()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a6c01ad619bbca43ef0c5b41c49be0a55">python.hrpsys_config.HrpsysConfigurator::stopImpedance()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5c188c1a3fa0340af4c886580dc6497c">python.hrpsys_config.HrpsysConfigurator::waitForModelLoader()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a434d433145d575859e48889962ed2f84">python.hrpsys_config.HrpsysConfigurator::waitForRobotHardware()</a>, and <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a87ca6029b9de3df71f3a1067bc5c8176">python.hrpsys_config.HrpsysConfigurator::waitForRTCManager()</a>.</p>
 
 </div>
 </div>
@@ -3288,6 +3508,21 @@ hironx' designated issue tracker.
 <div class="memdoc">
 
 <p>Referenced by <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a37cba25450691eb8333081cbf6654d1b">python.hrpsys_config.HrpsysConfigurator.checkSimulationMode()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a05ecb1abf027c83ed71c601a6e2f60e3"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::hrpsys_version" ref="a05ecb1abf027c83ed71c601a6e2f60e3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a05ecb1abf027c83ed71c601a6e2f60e3">python::hrpsys_config.HrpsysConfigurator::hrpsys_version</a> = None<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aaa5eac878da20d174d8e171d39f1f102">python.hrpsys_config.HrpsysConfigurator.init()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a674ebd1e5ceb45288a54e6ba4c28a01c">python.hrpsys_config.HrpsysConfigurator.startImpedance()</a>, and <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a6c01ad619bbca43ef0c5b41c49be0a55">python.hrpsys_config.HrpsysConfigurator.stopImpedance()</a>.</p>
 
 </div>
 </div>
@@ -3873,7 +4108,7 @@ hironx' designated issue tracker.
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 2 2015 21:43:35 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 4 2015 23:05:33 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
