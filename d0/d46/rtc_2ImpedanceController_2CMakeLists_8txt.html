@@ -62,19 +62,37 @@
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d46/rtc_2ImpedanceController_2CMakeLists_8txt.html#a70cc5067e4af23258ade104e13970334">set</a> (comp_sources ImpedanceController.cpp ImpedanceControllerService_impl.cpp JointPathEx.cpp RatsMatrix.cpp) <a class="el" href="../../da/de5/idl_2CMakeLists_8txt.html#ad00cebb7acaba72a40cade1519f00dbc">set</a>(libs hrpModel-3.1 hrpCollision-3.1 hrpUtil-3.1 hrpsysBaseStub) <a class="el" href="../../d2/dae/rtc_2SORFilter_2CMakeLists_8txt.html#ac83e5ea2dd88a4454b6478d9f65534f4">add_library</a>(ImpedanceController SHARED $</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d46/rtc_2ImpedanceController_2CMakeLists_8txt.html#abf12bc6b89cd517498b02fd2a2221f84">set</a> (comp_sources ImpedanceController.cpp ImpedanceControllerService_impl.cpp JointPathEx.cpp RatsMatrix.cpp ImpedanceOutputGenerator.h) <a class="el" href="../../da/de5/idl_2CMakeLists_8txt.html#ad00cebb7acaba72a40cade1519f00dbc">set</a>(libs hrpModel-3.1 hrpCollision-3.1 hrpUtil-3.1 hrpsysBaseStub) <a class="el" href="../../d2/dae/rtc_2SORFilter_2CMakeLists_8txt.html#ac83e5ea2dd88a4454b6478d9f65534f4">add_library</a>(ImpedanceController SHARED $</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d46/rtc_2ImpedanceController_2CMakeLists_8txt.html#a45af99137d7d8208570b6057afffad6b">target_link_libraries</a> (ImpedanceController ${libs}) <a class="el" href="../../d4/d91/rtc_2VirtualCamera_2CMakeLists_8txt.html#a20c78ecfb57ef67db4183adf455e6ba1">set_target_properties</a>(ImpedanceController PROPERTIES PREFIX&quot;&quot;) <a class="el" href="../../db/def/rtc_2DataLogger_2CMakeLists_8txt.html#a796bc9370f7163c1a3976b6ac775046f">add_executable</a>(ImpedanceControllerComp ImpedanceControllerComp.cpp $</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d46/rtc_2ImpedanceController_2CMakeLists_8txt.html#a5b2e1f69e52c3a0a31d9812071ad0f20">set</a> (target ImpedanceController ImpedanceControllerComp testImpedanceOutputGenerator) install(TARGETS $</td></tr>
 </table>
 <hr/><h2>Function Documentation</h2>
-<a class="anchor" id="a70cc5067e4af23258ade104e13970334"></a><!-- doxytag: member="rtc/ImpedanceController/CMakeLists.txt::set" ref="a70cc5067e4af23258ade104e13970334" args="(comp_sources ImpedanceController.cpp ImpedanceControllerService_impl.cpp JointPathEx.cpp RatsMatrix.cpp) set(libs hrpModel&#45;3.1 hrpCollision&#45;3.1 hrpUtil&#45;3.1 hrpsysBaseStub) add_library(ImpedanceController SHARED $" -->
+<a class="anchor" id="abf12bc6b89cd517498b02fd2a2221f84"></a><!-- doxytag: member="rtc/ImpedanceController/CMakeLists.txt::set" ref="abf12bc6b89cd517498b02fd2a2221f84" args="(comp_sources ImpedanceController.cpp ImpedanceControllerService_impl.cpp JointPathEx.cpp RatsMatrix.cpp ImpedanceOutputGenerator.h) set(libs hrpModel&#45;3.1 hrpCollision&#45;3.1 hrpUtil&#45;3.1 hrpsysBaseStub) add_library(ImpedanceController SHARED $" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../da/de5/idl_2CMakeLists_8txt.html#ad00cebb7acaba72a40cade1519f00dbc">set</a> </td>
           <td>(</td>
-          <td class="paramtype">comp_sources ImpedanceController.cpp ImpedanceControllerService_impl.cpp JointPathEx.cpp RatsMatrix.&#160;</td>
-          <td class="paramname"><em>cpp</em></td><td>)</td>
+          <td class="paramtype">comp_sources ImpedanceController.cpp ImpedanceControllerService_impl.cpp JointPathEx.cpp RatsMatrix.cpp ImpedanceOutputGenerator.&#160;</td>
+          <td class="paramname"><em>h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5b2e1f69e52c3a0a31d9812071ad0f20"></a><!-- doxytag: member="rtc/ImpedanceController/CMakeLists.txt::set" ref="a5b2e1f69e52c3a0a31d9812071ad0f20" args="(target ImpedanceController ImpedanceControllerComp testImpedanceOutputGenerator) install(TARGETS $" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/de5/idl_2CMakeLists_8txt.html#ad00cebb7acaba72a40cade1519f00dbc">set</a> </td>
+          <td>(</td>
+          <td class="paramtype">target ImpedanceController ImpedanceControllerComp&#160;</td>
+          <td class="paramname"><em>testImpedanceOutputGenerator</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -103,7 +121,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 17 2015 15:12:03 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 17 2015 16:07:02 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
