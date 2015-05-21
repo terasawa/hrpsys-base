@@ -132,6 +132,10 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set all joint angles.  <a href="#a8f6c980d05cc00f41d9667036ebd436f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a31eadc49bdf2ce66014c510500614c07">setJointAnglesOfGroup</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the joint angles to aim.  <a href="#a31eadc49bdf2ce66014c510500614c07"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a1126c16665262d008b95691508f2f527">setJointAnglesSequence</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set all joint angles.  <a href="#a1126c16665262d008b95691508f2f527"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a4182923ba121f5135a27e150b0cb32df">setJointAnglesSequenceOfGroup</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set all joint angles.  <a href="#a4182923ba121f5135a27e150b0cb32df"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aaea0081b80df5d4a994c13723e7498df">loadPattern</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a pattern file that is created offline.  <a href="#aaea0081b80df5d4a994c13723e7498df"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aa0c2ce9825c19956c7647208bf193309">waitInterpolation</a></td></tr>
@@ -2341,6 +2345,111 @@ hironx' designated issue tracker.
 
 </div>
 </div>
+<a class="anchor" id="a1126c16665262d008b95691508f2f527"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::setJointAnglesSequence" ref="a1126c16665262d008b95691508f2f527" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a1126c16665262d008b95691508f2f527">python.hrpsys_config.HrpsysConfigurator.setJointAnglesSequence</a> </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>angless</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>tms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set all joint angles. </p>
+<div class="fragment"><pre class="fragment">
+NOTE-1: that while this method does not check angle value range,
+any joints could emit position limit over error, which has not yet
+been thrown by hrpsys so that there's no way to catch on this client
+side. Worthwhile opening an enhancement ticket for that at
+hironx' designated issue tracker.
+
+</pre></div> <dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sequence</td><td>angles list of float: In degree. </td></tr>
+    <tr><td class="paramname">tm</td><td>sequence of float: Time to complete, In Second </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4182923ba121f5135a27e150b0cb32df"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::setJointAnglesSequenceOfGroup" ref="a4182923ba121f5135a27e150b0cb32df" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a4182923ba121f5135a27e150b0cb32df">python.hrpsys_config.HrpsysConfigurator.setJointAnglesSequenceOfGroup</a> </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>gname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>angless</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>tms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set all joint angles. </p>
+<div class="fragment"><pre class="fragment">
+NOTE-1: that while this method does not check angle value range,
+any joints could emit position limit over error, which has not yet
+been thrown by hrpsys so that there's no way to catch on this client
+side. Worthwhile opening an enhancement ticket for that at
+hironx' designated issue tracker.
+
+</pre></div> <dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gname</td><td>str: Name of the joint group. </td></tr>
+    <tr><td class="paramname">sequence</td><td>angles list of float: In degree. </td></tr>
+    <tr><td class="paramname">tm</td><td>sequence of float: Time to complete, In Second </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ad7022f7e901b18ff2e8a9784b0272587"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::setMaxLogLength" ref="ad7022f7e901b18ff2e8a9784b0272587" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -4124,7 +4233,7 @@ hironx' designated issue tracker.
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 21 2015 15:17:15 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 21 2015 20:29:18 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
