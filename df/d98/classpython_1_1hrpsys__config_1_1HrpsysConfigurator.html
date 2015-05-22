@@ -226,6 +226,10 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">stop impedance mode  <a href="#a6e065034a919cd10440af068f1942fdb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a674ebd1e5ceb45288a54e6ba4c28a01c">startImpedance</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a6c01ad619bbca43ef0c5b41c49be0a55">stopImpedance</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5a08043ad5f099474ed9813f4bdff1c5">startDefaultUnstableControllers</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Start default unstable RTCs controller mode.  <a href="#a5a08043ad5f099474ed9813f4bdff1c5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5d3f1a7d95267d07dda134b0e40555dc">stopDefaultUnstableControllers</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop default unstable RTCs controller mode.  <a href="#a5d3f1a7d95267d07dda134b0e40555dc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aaa5eac878da20d174d8e171d39f1f102">init</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls init from its superclass, which tries to connect RTCManager, looks for ModelLoader, and starts necessary RTC components.  <a href="#aaa5eac878da20d174d8e171d39f1f102"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aea38aea442c7f0ae757ef2e6274362b5">__init__</a></td></tr>
@@ -2782,6 +2786,58 @@ hironx' designated issue tracker.
   </dd>
 </dl>
 
+<p>Referenced by <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5a08043ad5f099474ed9813f4bdff1c5">python.hrpsys_config.HrpsysConfigurator.startDefaultUnstableControllers()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a08043ad5f099474ed9813f4bdff1c5"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::startDefaultUnstableControllers" ref="a5a08043ad5f099474ed9813f4bdff1c5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5a08043ad5f099474ed9813f4bdff1c5">python.hrpsys_config.HrpsysConfigurator.startDefaultUnstableControllers</a> </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>ic_limbs</em> = <code>[&quot;rarm&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>larm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>abc_limbs</em> = <code>[&quot;rleg&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>lleg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Start default unstable RTCs controller mode. </p>
+<p>Currently Stabilzier, AutoBalancer, and ImpedanceController are started. </p>
+
+<p>References <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a947ce52b0cfa902f704b412a2f084034">python.hrpsys_config.HrpsysConfigurator.startAutoBalancer()</a>, and <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#af76f90aeb2d6b366b04fc7d4291135d4">python.hrpsys_config.HrpsysConfigurator.startStabilizer()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a674ebd1e5ceb45288a54e6ba4c28a01c"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::startImpedance" ref="a674ebd1e5ceb45288a54e6ba4c28a01c" args="" -->
@@ -2954,6 +3010,8 @@ hironx' designated issue tracker.
 
 <p>Start Stabilzier mode. </p>
 
+<p>Referenced by <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5a08043ad5f099474ed9813f4bdff1c5">python.hrpsys_config.HrpsysConfigurator.startDefaultUnstableControllers()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a1173d431fb7a66e0501b9c993112df79"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::stopAutoBalancer" ref="a1173d431fb7a66e0501b9c993112df79" args="" -->
@@ -2972,6 +3030,46 @@ hironx' designated issue tracker.
 <div class="memdoc">
 
 <p>Stop AutoBalancer mode. </p>
+
+<p>Referenced by <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5d3f1a7d95267d07dda134b0e40555dc">python.hrpsys_config.HrpsysConfigurator.stopDefaultUnstableControllers()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5d3f1a7d95267d07dda134b0e40555dc"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::stopDefaultUnstableControllers" ref="a5d3f1a7d95267d07dda134b0e40555dc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5d3f1a7d95267d07dda134b0e40555dc">python.hrpsys_config.HrpsysConfigurator.stopDefaultUnstableControllers</a> </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>ic_limbs</em> = <code>[&quot;rarm&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>larm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Stop default unstable RTCs controller mode. </p>
+<p>Currently Stabilzier, AutoBalancer, and ImpedanceController are stopped. </p>
+
+<p>References <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a1173d431fb7a66e0501b9c993112df79">python.hrpsys_config.HrpsysConfigurator.stopAutoBalancer()</a>, and <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aec66d7aadd0afeb61b56b1b83c07c7f8">python.hrpsys_config.HrpsysConfigurator.stopStabilizer()</a>.</p>
 
 </div>
 </div>
@@ -3051,6 +3149,8 @@ hironx' designated issue tracker.
 <div class="memdoc">
 
 <p>Stop Stabilzier mode. </p>
+
+<p>Referenced by <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5d3f1a7d95267d07dda134b0e40555dc">python.hrpsys_config.HrpsysConfigurator.stopDefaultUnstableControllers()</a>.</p>
 
 </div>
 </div>
@@ -4233,7 +4333,7 @@ hironx' designated issue tracker.
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 21 2015 20:41:13 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 22 2015 04:39:27 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

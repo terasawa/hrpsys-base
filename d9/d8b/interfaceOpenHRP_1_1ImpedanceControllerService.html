@@ -87,9 +87,13 @@ Public Types</h2></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a249417099d89b5e25e74dea6fdcb89b7">startImpedanceController</a> (in string name)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">start impedance controller.  <a href="#a249417099d89b5e25e74dea6fdcb89b7"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">start impedance controller with waiting for transition.  <a href="#a249417099d89b5e25e74dea6fdcb89b7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#ad36e1f79a5b93051584c1ccc6f707349">startImpedanceControllerNoWait</a> (in string name)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">start impedance controller without waiting for transition.  <a href="#ad36e1f79a5b93051584c1ccc6f707349"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#ad987be06db7c760f41884e8bc6948b05">stopImpedanceController</a> (in string name)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">stop impedance controller.  <a href="#ad987be06db7c760f41884e8bc6948b05"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">stop impedance controller with waiting for transition.  <a href="#ad987be06db7c760f41884e8bc6948b05"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#aef8703d1f9ff1768b952a59279885a96">stopImpedanceControllerNoWait</a> (in string name)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">stop impedance controller without waiting for transition.  <a href="#aef8703d1f9ff1768b952a59279885a96"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#af95f1cab8308fe30ddd577e511910e0a">setImpedanceControllerParam</a> (in string name, in <a class="el" href="../../d6/d32/structOpenHRP_1_1ImpedanceControllerService_1_1impedanceParam.html">impedanceParam</a> i_param)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set impedance parameters.  <a href="#af95f1cab8308fe30ddd577e511910e0a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#af380c21932dcbbdbbeb5ec1e86618c4c">getImpedanceControllerParam</a> (in string name, out <a class="el" href="../../d6/d32/structOpenHRP_1_1ImpedanceControllerService_1_1impedanceParam.html">impedanceParam</a> i_param)</td></tr>
@@ -238,7 +242,33 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>start impedance controller. </p>
+<p>start impedance controller with waiting for transition. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>impedance controller param's name, which basically corresponds to force sensor name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad36e1f79a5b93051584c1ccc6f707349"></a><!-- doxytag: member="OpenHRP::ImpedanceControllerService::startImpedanceControllerNoWait" ref="ad36e1f79a5b93051584c1ccc6f707349" args="(in string name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#ad36e1f79a5b93051584c1ccc6f707349">OpenHRP::ImpedanceControllerService::startImpedanceControllerNoWait</a> </td>
+          <td>(</td>
+          <td class="paramtype">in string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>start impedance controller without waiting for transition. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>impedance controller param's name, which basically corresponds to force sensor name </td></tr>
@@ -264,7 +294,33 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>stop impedance controller. </p>
+<p>stop impedance controller with waiting for transition. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>impedance controller param's name, which basically corresponds to force sensor name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aef8703d1f9ff1768b952a59279885a96"></a><!-- doxytag: member="OpenHRP::ImpedanceControllerService::stopImpedanceControllerNoWait" ref="aef8703d1f9ff1768b952a59279885a96" args="(in string name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#aef8703d1f9ff1768b952a59279885a96">OpenHRP::ImpedanceControllerService::stopImpedanceControllerNoWait</a> </td>
+          <td>(</td>
+          <td class="paramtype">in string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>stop impedance controller without waiting for transition. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>impedance controller param's name, which basically corresponds to force sensor name </td></tr>
@@ -307,7 +363,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 21 2015 20:41:13 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 22 2015 04:39:26 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
