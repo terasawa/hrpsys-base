@@ -114,6 +114,8 @@ Public Attributes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Use toe joint or not in toe-off heel-contact motion.  <a href="#a1e8c57a68b9a9d897935236f5abbe203"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dab/structOpenHRP_1_1AutoBalancerService_1_1GaitGeneratorParam.html#a1f0d7b967fc6e1008bd2d3524a0c8c74">use_toe_heel_transition</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Use toe heel zmp transition. If true, zmp moves among default position, toe position (described by toe_zmp_offset_x), and heel position (described by heel_zmp_offset_x).  <a href="#a1f0d7b967fc6e1008bd2d3524a0c8c74"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">sequence&lt; <a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#a95498baa7dc5478d077277bd69d1bb57">DblSequence3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dab/structOpenHRP_1_1AutoBalancerService_1_1GaitGeneratorParam.html#ab1ab449fda43ad271cf574c3ff7ceb4c">leg_default_translate_pos</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Foot position offset[m] (rleg and lleg)  <a href="#ab1ab449fda43ad271cf574c3ff7ceb4c"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Parameters for GaitGenerator. </p>
@@ -250,6 +252,21 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Heel ZMP offset [m] in end-effector frame x axis. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab1ab449fda43ad271cf574c3ff7ceb4c"></a><!-- doxytag: member="OpenHRP::AutoBalancerService::GaitGeneratorParam::leg_default_translate_pos" ref="ab1ab449fda43ad271cf574c3ff7ceb4c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sequence&lt;<a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#a95498baa7dc5478d077277bd69d1bb57">DblSequence3</a>&gt; <a class="el" href="../../d9/dab/structOpenHRP_1_1AutoBalancerService_1_1GaitGeneratorParam.html#ab1ab449fda43ad271cf574c3ff7ceb4c">OpenHRP::AutoBalancerService::GaitGeneratorParam::leg_default_translate_pos</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Foot position offset[m] (rleg and lleg) </p>
 
 </div>
 </div>
@@ -410,7 +427,7 @@ Public Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 23 2015 05:43:26 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 23 2015 23:17:54 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
