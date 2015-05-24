@@ -135,6 +135,10 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolate all joint angles in groups, using duration specified by <em>tm</em>.  <a href="#ab4c6c9caa6b78562b594cca087b46741"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#aa4b1da1c7d2a1868d08f553b6f967e89">setJointAnglesSequenceFull</a> (in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> jvss, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> vels, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> torques, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> poss, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> rpys, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> accs, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> zmps, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> wrenchs, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> optionals, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a8fbc66139f3a0604de03b3049c93b164">dSequence</a> tms)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolate all joint angles, using duration specified by <em>tm</em>.  <a href="#aa4b1da1c7d2a1868d08f553b6f967e89"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#acc092015e0dfbaa16b7912f6441af0b0">clearJointAngles</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">clear current JointAngles  <a href="#acc092015e0dfbaa16b7912f6441af0b0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a85657b5344b3719ddf2d40431d987449">clearJointAnglesOfGroup</a> (in string gname)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">clear current JointAnglesOfGroup  <a href="#a85657b5344b3719ddf2d40431d987449"></a><br/></td></tr>
 </table>
 <hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="acf33d7998ac77b145ddd8a44b5846374"></a><!-- doxytag: member="OpenHRP::SequencePlayerService::StrSequence" ref="acf33d7998ac77b145ddd8a44b5846374" args="" -->
@@ -228,6 +232,51 @@ Public Member Functions</h2></td></tr>
 
 <p>clear pattern data in playback queue. </p>
 <p>This function returns after the queue becomes empty. </p>
+
+</div>
+</div>
+<a class="anchor" id="acc092015e0dfbaa16b7912f6441af0b0"></a><!-- doxytag: member="OpenHRP::SequencePlayerService::clearJointAngles" ref="acc092015e0dfbaa16b7912f6441af0b0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#acc092015e0dfbaa16b7912f6441af0b0">OpenHRP::SequencePlayerService::clearJointAngles</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>clear current JointAngles </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true joint angles are set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a85657b5344b3719ddf2d40431d987449"></a><!-- doxytag: member="OpenHRP::SequencePlayerService::clearJointAnglesOfGroup" ref="a85657b5344b3719ddf2d40431d987449" args="(in string gname)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a85657b5344b3719ddf2d40431d987449">OpenHRP::SequencePlayerService::clearJointAnglesOfGroup</a> </td>
+          <td>(</td>
+          <td class="paramtype">in string&#160;</td>
+          <td class="paramname"><em>gname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>clear current JointAnglesOfGroup </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gname</td><td>name of the joint group </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true joint angles are set successfully, false otherwise </dd></dl>
 
 </div>
 </div>
@@ -1217,7 +1266,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 24 2015 13:03:29 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 24 2015 16:42:29 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
