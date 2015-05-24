@@ -134,6 +134,14 @@ Public Attributes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Cutoff frequency of LPF in calculation of force moment distribution alpha ratio parameter [Hz].  <a href="#a785899c4662a603749ba8ac2216c23d1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a0309019ee287deefc7ff4cb020364968">eefm_gravitational_acceleration</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gravitational acceleration [m/s^2] used in ST calculation.  <a href="#a0309019ee287deefc7ff4cb020364968"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a5b525b8cf3474c23306ae8a91f33afda">eefm_ee_pos_error_p_gain</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Pos error gain.  <a href="#a5b525b8cf3474c23306ae8a91f33afda"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#ab3235d6324e66c3c244680af5bd7e11b">eefm_ee_rot_error_p_gain</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Rot error gain.  <a href="#ab3235d6324e66c3c244680af5bd7e11b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a4f92d7556e39367eef4691db456ff056">eefm_ee_error_cutoff_freq</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Pos rot error cutoff freq [Hz].  <a href="#a4f92d7556e39367eef4691db456ff056"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#a7d43c5cd8faab3735a54739d26507f7a">BoolSequence</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a876f0308ebcbe5754cc088ea1e6898da">is_ik_enable</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Is ik enable.  <a href="#a876f0308ebcbe5754cc088ea1e6898da"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#a4b982d83bcae44b2d304a6425cef5204">STAlgorithm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a24a9083c44fb2e97b9b3a5d0308a73bb">st_algorithm</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Current Stabilizer algorithm.  <a href="#a24a9083c44fb2e97b9b3a5d0308a73bb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#ac02645c7a5ccdee96645d5cd91110cca">ControllerMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a9af3cb2e4025a2cf6e1b9a1e017f486e">controller_mode</a></td></tr>
@@ -255,6 +263,51 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Cutoff frequency of LPF in calculation of COG velocity [Hz]. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4f92d7556e39367eef4691db456ff056"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::eefm_ee_error_cutoff_freq" ref="a4f92d7556e39367eef4691db456ff056" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a4f92d7556e39367eef4691db456ff056">OpenHRP::StabilizerService::stParam::eefm_ee_error_cutoff_freq</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Pos rot error cutoff freq [Hz]. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5b525b8cf3474c23306ae8a91f33afda"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::eefm_ee_pos_error_p_gain" ref="a5b525b8cf3474c23306ae8a91f33afda" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a5b525b8cf3474c23306ae8a91f33afda">OpenHRP::StabilizerService::stParam::eefm_ee_pos_error_p_gain</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Pos error gain. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab3235d6324e66c3c244680af5bd7e11b"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::eefm_ee_rot_error_p_gain" ref="ab3235d6324e66c3c244680af5bd7e11b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#ab3235d6324e66c3c244680af5bd7e11b">OpenHRP::StabilizerService::stParam::eefm_ee_rot_error_p_gain</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Rot error gain. </p>
 
 </div>
 </div>
@@ -513,6 +566,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a876f0308ebcbe5754cc088ea1e6898da"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::is_ik_enable" ref="a876f0308ebcbe5754cc088ea1e6898da" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#a7d43c5cd8faab3735a54739d26507f7a">BoolSequence</a> <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a876f0308ebcbe5754cc088ea1e6898da">OpenHRP::StabilizerService::stParam::is_ik_enable</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Is ik enable. </p>
+
+</div>
+</div>
 <a class="anchor" id="a8caff6c2bff39c94f86ae92463da06ec"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::k_brot_p" ref="a8caff6c2bff39c94f86ae92463da06ec" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -675,7 +743,7 @@ Public Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 24 2015 05:22:13 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 24 2015 06:07:19 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
