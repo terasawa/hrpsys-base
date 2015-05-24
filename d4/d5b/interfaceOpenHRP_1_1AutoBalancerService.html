@@ -127,6 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set footsteps.  <a href="#ae2dc1f306d70882f3e39bc488c2083b6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#ad1e1699090e095b2a2a01dff41569d6f">waitFootSteps</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for whole footsteps are executed.  <a href="#ad1e1699090e095b2a2a01dff41569d6f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#a368616e004eb575af45f599096dcab3b">waitFootStepsEarly</a> (in double tm)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for whole footsteps are executed.  <a href="#a368616e004eb575af45f599096dcab3b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#a64c4d4663874a9b36c75ca46c6ba3994">startAutoBalancer</a> (in <a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#a58e84a02cda74dcff6680dea9ea03959">StrSequence</a> limbs)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Start AutoBalancer mode in which the robot controls the COM.  <a href="#a64c4d4663874a9b36c75ca46c6ba3994"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#ad36bf04c5a607f39fb58fae1922c222c">stopAutoBalancer</a> ()</td></tr>
@@ -682,6 +684,32 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a368616e004eb575af45f599096dcab3b"></a><!-- doxytag: member="OpenHRP::AutoBalancerService::waitFootStepsEarly" ref="a368616e004eb575af45f599096dcab3b" args="(in double tm)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#a368616e004eb575af45f599096dcab3b">OpenHRP::AutoBalancerService::waitFootStepsEarly</a> </td>
+          <td>(</td>
+          <td class="paramtype">in double&#160;</td>
+          <td class="paramname"><em>tm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Wait for whole footsteps are executed. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tm</td><td>is early time from stepping finish </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li><a class="el" href="../../de/d54/AutoBalancerService_8idl.html">AutoBalancerService.idl</a></li>
 </ul>
@@ -689,7 +717,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 24 2015 16:46:45 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 24 2015 21:26:49 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
