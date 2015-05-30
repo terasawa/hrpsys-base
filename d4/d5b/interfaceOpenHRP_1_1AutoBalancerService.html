@@ -143,6 +143,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get AutoBalancer parameters.  <a href="#ada696fc49cf95f81f4ad28b2c470e479"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#a49f54b634f0e29c3543679213f5dbb25">getFootstepParam</a> (out <a class="el" href="../../d1/d82/structOpenHRP_1_1AutoBalancerService_1_1FootstepParam.html">FootstepParam</a> i_param)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get footstep parameters.  <a href="#a49f54b634f0e29c3543679213f5dbb25"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#a1f2c47291515a13c3c6d168bc559192e">adjustFootSteps</a> (in <a class="el" href="../../d8/d80/structOpenHRP_1_1AutoBalancerService_1_1Footstep.html">Footstep</a> rfootstep, in <a class="el" href="../../d8/d80/structOpenHRP_1_1AutoBalancerService_1_1Footstep.html">Footstep</a> lfootstep)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust Footsteps.  <a href="#a1f2c47291515a13c3c6d168bc559192e"></a><br/></td></tr>
 </table>
 <hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="a57f6d021b545b3ab7edf0d5da2e28d39"></a><!-- doxytag: member="OpenHRP::AutoBalancerService::DblArray3" ref="a57f6d021b545b3ab7edf0d5da2e28d39" args="[3]" -->
@@ -306,6 +308,41 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a1f2c47291515a13c3c6d168bc559192e"></a><!-- doxytag: member="OpenHRP::AutoBalancerService::adjustFootSteps" ref="a1f2c47291515a13c3c6d168bc559192e" args="(in Footstep rfootstep, in Footstep lfootstep)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#a1f2c47291515a13c3c6d168bc559192e">OpenHRP::AutoBalancerService::adjustFootSteps</a> </td>
+          <td>(</td>
+          <td class="paramtype">in <a class="el" href="../../d8/d80/structOpenHRP_1_1AutoBalancerService_1_1Footstep.html">Footstep</a>&#160;</td>
+          <td class="paramname"><em>rfootstep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">in <a class="el" href="../../d8/d80/structOpenHRP_1_1AutoBalancerService_1_1Footstep.html">Footstep</a>&#160;</td>
+          <td class="paramname"><em>lfootstep</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Adjust Footsteps. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">@return</td><td>true if set successfully, false otherwise </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ada696fc49cf95f81f4ad28b2c470e479"></a><!-- doxytag: member="OpenHRP::AutoBalancerService::getAutoBalancerParam" ref="ada696fc49cf95f81f4ad28b2c470e479" args="(out AutoBalancerParam i_param)" -->
 <div class="memitem">
 <div class="memproto">
@@ -717,7 +754,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 28 2015 15:10:41 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 30 2015 03:01:11 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
