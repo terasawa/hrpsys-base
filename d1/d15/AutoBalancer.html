@@ -63,6 +63,19 @@ Controlled end-effectors</h3>
 <h3><a class="anchor" id="wpg"></a>
 Walking pattern generation</h3>
 <p>This component has also the feature as walking pattern generation, named as GaitGenerator. When <a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#ab1228769703a5a8403f80f34c4f96010" title="Walk to the goal position and orientation.">OpenHRP::AutoBalancerService::goPos()</a>, <a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#ad76d7a7c8aff5c0fa95c16b267929bcd" title="Walk at the desired velocity.">OpenHRP::AutoBalancerService::goVelocity()</a>, <a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#a69a486e3a60bfdeef6c53041f5d251a6" title="Set footsteps.">OpenHRP::AutoBalancerService::setFootSteps()</a> are called, this component starts to use reference XY COG position from "GaitGenerator". For <a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#ab1228769703a5a8403f80f34c4f96010" title="Walk to the goal position and orientation.">OpenHRP::AutoBalancerService::goPos()</a> and <a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#a69a486e3a60bfdeef6c53041f5d251a6" title="Set footsteps.">OpenHRP::AutoBalancerService::setFootSteps()</a>, this component stops to use it after completing walking command. After <a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#ad76d7a7c8aff5c0fa95c16b267929bcd" title="Walk at the desired velocity.">OpenHRP::AutoBalancerService::goVelocity()</a> is called, this component continuously generates walking pattern. When <a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#a5b1b21542295ce1dc9dfc9493677cf79" title="Stop stepping.">OpenHRP::AutoBalancerService::goStop()</a> are called in this case, this completing stops to use it after completing walking command.</p>
+<h3><a class="anchor" id="pcexample"></a>
+Preview Controller Example</h3>
+<p>Preview controller example, in which trajectories are displayed on graphs (COG, ZMP, ... etc).</p>
+<div class="fragment"><pre class="fragment">testPreviewController # Non-ROS environemnt
+rosrun hrpsys testPreviewController # ROS environemnt
+</pre></div><h3><a class="anchor" id="ggexample"></a>
+GaitGenerator Example</h3>
+<p>GaitGenerator example, in which trajectories are displayed on graphs (COG, ZMP, foot trajectories ... etc).</p>
+<p>Users can change test type (fwd-walking example, rotation-walking example, stair-walking, toe-heel example, ... etc).</p>
+<p>Users can also change GaitGenerator parameters (step time, step height, orbit type, ... etc).</p>
+<div class="fragment"><pre class="fragment">testGaitGenerator [test-type-<a class="code" href="../../dd/d9e/rtc_2KalmanFilter_2CMakeLists_8txt.html#a5abe185187eaa0f3ba17f63a50fac974">option</a>] [gg-parameters-options] # Non ROS environment
+rosrun hrpsys testGaitGenerator [test-type-<a class="code" href="../../dd/d9e/rtc_2KalmanFilter_2CMakeLists_8txt.html#a5abe185187eaa0f3ba17f63a50fac974">option</a>] [gg-parameters-options] # ROS environment
+</pre></div><p> [test-type-option] is test type and [gg-parameters-options] are GaitGeneratorParameters. To learn test type, please execute testGaitGenerator without arguments.</p>
 <table class="doxtable">
 <tr>
 <th>implementation_id</th><td>AutoBalancer </td></tr>
@@ -135,7 +148,7 @@ Configuration File</h2>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 11:14:15 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 22 2015 12:45:12 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
