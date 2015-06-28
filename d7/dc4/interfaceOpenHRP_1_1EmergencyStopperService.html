@@ -60,6 +60,7 @@
 </div>
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">OpenHRP::EmergencyStopperService Interface Reference</div>  </div>
@@ -70,12 +71,42 @@
 
 <p><a href="../../db/d6f/interfaceOpenHRP_1_1EmergencyStopperService-members.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d33/structOpenHRP_1_1EmergencyStopperService_1_1EmergencyStopperParam.html">EmergencyStopperParam</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters for EmergencyStopper.  <a href="../../d7/d33/structOpenHRP_1_1EmergencyStopperService_1_1EmergencyStopperParam.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc4/interfaceOpenHRP_1_1EmergencyStopperService.html#aabd933d044df44173c6778266e65d12c">stopMotion</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop Input Motion.  <a href="#aabd933d044df44173c6778266e65d12c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc4/interfaceOpenHRP_1_1EmergencyStopperService.html#ae718a665c0ae1e5b10672a04dc83be80">releaseMotion</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Release Motion.  <a href="#ae718a665c0ae1e5b10672a04dc83be80"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc4/interfaceOpenHRP_1_1EmergencyStopperService.html#a9e505d038943182971d305b4401c4ac4">getEmergencyStopperParam</a> (out <a class="el" href="../../d7/d33/structOpenHRP_1_1EmergencyStopperService_1_1EmergencyStopperParam.html">EmergencyStopperParam</a> i_param)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="../../d7/d33/structOpenHRP_1_1EmergencyStopperService_1_1EmergencyStopperParam.html" title="Parameters for EmergencyStopper.">EmergencyStopperParam</a>.  <a href="#a9e505d038943182971d305b4401c4ac4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc4/interfaceOpenHRP_1_1EmergencyStopperService.html#ae1a0242b33aa2c476bf4eace47462235">setEmergencyStopperParam</a> (in <a class="el" href="../../d7/d33/structOpenHRP_1_1EmergencyStopperService_1_1EmergencyStopperParam.html">EmergencyStopperParam</a> i_param)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="../../d7/d33/structOpenHRP_1_1EmergencyStopperService_1_1EmergencyStopperParam.html" title="Parameters for EmergencyStopper.">EmergencyStopperParam</a>.  <a href="#ae1a0242b33aa2c476bf4eace47462235"></a><br/></td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a9e505d038943182971d305b4401c4ac4"></a><!-- doxytag: member="OpenHRP::EmergencyStopperService::getEmergencyStopperParam" ref="a9e505d038943182971d305b4401c4ac4" args="(out EmergencyStopperParam i_param)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../d7/dc4/interfaceOpenHRP_1_1EmergencyStopperService.html#a9e505d038943182971d305b4401c4ac4">OpenHRP::EmergencyStopperService::getEmergencyStopperParam</a> </td>
+          <td>(</td>
+          <td class="paramtype">out <a class="el" href="../../d7/d33/structOpenHRP_1_1EmergencyStopperService_1_1EmergencyStopperParam.html">EmergencyStopperParam</a>&#160;</td>
+          <td class="paramname"><em>i_param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get <a class="el" href="../../d7/d33/structOpenHRP_1_1EmergencyStopperService_1_1EmergencyStopperParam.html" title="Parameters for EmergencyStopper.">EmergencyStopperParam</a>. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ae718a665c0ae1e5b10672a04dc83be80"></a><!-- doxytag: member="OpenHRP::EmergencyStopperService::releaseMotion" ref="ae718a665c0ae1e5b10672a04dc83be80" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -89,6 +120,29 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Release Motion. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae1a0242b33aa2c476bf4eace47462235"></a><!-- doxytag: member="OpenHRP::EmergencyStopperService::setEmergencyStopperParam" ref="ae1a0242b33aa2c476bf4eace47462235" args="(in EmergencyStopperParam i_param)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../d7/dc4/interfaceOpenHRP_1_1EmergencyStopperService.html#ae1a0242b33aa2c476bf4eace47462235">OpenHRP::EmergencyStopperService::setEmergencyStopperParam</a> </td>
+          <td>(</td>
+          <td class="paramtype">in <a class="el" href="../../d7/d33/structOpenHRP_1_1EmergencyStopperService_1_1EmergencyStopperParam.html">EmergencyStopperParam</a>&#160;</td>
+          <td class="paramname"><em>i_param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set <a class="el" href="../../d7/d33/structOpenHRP_1_1EmergencyStopperService_1_1EmergencyStopperParam.html" title="Parameters for EmergencyStopper.">EmergencyStopperParam</a>. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if set successfully, false otherwise </dd></dl>
 
 </div>
 </div>
@@ -106,6 +160,9 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Stop Input Motion. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if set successfully, false otherwise </dd></dl>
+
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
@@ -115,7 +172,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 28 2015 21:56:25 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 28 2015 23:52:17 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
