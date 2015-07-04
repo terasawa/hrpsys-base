@@ -93,6 +93,11 @@ Public Types</h2></td></tr>
 <br/>
  }</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Mode of controller.  <a href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#ac02645c7a5ccdee96645d5cd91110cca">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#afd45821b646d8424f709886eb94141c5">EmergencyCheckMode</a> { <a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#afd45821b646d8424f709886eb94141c5a1665e4c2163afbc0dbc8a8a7b7d51d20">NO_CHECK</a>, 
+<a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#afd45821b646d8424f709886eb94141c5a968abaf92aeada7f298395d6b263226f">COP</a>, 
+<a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#afd45821b646d8424f709886eb94141c5a48caa1030cc1318e0893ca3aca9b8e36">CP</a>
+ }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Mode of emergency checking.  <a href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#afd45821b646d8424f709886eb94141c5">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#ad92adefd999b8d6606673674199e607d">DblArray2</a> [2]</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#a7a6dc2173d00fb0fe6c449aa3fdc5f07">DblArray3</a> [3]</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef sequence&lt; boolean &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#a7d43c5cd8faab3735a54739d26507f7a">BoolSequence</a></td></tr>
@@ -171,6 +176,31 @@ Public Member Functions</h2></td></tr>
 <tr><td valign="top"><em><a class="anchor" id="ac02645c7a5ccdee96645d5cd91110ccaab8fba1611fe786f84be89e76038242af"></a><!-- doxytag: member="MODE_SYNC_TO_IDLE" ref="ac02645c7a5ccdee96645d5cd91110ccaab8fba1611fe786f84be89e76038242af" args="" -->MODE_SYNC_TO_IDLE</em>&nbsp;</td><td>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="ac02645c7a5ccdee96645d5cd91110ccaa89db3fc34f2d383089f8da3cece8f253"></a><!-- doxytag: member="MODE_SYNC_TO_AIR" ref="ac02645c7a5ccdee96645d5cd91110ccaa89db3fc34f2d383089f8da3cece8f253" args="" -->MODE_SYNC_TO_AIR</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afd45821b646d8424f709886eb94141c5"></a><!-- doxytag: member="OpenHRP::StabilizerService::EmergencyCheckMode" ref="afd45821b646d8424f709886eb94141c5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#afd45821b646d8424f709886eb94141c5">OpenHRP::StabilizerService::EmergencyCheckMode</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Mode of emergency checking. </p>
+<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="afd45821b646d8424f709886eb94141c5a1665e4c2163afbc0dbc8a8a7b7d51d20"></a><!-- doxytag: member="NO_CHECK" ref="afd45821b646d8424f709886eb94141c5a1665e4c2163afbc0dbc8a8a7b7d51d20" args="" -->NO_CHECK</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afd45821b646d8424f709886eb94141c5a968abaf92aeada7f298395d6b263226f"></a><!-- doxytag: member="COP" ref="afd45821b646d8424f709886eb94141c5a968abaf92aeada7f298395d6b263226f" args="" -->COP</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afd45821b646d8424f709886eb94141c5a48caa1030cc1318e0893ca3aca9b8e36"></a><!-- doxytag: member="CP" ref="afd45821b646d8424f709886eb94141c5a48caa1030cc1318e0893ca3aca9b8e36" args="" -->CP</em>&nbsp;</td><td>
 </td></tr>
 </table>
 </dd>
@@ -327,7 +357,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 3 2015 15:49:10 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 4 2015 11:39:42 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
