@@ -230,6 +230,10 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Start default unstable RTCs controller mode.  <a href="#a5a08043ad5f099474ed9813f4bdff1c5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5d3f1a7d95267d07dda134b0e40555dc">stopDefaultUnstableControllers</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop default unstable RTCs controller mode.  <a href="#a5d3f1a7d95267d07dda134b0e40555dc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aafcd2a6e1b6faf4a9a6023e800d1c261">setFootSteps</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">setFootSteps  <a href="#aafcd2a6e1b6faf4a9a6023e800d1c261"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a614be5e1e6527ebc52ee9b785fa650c5">setFootStepsWithParam</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">setFootSteps  <a href="#a614be5e1e6527ebc52ee9b785fa650c5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aaa5eac878da20d174d8e171d39f1f102">init</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls init from its superclass, which tries to connect RTCManager, looks for ModelLoader, and starts necessary RTC components.  <a href="#aaa5eac878da20d174d8e171d39f1f102"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aea38aea442c7f0ae757ef2e6274362b5">__init__</a></td></tr>
@@ -2182,6 +2186,97 @@ Static Public Attributes</h2></td></tr>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int: 1 or -1 indicating success or failure, respectively. </dd></dl>
 
 <p>References <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5c980e85f79eacb738a648b4b9a04a09">python.hrpsys_config.HrpsysConfigurator.configurator_name</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ad9a1c1145281fd3a7cd4c743aa1917d3">python.hrpsys_config.HrpsysConfigurator.goActual()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a955c6b358765ef15591da00d4c16f43b">python.hrpsys_config.HrpsysConfigurator.isCalibDone()</a>, and <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a15e75328813c5822552a07327b3d2a28">python.hrpsys_config.HrpsysConfigurator.isServoOn()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aafcd2a6e1b6faf4a9a6023e800d1c261"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::setFootSteps" ref="aafcd2a6e1b6faf4a9a6023e800d1c261" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aafcd2a6e1b6faf4a9a6023e800d1c261">python.hrpsys_config.HrpsysConfigurator.setFootSteps</a> </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>footstep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>overwrite_fs_idx</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>setFootSteps </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">footstep</td><td>: <a class="el" href="../../d4/db3/structFootstepSequence.html" title="Sequence of foot step.">FootstepSequence</a>. </td></tr>
+    <tr><td class="paramname">overwrite_fs_idx</td><td>: Index to be overwritten. overwrite_fs_idx is used only in walking. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a614be5e1e6527ebc52ee9b785fa650c5"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::setFootStepsWithParam" ref="a614be5e1e6527ebc52ee9b785fa650c5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a614be5e1e6527ebc52ee9b785fa650c5">python.hrpsys_config.HrpsysConfigurator.setFootStepsWithParam</a> </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>footstep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>stepparams</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>overwrite_fs_idx</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>setFootSteps </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">footstep</td><td>: <a class="el" href="../../d4/db3/structFootstepSequence.html" title="Sequence of foot step.">FootstepSequence</a>. </td></tr>
+    <tr><td class="paramname">stepparams</td><td>: StepParamSeuqnce. </td></tr>
+    <tr><td class="paramname">overwrite_fs_idx</td><td>: Index to be overwritten. overwrite_fs_idx is used only in walking. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -4421,7 +4516,7 @@ hironx' designated issue tracker.
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 17 2015 13:10:38 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 19 2015 01:15:53 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
