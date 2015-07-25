@@ -81,6 +81,14 @@ Public Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef sequence&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#ac6f6431b2b5b53606587cb7070d754bd">StrSequence</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#adcdfbea36f814dcb641fd9622d7ad817">enableTorqueController</a> (in string jname)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">enable torque controller in specified joint  <a href="#adcdfbea36f814dcb641fd9622d7ad817"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#a094debf68b560243fff285ec443d8e90">enableMultipleTorqueControllers</a> (in <a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#ac6f6431b2b5b53606587cb7070d754bd">StrSequence</a> jnames)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">enable torque controller in specified joints  <a href="#a094debf68b560243fff285ec443d8e90"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#af5e4547f8f588a60d4fb241e2c732829">disableTorqueController</a> (in string jname)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">disable torque controller in specified joint  <a href="#af5e4547f8f588a60d4fb241e2c732829"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#ae02caf9dd5058a4ae25a675f5f901dba">disableMultipleTorqueControllers</a> (in <a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#ac6f6431b2b5b53606587cb7070d754bd">StrSequence</a> jnames)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">disable torque controller in specified joints  <a href="#ae02caf9dd5058a4ae25a675f5f901dba"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#a5cf35f2f86413b03a683bee657b602a0">startTorqueControl</a> (in string jname)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">start torque controller in specified joint  <a href="#a5cf35f2f86413b03a683bee657b602a0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#aece0b142d0566b811e1ed6601f2cdbec">startMultipleTorqueControls</a> (in <a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#ac6f6431b2b5b53606587cb7070d754bd">StrSequence</a> jnames)</td></tr>
@@ -124,6 +132,110 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ae02caf9dd5058a4ae25a675f5f901dba"></a><!-- doxytag: member="OpenHRP::TorqueControllerService::disableMultipleTorqueControllers" ref="ae02caf9dd5058a4ae25a675f5f901dba" args="(in StrSequence jnames)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#ae02caf9dd5058a4ae25a675f5f901dba">OpenHRP::TorqueControllerService::disableMultipleTorqueControllers</a> </td>
+          <td>(</td>
+          <td class="paramtype">in <a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#ac6f6431b2b5b53606587cb7070d754bd">StrSequence</a>&#160;</td>
+          <td class="paramname"><em>jnames</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>disable torque controller in specified joints </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jnames,:</td><td>target joint names </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af5e4547f8f588a60d4fb241e2c732829"></a><!-- doxytag: member="OpenHRP::TorqueControllerService::disableTorqueController" ref="af5e4547f8f588a60d4fb241e2c732829" args="(in string jname)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#af5e4547f8f588a60d4fb241e2c732829">OpenHRP::TorqueControllerService::disableTorqueController</a> </td>
+          <td>(</td>
+          <td class="paramtype">in string&#160;</td>
+          <td class="paramname"><em>jname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>disable torque controller in specified joint </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jname,:</td><td>target joint name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a094debf68b560243fff285ec443d8e90"></a><!-- doxytag: member="OpenHRP::TorqueControllerService::enableMultipleTorqueControllers" ref="a094debf68b560243fff285ec443d8e90" args="(in StrSequence jnames)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#a094debf68b560243fff285ec443d8e90">OpenHRP::TorqueControllerService::enableMultipleTorqueControllers</a> </td>
+          <td>(</td>
+          <td class="paramtype">in <a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#ac6f6431b2b5b53606587cb7070d754bd">StrSequence</a>&#160;</td>
+          <td class="paramname"><em>jnames</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>enable torque controller in specified joints </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jnames,:</td><td>target joint names </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adcdfbea36f814dcb641fd9622d7ad817"></a><!-- doxytag: member="OpenHRP::TorqueControllerService::enableTorqueController" ref="adcdfbea36f814dcb641fd9622d7ad817" args="(in string jname)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#adcdfbea36f814dcb641fd9622d7ad817">OpenHRP::TorqueControllerService::enableTorqueController</a> </td>
+          <td>(</td>
+          <td class="paramtype">in string&#160;</td>
+          <td class="paramname"><em>jname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>enable torque controller in specified joint </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jname,:</td><td>target joint name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a6e894842ddc765953828e2077cbc7253"></a><!-- doxytag: member="OpenHRP::TorqueControllerService::setMultipleReferenceTorques" ref="a6e894842ddc765953828e2077cbc7253" args="(in StrSequence jnames, in dSequence tauRefs)" -->
 <div class="memitem">
 <div class="memproto">
@@ -335,7 +447,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 24 2015 15:27:59 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 25 2015 00:36:15 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
