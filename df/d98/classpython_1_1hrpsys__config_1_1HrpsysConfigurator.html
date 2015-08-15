@@ -2321,13 +2321,11 @@ Static Public Attributes</h2></td></tr>
 <div class="fragment"><pre class="fragment">
 NOTE-1: It's known that this method does not do anything after
 some group operation is done.
-TODO: at least need elaborated to warn users.
-</pre></div> <div class="fragment"><pre class="fragment">
-NOTE-2: that while this method does not check angle value range,
+TODO: at least need to warn users.
+NOTE-2: While this method does not check angle value range,
 any joints could emit position limit over error, which has not yet
-been thrown by hrpsys so that there's no way to catch on this client
-side. Worthwhile opening an enhancement ticket for that at
-hironx' designated issue tracker.
+been thrown by hrpsys so that there's no way to catch on this python client. 
+Worthwhile opening an enhancement ticket at designated issue tracker.
 </pre></div><dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">jname</td><td>str: name of joint </td></tr>
@@ -2372,12 +2370,10 @@ hironx' designated issue tracker.
 
 <p>Set all joint angles. </p>
 <div class="fragment"><pre class="fragment">
-NOTE-1: that while this method does not check angle value range,
-any joints could emit position limit over error, which has not yet
-been thrown by hrpsys so that there's no way to catch on this client
-side. Worthwhile opening an enhancement ticket for that at
-hironx' designated issue tracker.
-
+NOTE: While this method does not check angle value range,
+      any joints could emit position limit over error, which has not yet
+      been thrown by hrpsys so that there's no way to catch on this python client. 
+      Worthwhile opening an enhancement ticket at designated issue tracker.
 </pre></div> <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">angles</td><td>list of float: In degree. </td></tr>
@@ -2435,8 +2431,12 @@ hironx' designated issue tracker.
 
 <p>Set the joint angles to aim. </p>
 <p>By default it waits interpolation to be over.</p>
-<p>Note that while this method does not check angle value range, any joints could emit position limit over error, which has not yet been handled in hrpsys so that there's no way to catch on this client class level. Please consider opening an enhancement ticket for that at hironx' designated issue tracker.</p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
+<div class="fragment"><pre class="fragment">
+NOTE: While this method does not check angle value range,
+      any joints could emit position limit over error, which has not yet
+      been thrown by hrpsys so that there's no way to catch on this python client. 
+      Worthwhile opening an enhancement ticket at designated issue tracker.
+</pre></div><dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">gname</td><td>str: Name of the joint group. </td></tr>
     <tr><td class="paramname">pose</td><td>list of float: list of positions and orientations </td></tr>
@@ -2483,12 +2483,10 @@ hironx' designated issue tracker.
 
 <p>Set all joint angles. </p>
 <div class="fragment"><pre class="fragment">
-NOTE-1: that while this method does not check angle value range,
-any joints could emit position limit over error, which has not yet
-been thrown by hrpsys so that there's no way to catch on this client
-side. Worthwhile opening an enhancement ticket for that at
-hironx' designated issue tracker.
-
+NOTE: While this method does not check angle value range,
+      any joints could emit position limit over error, which has not yet
+      been thrown by hrpsys so that there's no way to catch on this python client. 
+      Worthwhile opening an enhancement ticket at designated issue tracker.
 </pre></div> <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">sequence</td><td>angles list of float: In degree. </td></tr>
@@ -2538,12 +2536,10 @@ hironx' designated issue tracker.
 
 <p>Set all joint angles. </p>
 <div class="fragment"><pre class="fragment">
-NOTE-1: that while this method does not check angle value range,
-any joints could emit position limit over error, which has not yet
-been thrown by hrpsys so that there's no way to catch on this client
-side. Worthwhile opening an enhancement ticket for that at
-hironx' designated issue tracker.
-
+NOTE: While this method does not check angle value range,
+      any joints could emit position limit over error, which has not yet
+      been thrown by hrpsys so that there's no way to catch on this python client. 
+      Worthwhile opening an enhancement ticket at designated issue tracker.
 </pre></div> <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">gname</td><td>str: Name of the joint group. </td></tr>
@@ -4516,7 +4512,7 @@ hironx' designated issue tracker.
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 14 2015 22:18:35 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 15 2015 03:59:40 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
