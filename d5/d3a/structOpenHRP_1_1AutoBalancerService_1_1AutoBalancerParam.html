@@ -99,6 +99,12 @@ Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3a/structOpenHRP_1_1AutoBalancerService_1_1AutoBalancerParam.html#a0d117d19d7437acd9a1024b17f2d691c">adjust_footstep_transition_time</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Transition time [s] for adjust foot step.  <a href="#a0d117d19d7437acd9a1024b17f2d691c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#a58e84a02cda74dcff6680dea9ea03959">StrSequence</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3a/structOpenHRP_1_1AutoBalancerService_1_1AutoBalancerParam.html#a34ca4cb0c9f3a5d1ee1bf1efe58b9abc">leg_names</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3a/structOpenHRP_1_1AutoBalancerService_1_1AutoBalancerParam.html#a6bc4c4f330291bd4ec9bc96012aaa25f">has_ik_failed</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag for inverse kinematics (IK). If true, IK has failed before.  <a href="#a6bc4c4f330291bd4ec9bc96012aaa25f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3a/structOpenHRP_1_1AutoBalancerService_1_1AutoBalancerParam.html#a37620a0fe1d577a83552b5dacec8de4e">pos_ik_thre</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">IK position threshold [m].  <a href="#a37620a0fe1d577a83552b5dacec8de4e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3a/structOpenHRP_1_1AutoBalancerService_1_1AutoBalancerParam.html#a8dde1f877e37af17287634e8bf88ed1c">rot_ik_thre</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">IK rotation threshold [rad].  <a href="#a8dde1f877e37af17287634e8bf88ed1c"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Parameters for AutoBalancer. </p>
@@ -211,6 +217,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a6bc4c4f330291bd4ec9bc96012aaa25f"></a><!-- doxytag: member="OpenHRP::AutoBalancerService::AutoBalancerParam::has_ik_failed" ref="a6bc4c4f330291bd4ec9bc96012aaa25f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../d5/d3a/structOpenHRP_1_1AutoBalancerService_1_1AutoBalancerParam.html#a6bc4c4f330291bd4ec9bc96012aaa25f">OpenHRP::AutoBalancerService::AutoBalancerParam::has_ik_failed</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Flag for inverse kinematics (IK). If true, IK has failed before. </p>
+
+</div>
+</div>
 <a class="anchor" id="a34ca4cb0c9f3a5d1ee1bf1efe58b9abc"></a><!-- doxytag: member="OpenHRP::AutoBalancerService::AutoBalancerParam::leg_names" ref="a34ca4cb0c9f3a5d1ee1bf1efe58b9abc" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -234,6 +255,36 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a37620a0fe1d577a83552b5dacec8de4e"></a><!-- doxytag: member="OpenHRP::AutoBalancerService::AutoBalancerParam::pos_ik_thre" ref="a37620a0fe1d577a83552b5dacec8de4e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="../../d5/d3a/structOpenHRP_1_1AutoBalancerService_1_1AutoBalancerParam.html#a37620a0fe1d577a83552b5dacec8de4e">OpenHRP::AutoBalancerService::AutoBalancerParam::pos_ik_thre</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>IK position threshold [m]. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8dde1f877e37af17287634e8bf88ed1c"></a><!-- doxytag: member="OpenHRP::AutoBalancerService::AutoBalancerParam::rot_ik_thre" ref="a8dde1f877e37af17287634e8bf88ed1c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="../../d5/d3a/structOpenHRP_1_1AutoBalancerService_1_1AutoBalancerParam.html#a8dde1f877e37af17287634e8bf88ed1c">OpenHRP::AutoBalancerService::AutoBalancerParam::rot_ik_thre</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>IK rotation threshold [rad]. </p>
 
 </div>
 </div>
@@ -274,7 +325,7 @@ Public Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 25 2015 22:51:28 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 26 2015 13:56:30 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
