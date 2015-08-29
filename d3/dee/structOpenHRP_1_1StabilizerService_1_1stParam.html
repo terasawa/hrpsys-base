@@ -102,16 +102,16 @@ Public Attributes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Time constant for stabilizer ZMP delay [s] (x,y)  <a href="#af1e9e43e7411bf3b6cc9c0c467000419"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#ad92adefd999b8d6606673674199e607d">DblArray2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a7cdfe93f3c9e413d6ea640ff38d88a6b">eefm_ref_zmp_aux</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Auxiliary input for ZMP position [m] (x,y). This is used for delay model identification.  <a href="#a7cdfe93f3c9e413d6ea640ff38d88a6b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#aa2322957ef10e949e89453b54803f1fa">eefm_rot_damping_gain</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Foot rotation damping gain [Nm/(rad/s)].  <a href="#aa2322957ef10e949e89453b54803f1fa"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a896e0b8a050b4f348a27593d32ddd47e">eefm_rot_time_const</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Foot rotation damping time constant [s].  <a href="#a896e0b8a050b4f348a27593d32ddd47e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#a7a6dc2173d00fb0fe6c449aa3fdc5f07">DblArray3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a83de9292653368320501186f4c1e845f">eefm_pos_damping_gain</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Foot position damping gain [N/(m/s)].  <a href="#a83de9292653368320501186f4c1e845f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#a7a6dc2173d00fb0fe6c449aa3fdc5f07">DblArray3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a5f3b8b4e34f8b2de2c0e53cae20b29f2">eefm_pos_time_const_support</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Foot position damping time constant for double support phase [s].  <a href="#a5f3b8b4e34f8b2de2c0e53cae20b29f2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">sequence&lt; sequence&lt; double, 3 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#ac468f6096d58548edab2e949c5ff7666">eefm_rot_damping_gain</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sequence of all end-effector rotation damping gain [Nm/(rad/s)] (r,p,y).  <a href="#ac468f6096d58548edab2e949c5ff7666"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">sequence&lt; sequence&lt; double, 3 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a1da05d83727114b448647f2144b27e63">eefm_rot_time_const</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sequence of all end-effector rotation damping time constant [s] (r,p,y).  <a href="#a1da05d83727114b448647f2144b27e63"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">sequence&lt; sequence&lt; double, 3 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a601900821c09f2bcb61d453254331332">eefm_pos_damping_gain</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sequence of all end-effector position damping gain [N/(m/s)] (x,y,z).  <a href="#a601900821c09f2bcb61d453254331332"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">sequence&lt; sequence&lt; double, 3 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a146ef7bd33da13fe97de037916ae9f63">eefm_pos_time_const_support</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sequence of all end-effector position damping time constant for double support phase [s] (x,y,z).  <a href="#a146ef7bd33da13fe97de037916ae9f63"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#ac3f8920becf3684f9cc73b9b7c6d044a">eefm_pos_time_const_swing</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Foot position damping time constant for single support phase [s].  <a href="#ac3f8920becf3684f9cc73b9b7c6d044a"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">End-effector position damping time constant for single support phase [s].  <a href="#ac3f8920becf3684f9cc73b9b7c6d044a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a7dc41e9573140493f2749a80d39ce3fe">eefm_pos_transition_time</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Transition time for single=&gt;double support phase gain interpolation [s].  <a href="#a7dc41e9573140493f2749a80d39ce3fe"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#ad3030bb6efd71b4d07a41f9d85b6a5d9">eefm_pos_margin_time</a></td></tr>
@@ -488,18 +488,18 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a83de9292653368320501186f4c1e845f"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::eefm_pos_damping_gain" ref="a83de9292653368320501186f4c1e845f" args="" -->
+<a class="anchor" id="a601900821c09f2bcb61d453254331332"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::eefm_pos_damping_gain" ref="a601900821c09f2bcb61d453254331332" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#a7a6dc2173d00fb0fe6c449aa3fdc5f07">DblArray3</a> <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a83de9292653368320501186f4c1e845f">OpenHRP::StabilizerService::stParam::eefm_pos_damping_gain</a></td>
+          <td class="memname">sequence&lt;sequence&lt;double, 3&gt; &gt; <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a601900821c09f2bcb61d453254331332">OpenHRP::StabilizerService::stParam::eefm_pos_damping_gain</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Foot position damping gain [N/(m/s)]. </p>
+<p>Sequence of all end-effector position damping gain [N/(m/s)] (x,y,z). </p>
 
 </div>
 </div>
@@ -518,18 +518,18 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5f3b8b4e34f8b2de2c0e53cae20b29f2"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::eefm_pos_time_const_support" ref="a5f3b8b4e34f8b2de2c0e53cae20b29f2" args="" -->
+<a class="anchor" id="a146ef7bd33da13fe97de037916ae9f63"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::eefm_pos_time_const_support" ref="a146ef7bd33da13fe97de037916ae9f63" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#a7a6dc2173d00fb0fe6c449aa3fdc5f07">DblArray3</a> <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a5f3b8b4e34f8b2de2c0e53cae20b29f2">OpenHRP::StabilizerService::stParam::eefm_pos_time_const_support</a></td>
+          <td class="memname">sequence&lt;sequence&lt;double, 3&gt; &gt; <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a146ef7bd33da13fe97de037916ae9f63">OpenHRP::StabilizerService::stParam::eefm_pos_time_const_support</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Foot position damping time constant for double support phase [s]. </p>
+<p>Sequence of all end-effector position damping time constant for double support phase [s] (x,y,z). </p>
 
 </div>
 </div>
@@ -544,7 +544,7 @@ Public Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Foot position damping time constant for single support phase [s]. </p>
+<p>End-effector position damping time constant for single support phase [s]. </p>
 
 </div>
 </div>
@@ -578,33 +578,33 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa2322957ef10e949e89453b54803f1fa"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::eefm_rot_damping_gain" ref="aa2322957ef10e949e89453b54803f1fa" args="" -->
+<a class="anchor" id="ac468f6096d58548edab2e949c5ff7666"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::eefm_rot_damping_gain" ref="ac468f6096d58548edab2e949c5ff7666" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#aa2322957ef10e949e89453b54803f1fa">OpenHRP::StabilizerService::stParam::eefm_rot_damping_gain</a></td>
+          <td class="memname">sequence&lt;sequence&lt;double, 3&gt; &gt; <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#ac468f6096d58548edab2e949c5ff7666">OpenHRP::StabilizerService::stParam::eefm_rot_damping_gain</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Foot rotation damping gain [Nm/(rad/s)]. </p>
+<p>Sequence of all end-effector rotation damping gain [Nm/(rad/s)] (r,p,y). </p>
 
 </div>
 </div>
-<a class="anchor" id="a896e0b8a050b4f348a27593d32ddd47e"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::eefm_rot_time_const" ref="a896e0b8a050b4f348a27593d32ddd47e" args="" -->
+<a class="anchor" id="a1da05d83727114b448647f2144b27e63"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::eefm_rot_time_const" ref="a1da05d83727114b448647f2144b27e63" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a896e0b8a050b4f348a27593d32ddd47e">OpenHRP::StabilizerService::stParam::eefm_rot_time_const</a></td>
+          <td class="memname">sequence&lt;sequence&lt;double, 3&gt; &gt; <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a1da05d83727114b448647f2144b27e63">OpenHRP::StabilizerService::stParam::eefm_rot_time_const</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Foot rotation damping time constant [s]. </p>
+<p>Sequence of all end-effector rotation damping time constant [s] (r,p,y). </p>
 
 </div>
 </div>
@@ -845,7 +845,7 @@ Public Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 28 2015 14:25:35 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 29 2015 21:27:59 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
