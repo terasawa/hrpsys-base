@@ -116,6 +116,8 @@ Public Attributes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Use toe joint or not in toe-off heel-contact motion.  <a href="#a1e8c57a68b9a9d897935236f5abbe203"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dab/structOpenHRP_1_1AutoBalancerService_1_1GaitGeneratorParam.html#a1f0d7b967fc6e1008bd2d3524a0c8c74">use_toe_heel_transition</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Use toe heel zmp transition. If true, zmp moves among default position, toe position (described by toe_zmp_offset_x), and heel position (described by heel_zmp_offset_x).  <a href="#a1f0d7b967fc6e1008bd2d3524a0c8c74"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">sequence&lt; double, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dab/structOpenHRP_1_1AutoBalancerService_1_1GaitGeneratorParam.html#a288568dd2a001f809f23e833384b3397">zmp_weight_map</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">ZMP weight of RLEG, LLEG, RARM and LARM.  <a href="#a288568dd2a001f809f23e833384b3397"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">sequence&lt; <a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#a95498baa7dc5478d077277bd69d1bb57">DblSequence3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dab/structOpenHRP_1_1AutoBalancerService_1_1GaitGeneratorParam.html#ab1ab449fda43ad271cf574c3ff7ceb4c">leg_default_translate_pos</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Foot position offset[m] (rleg and lleg)  <a href="#ab1ab449fda43ad271cf574c3ff7ceb4c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dab/structOpenHRP_1_1AutoBalancerService_1_1GaitGeneratorParam.html#a75a860c581aec74750dedc22084ae7b4">optional_go_pos_finalize_footstep_num</a></td></tr>
@@ -454,6 +456,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a288568dd2a001f809f23e833384b3397"></a><!-- doxytag: member="OpenHRP::AutoBalancerService::GaitGeneratorParam::zmp_weight_map" ref="a288568dd2a001f809f23e833384b3397" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sequence&lt;double, 4&gt; <a class="el" href="../../d9/dab/structOpenHRP_1_1AutoBalancerService_1_1GaitGeneratorParam.html#a288568dd2a001f809f23e833384b3397">OpenHRP::AutoBalancerService::GaitGeneratorParam::zmp_weight_map</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>ZMP weight of RLEG, LLEG, RARM and LARM. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="../../de/d54/AutoBalancerService_8idl.html">AutoBalancerService.idl</a></li>
 </ul>
@@ -461,7 +478,7 @@ Public Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 30 2015 03:57:16 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 30 2015 10:43:25 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
