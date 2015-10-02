@@ -76,6 +76,8 @@
 Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d32/structOpenHRP_1_1ImpedanceControllerService_1_1impedanceParam.html">impedanceParam</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Impedance controller parameters for one end-effector.  <a href="../../d6/d32/structOpenHRP_1_1ImpedanceControllerService_1_1impedanceParam.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/structOpenHRP_1_1ImpedanceControllerService_1_1objectTurnaroundDetectorParam.html">objectTurnaroundDetectorParam</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">ObjectTurnaroundDetectorParam parameters.  <a href="../../de/dcf/structOpenHRP_1_1ImpedanceControllerService_1_1objectTurnaroundDetectorParam.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#aceaa88fbd478656f93b379f10d57ad5c">ControllerMode</a> { <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#aceaa88fbd478656f93b379f10d57ad5ca0ccd8d254fb4f2744906fbf94f81e9d9">MODE_IDLE</a>, 
@@ -83,7 +85,11 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Mode of controller.  <a href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#aceaa88fbd478656f93b379f10d57ad5c">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef sequence&lt; double, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#acd028950c5b95c5612dda1ce5ccc932f">DblSequence3</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a5f8142056f382d1886a83283a944f56c">DblArray3</a> [3]</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef sequence&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a3c17f3d6ca46f3d1f9ec48e059d43b78">DblSequence</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef sequence&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a57e5d2b5d6c51a6be0805c39c757a2a1">StrSequence</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef sequence&lt; sequence<br class="typebreak"/>
+&lt; double, 3 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#ad9e0122d64687c28ac14d5dbdbfd1f8a">Dbl3Sequence</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a249417099d89b5e25e74dea6fdcb89b7">startImpedanceController</a> (in string name)</td></tr>
@@ -100,8 +106,44 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">get impedance parameters.  <a href="#af380c21932dcbbdbbeb5ec1e86618c4c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#aab2559fbedf85137da63a055b0633712">waitImpedanceControllerTransition</a> (in string name)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">wait for impedance controller mode transition.  <a href="#aab2559fbedf85137da63a055b0633712"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a3062447fef9bc6738dfb0261ca7b2e64">startObjectTurnaroundDetection</a> (in double i_ref_diff_wrench, in double i_max_time, in <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a57e5d2b5d6c51a6be0805c39c757a2a1">StrSequence</a> i_ee_names)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Start ObjectTurnaroundDetector.  <a href="#a3062447fef9bc6738dfb0261ca7b2e64"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a8c0485594245e16d909e5c57e335bce1">checkObjectTurnaroundDetection</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check ObjectTurnaroundDetector.  <a href="#a8c0485594245e16d909e5c57e335bce1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a14f08ee5223149d1b2212d372829446d">setObjectTurnaroundDetectorParam</a> (in <a class="el" href="../../de/dcf/structOpenHRP_1_1ImpedanceControllerService_1_1objectTurnaroundDetectorParam.html">objectTurnaroundDetectorParam</a> i_param)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set object turnaround detector parameters.  <a href="#a14f08ee5223149d1b2212d372829446d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a4c87a247d57d37803a26ac550c176f60">getObjectTurnaroundDetectorParam</a> (out <a class="el" href="../../de/dcf/structOpenHRP_1_1ImpedanceControllerService_1_1objectTurnaroundDetectorParam.html">objectTurnaroundDetectorParam</a> i_param)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">get object turnaround detector parameters.  <a href="#a4c87a247d57d37803a26ac550c176f60"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a4d5566c7338680f0ca2f4ec0280c41e4">getObjectForcesMoments</a> (out <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#ad9e0122d64687c28ac14d5dbdbfd1f8a">Dbl3Sequence</a> o_forces, out <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#ad9e0122d64687c28ac14d5dbdbfd1f8a">Dbl3Sequence</a> o_moments)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">get Current force and moment for object  <a href="#a4d5566c7338680f0ca2f4ec0280c41e4"></a><br/></td></tr>
 </table>
 <hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="ad9e0122d64687c28ac14d5dbdbfd1f8a"></a><!-- doxytag: member="OpenHRP::ImpedanceControllerService::Dbl3Sequence" ref="ad9e0122d64687c28ac14d5dbdbfd1f8a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef sequence&lt;sequence&lt;double, 3&gt; &gt; <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#ad9e0122d64687c28ac14d5dbdbfd1f8a">OpenHRP::ImpedanceControllerService::Dbl3Sequence</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f8142056f382d1886a83283a944f56c"></a><!-- doxytag: member="OpenHRP::ImpedanceControllerService::DblArray3" ref="a5f8142056f382d1886a83283a944f56c" args="[3]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef double <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a5f8142056f382d1886a83283a944f56c">OpenHRP::ImpedanceControllerService::DblArray3</a>[3]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a3c17f3d6ca46f3d1f9ec48e059d43b78"></a><!-- doxytag: member="OpenHRP::ImpedanceControllerService::DblSequence" ref="a3c17f3d6ca46f3d1f9ec48e059d43b78" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -121,6 +163,19 @@ Public Member Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef sequence&lt;double, 3&gt; <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#acd028950c5b95c5612dda1ce5ccc932f">OpenHRP::ImpedanceControllerService::DblSequence3</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a57e5d2b5d6c51a6be0805c39c757a2a1"></a><!-- doxytag: member="OpenHRP::ImpedanceControllerService::StrSequence" ref="a57e5d2b5d6c51a6be0805c39c757a2a1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef sequence&lt;string&gt; <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a57e5d2b5d6c51a6be0805c39c757a2a1">OpenHRP::ImpedanceControllerService::StrSequence</a></td>
         </tr>
       </table>
 </div>
@@ -153,6 +208,25 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a8c0485594245e16d909e5c57e335bce1"></a><!-- doxytag: member="OpenHRP::ImpedanceControllerService::checkObjectTurnaroundDetection" ref="a8c0485594245e16d909e5c57e335bce1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a8c0485594245e16d909e5c57e335bce1">OpenHRP::ImpedanceControllerService::checkObjectTurnaroundDetection</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Check ObjectTurnaroundDetector. </p>
+<p>True = detected, False = not. </p>
+
+</div>
+</div>
 <a class="anchor" id="af380c21932dcbbdbbeb5ec1e86618c4c"></a><!-- doxytag: member="OpenHRP::ImpedanceControllerService::getImpedanceControllerParam" ref="af380c21932dcbbdbbeb5ec1e86618c4c" args="(in string name, out impedanceParam i_param)" -->
 <div class="memitem">
 <div class="memproto">
@@ -190,6 +264,68 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a4d5566c7338680f0ca2f4ec0280c41e4"></a><!-- doxytag: member="OpenHRP::ImpedanceControllerService::getObjectForcesMoments" ref="a4d5566c7338680f0ca2f4ec0280c41e4" args="(out Dbl3Sequence o_forces, out Dbl3Sequence o_moments)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a4d5566c7338680f0ca2f4ec0280c41e4">OpenHRP::ImpedanceControllerService::getObjectForcesMoments</a> </td>
+          <td>(</td>
+          <td class="paramtype">out <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#ad9e0122d64687c28ac14d5dbdbfd1f8a">Dbl3Sequence</a>&#160;</td>
+          <td class="paramname"><em>o_forces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#ad9e0122d64687c28ac14d5dbdbfd1f8a">Dbl3Sequence</a>&#160;</td>
+          <td class="paramname"><em>o_moments</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>get Current force and moment for object </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_param</td><td>output force and moment </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4c87a247d57d37803a26ac550c176f60"></a><!-- doxytag: member="OpenHRP::ImpedanceControllerService::getObjectTurnaroundDetectorParam" ref="a4c87a247d57d37803a26ac550c176f60" args="(out objectTurnaroundDetectorParam i_param)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a4c87a247d57d37803a26ac550c176f60">OpenHRP::ImpedanceControllerService::getObjectTurnaroundDetectorParam</a> </td>
+          <td>(</td>
+          <td class="paramtype">out <a class="el" href="../../de/dcf/structOpenHRP_1_1ImpedanceControllerService_1_1objectTurnaroundDetectorParam.html">objectTurnaroundDetectorParam</a>&#160;</td>
+          <td class="paramname"><em>i_param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>get object turnaround detector parameters. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_param</td><td>input new parameters </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="af95f1cab8308fe30ddd577e511910e0a"></a><!-- doxytag: member="OpenHRP::ImpedanceControllerService::setImpedanceControllerParam" ref="af95f1cab8308fe30ddd577e511910e0a" args="(in string name, in impedanceParam i_param)" -->
 <div class="memitem">
 <div class="memproto">
@@ -220,6 +356,32 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">i_param</td><td>input new impedance parameters </td></tr>
     <tr><td class="paramname">name</td><td>impedance controller param's name, which basically corresponds to force sensor name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a14f08ee5223149d1b2212d372829446d"></a><!-- doxytag: member="OpenHRP::ImpedanceControllerService::setObjectTurnaroundDetectorParam" ref="a14f08ee5223149d1b2212d372829446d" args="(in objectTurnaroundDetectorParam i_param)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a14f08ee5223149d1b2212d372829446d">OpenHRP::ImpedanceControllerService::setObjectTurnaroundDetectorParam</a> </td>
+          <td>(</td>
+          <td class="paramtype">in <a class="el" href="../../de/dcf/structOpenHRP_1_1ImpedanceControllerService_1_1objectTurnaroundDetectorParam.html">objectTurnaroundDetectorParam</a>&#160;</td>
+          <td class="paramname"><em>i_param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>set object turnaround detector parameters. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_param</td><td>input new parameters </td></tr>
   </table>
   </dd>
 </dl>
@@ -276,6 +438,49 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>true if set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3062447fef9bc6738dfb0261ca7b2e64"></a><!-- doxytag: member="OpenHRP::ImpedanceControllerService::startObjectTurnaroundDetection" ref="a3062447fef9bc6738dfb0261ca7b2e64" args="(in double i_ref_diff_wrench, in double i_max_time, in StrSequence i_ee_names)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a3062447fef9bc6738dfb0261ca7b2e64">OpenHRP::ImpedanceControllerService::startObjectTurnaroundDetection</a> </td>
+          <td>(</td>
+          <td class="paramtype">in double&#160;</td>
+          <td class="paramname"><em>i_ref_diff_wrench</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">in double&#160;</td>
+          <td class="paramname"><em>i_max_time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">in <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a57e5d2b5d6c51a6be0805c39c757a2a1">StrSequence</a>&#160;</td>
+          <td class="paramname"><em>i_ee_names</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Start ObjectTurnaroundDetector. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ref_diff_wrench</td><td>is force or moment value. </td></tr>
+    <tr><td class="paramname">max_time</td><td>is max time [s]. </td></tr>
+    <tr><td class="paramname">i_ee_names</td><td>is list of end effector </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -363,7 +568,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 2 2015 08:47:43 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 2 2015 10:15:52 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

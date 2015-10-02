@@ -63,7 +63,7 @@
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0f/rtc_2AutoBalancer_2CMakeLists_8txt.html#a6f14394fbe5116a026ccb87383188108">set</a> (comp_sources AutoBalancer.cpp AutoBalancerService_impl.cpp../ImpedanceController/JointPathEx.cpp../ImpedanceController/RatsMatrix.cpp../SequencePlayer/interpolator.cpp PreviewController.cpp GaitGenerator.cpp) <a class="el" href="../../da/de5/idl_2CMakeLists_8txt.html#a8d2a4e827bf16119cfc351704a21844a">set</a>(libs hrpModel-3.1 hrpCollision-3.1 hrpUtil-3.1 hrpsysBaseStub) <a class="el" href="../../d2/dae/rtc_2SORFilter_2CMakeLists_8txt.html#ac83e5ea2dd88a4454b6478d9f65534f4">add_library</a>(AutoBalancer SHARED $</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0f/rtc_2AutoBalancer_2CMakeLists_8txt.html#ab84bd3dc9750a0dc660760134b94ec3c">target_link_libraries</a> (AutoBalancer ${libs}) <a class="el" href="../../d4/d91/rtc_2VirtualCamera_2CMakeLists_8txt.html#a20c78ecfb57ef67db4183adf455e6ba1">set_target_properties</a>(AutoBalancer PROPERTIES PREFIX&quot;&quot;) <a class="el" href="../../db/def/rtc_2DataLogger_2CMakeLists_8txt.html#a796bc9370f7163c1a3976b6ac775046f">add_executable</a>(testPreviewController testPreviewController.cpp../ImpedanceController/RatsMatrix.cpp PreviewController.cpp) <a class="el" href="../../da/d36/rtc_2WavPlayer_2CMakeLists_8txt.html#a74dfd86b7486019d8e4f1d6a9a419b42">target_link_libraries</a>(testPreviewController $</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0f/rtc_2AutoBalancer_2CMakeLists_8txt.html#ab84bd3dc9750a0dc660760134b94ec3c">target_link_libraries</a> (AutoBalancer ${libs}) <a class="el" href="../../d4/d91/rtc_2VirtualCamera_2CMakeLists_8txt.html#a20c78ecfb57ef67db4183adf455e6ba1">set_target_properties</a>(AutoBalancer PROPERTIES PREFIX&quot;&quot;) <a class="el" href="../../d0/d46/rtc_2ImpedanceController_2CMakeLists_8txt.html#ae8e08bc9da9be7b0d74645120eeeb715">add_executable</a>(testPreviewController testPreviewController.cpp../ImpedanceController/RatsMatrix.cpp PreviewController.cpp) <a class="el" href="../../da/d36/rtc_2WavPlayer_2CMakeLists_8txt.html#a74dfd86b7486019d8e4f1d6a9a419b42">target_link_libraries</a>(testPreviewController $</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0f/rtc_2AutoBalancer_2CMakeLists_8txt.html#a7bb6684f0fec6e2232f014afa7646702">add_executable</a> (testGaitGenerator testGaitGenerator.cpp../ImpedanceController/RatsMatrix.cpp PreviewController.cpp GaitGenerator.cpp../SequencePlayer/interpolator.cpp) <a class="el" href="../../da/d36/rtc_2WavPlayer_2CMakeLists_8txt.html#a74dfd86b7486019d8e4f1d6a9a419b42">target_link_libraries</a>(testGaitGenerator $</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0f/rtc_2AutoBalancer_2CMakeLists_8txt.html#aebf7a54a748352a8a9e38684ac4ac134">add_executable</a> (AutoBalancerComp AutoBalancerComp.cpp ${comp_sources}) <a class="el" href="../../da/d36/rtc_2WavPlayer_2CMakeLists_8txt.html#a74dfd86b7486019d8e4f1d6a9a419b42">target_link_libraries</a>(AutoBalancerComp $</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0f/rtc_2AutoBalancer_2CMakeLists_8txt.html#a4884e23856cddc790d26be15c6eb94ec">include_directories</a> (${PROJECT_SOURCE_DIR}/rtc/SequencePlayer) <a class="el" href="../../da/de5/idl_2CMakeLists_8txt.html#a8d2a4e827bf16119cfc351704a21844a">set</a>(target AutoBalancer AutoBalancerComp testPreviewController testGaitGenerator) add_test(testPreviewControllerNoGP testPreviewController--use-gnuplot false) add_test(testGaitGeneratorTest0 testGaitGenerator--test0--use-gnuplot false) add_test(testGaitGeneratorTest1 testGaitGenerator--test1--use-gnuplot false) add_test(testGaitGeneratorTest2 testGaitGenerator--test2--use-gnuplot false) add_test(testGaitGeneratorTest3 testGaitGenerator--test3--use-gnuplot false) add_test(testGaitGeneratorTest4 testGaitGenerator--test4--use-gnuplot false) add_test(testGaitGeneratorTest5 testGaitGenerator--test5--use-gnuplot false) add_test(testGaitGeneratorTest7 testGaitGenerator--test7--use-gnuplot false) add_test(testGaitGeneratorTest8 testGaitGenerator--test8--use-gnuplot false) add_test(testGaitGeneratorTest9 testGaitGenerator--test9--use-gnuplot false) add_test(testGaitGeneratorTest10 testGaitGenerator--test10--use-gnuplot false) add_test(testGaitGeneratorTest11 testGaitGenerator--test11--use-gnuplot false) add_test(testGaitGeneratorTest12 testGaitGenerator--test12--use-gnuplot false) install(TARGETS $</td></tr>
@@ -74,7 +74,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../db/def/rtc_2DataLogger_2CMakeLists_8txt.html#a796bc9370f7163c1a3976b6ac775046f">add_executable</a> </td>
+          <td class="memname"><a class="el" href="../../d0/d46/rtc_2ImpedanceController_2CMakeLists_8txt.html#ae8e08bc9da9be7b0d74645120eeeb715">add_executable</a> </td>
           <td>(</td>
           <td class="paramtype">testGaitGenerator testGaitGenerator.cpp../ImpedanceController/RatsMatrix.cpp PreviewController.cpp GaitGenerator.cpp../SequencePlayer/interpolator.&#160;</td>
           <td class="paramname"><em>cpp</em></td><td>)</td>
@@ -91,7 +91,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../db/def/rtc_2DataLogger_2CMakeLists_8txt.html#a796bc9370f7163c1a3976b6ac775046f">add_executable</a> </td>
+          <td class="memname"><a class="el" href="../../d0/d46/rtc_2ImpedanceController_2CMakeLists_8txt.html#ae8e08bc9da9be7b0d74645120eeeb715">add_executable</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -155,7 +155,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 2 2015 08:47:43 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 2 2015 10:15:52 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
