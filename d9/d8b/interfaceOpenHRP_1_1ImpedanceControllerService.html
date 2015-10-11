@@ -84,6 +84,12 @@ Public Types</h2></td></tr>
 <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#aceaa88fbd478656f93b379f10d57ad5ca5100d9593e1f3432f14227d1bd1a96ca">MODE_IMP</a>
  }</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Mode of controller.  <a href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#aceaa88fbd478656f93b379f10d57ad5c">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#abf24b616672b2cf60de1d5f110afba89">DetectorMode</a> { <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#abf24b616672b2cf60de1d5f110afba89a7267edc540345df745628bda64f7eef9">MODE_DETECTOR_IDLE</a>, 
+<a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#abf24b616672b2cf60de1d5f110afba89a9e37379457744c4fc8fd87ebf49ab7c1">MODE_STARTED</a>, 
+<a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#abf24b616672b2cf60de1d5f110afba89a9974f9812a8fc081799a556ed6dd4cb3">MODE_DETECTED</a>, 
+<a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#abf24b616672b2cf60de1d5f110afba89aed56e7744166f98cfcad45ec3f6bc196">MODE_MAX_TIME</a>
+ }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Mode of object turnaround detector.  <a href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#abf24b616672b2cf60de1d5f110afba89">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef sequence&lt; double, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#acd028950c5b95c5612dda1ce5ccc932f">DblSequence3</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a5f8142056f382d1886a83283a944f56c">DblArray3</a> [3]</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef sequence&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a3c17f3d6ca46f3d1f9ec48e059d43b78">DblSequence</a></td></tr>
@@ -108,8 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">wait for impedance controller mode transition.  <a href="#aab2559fbedf85137da63a055b0633712"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a3062447fef9bc6738dfb0261ca7b2e64">startObjectTurnaroundDetection</a> (in double i_ref_diff_wrench, in double i_max_time, in <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a57e5d2b5d6c51a6be0805c39c757a2a1">StrSequence</a> i_ee_names)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Start ObjectTurnaroundDetector.  <a href="#a3062447fef9bc6738dfb0261ca7b2e64"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a8c0485594245e16d909e5c57e335bce1">checkObjectTurnaroundDetection</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check ObjectTurnaroundDetector.  <a href="#a8c0485594245e16d909e5c57e335bce1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#abf24b616672b2cf60de1d5f110afba89">DetectorMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#ade2998e1d7d86de1cfa37d83c64a4304">checkObjectTurnaroundDetection</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check ObjectTurnaroundDetector.  <a href="#ade2998e1d7d86de1cfa37d83c64a4304"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a14f08ee5223149d1b2212d372829446d">setObjectTurnaroundDetectorParam</a> (in <a class="el" href="../../de/dcf/structOpenHRP_1_1ImpedanceControllerService_1_1objectTurnaroundDetectorParam.html">objectTurnaroundDetectorParam</a> i_param)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set object turnaround detector parameters.  <a href="#a14f08ee5223149d1b2212d372829446d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a4c87a247d57d37803a26ac550c176f60">getObjectTurnaroundDetectorParam</a> (out <a class="el" href="../../de/dcf/structOpenHRP_1_1ImpedanceControllerService_1_1objectTurnaroundDetectorParam.html">objectTurnaroundDetectorParam</a> i_param)</td></tr>
@@ -207,13 +213,40 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a8c0485594245e16d909e5c57e335bce1"></a><!-- doxytag: member="OpenHRP::ImpedanceControllerService::checkObjectTurnaroundDetection" ref="a8c0485594245e16d909e5c57e335bce1" args="()" -->
+<a class="anchor" id="abf24b616672b2cf60de1d5f110afba89"></a><!-- doxytag: member="OpenHRP::ImpedanceControllerService::DetectorMode" ref="abf24b616672b2cf60de1d5f110afba89" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">boolean <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a8c0485594245e16d909e5c57e335bce1">OpenHRP::ImpedanceControllerService::checkObjectTurnaroundDetection</a> </td>
+          <td class="memname">enum <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#abf24b616672b2cf60de1d5f110afba89">OpenHRP::ImpedanceControllerService::DetectorMode</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Mode of object turnaround detector. </p>
+<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="abf24b616672b2cf60de1d5f110afba89a7267edc540345df745628bda64f7eef9"></a><!-- doxytag: member="MODE_DETECTOR_IDLE" ref="abf24b616672b2cf60de1d5f110afba89a7267edc540345df745628bda64f7eef9" args="" -->MODE_DETECTOR_IDLE</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="abf24b616672b2cf60de1d5f110afba89a9e37379457744c4fc8fd87ebf49ab7c1"></a><!-- doxytag: member="MODE_STARTED" ref="abf24b616672b2cf60de1d5f110afba89a9e37379457744c4fc8fd87ebf49ab7c1" args="" -->MODE_STARTED</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="abf24b616672b2cf60de1d5f110afba89a9974f9812a8fc081799a556ed6dd4cb3"></a><!-- doxytag: member="MODE_DETECTED" ref="abf24b616672b2cf60de1d5f110afba89a9974f9812a8fc081799a556ed6dd4cb3" args="" -->MODE_DETECTED</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="abf24b616672b2cf60de1d5f110afba89aed56e7744166f98cfcad45ec3f6bc196"></a><!-- doxytag: member="MODE_MAX_TIME" ref="abf24b616672b2cf60de1d5f110afba89aed56e7744166f98cfcad45ec3f6bc196" args="" -->MODE_MAX_TIME</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ade2998e1d7d86de1cfa37d83c64a4304"></a><!-- doxytag: member="OpenHRP::ImpedanceControllerService::checkObjectTurnaroundDetection" ref="ade2998e1d7d86de1cfa37d83c64a4304" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#abf24b616672b2cf60de1d5f110afba89">DetectorMode</a> <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#ade2998e1d7d86de1cfa37d83c64a4304">OpenHRP::ImpedanceControllerService::checkObjectTurnaroundDetection</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -223,7 +256,6 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Check ObjectTurnaroundDetector. </p>
-<p>True = detected, False = not. </p>
 
 </div>
 </div>
@@ -568,7 +600,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 11 2015 09:34:50 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 11 2015 11:04:45 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
