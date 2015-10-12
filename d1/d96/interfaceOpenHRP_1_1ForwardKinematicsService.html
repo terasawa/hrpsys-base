@@ -76,13 +76,13 @@ Public Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d96/interfaceOpenHRP_1_1ForwardKinematicsService.html#ad41db6d7c6a01536a29b27fd1137b594">position</a> [3]</td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d96/interfaceOpenHRP_1_1ForwardKinematicsService.html#a6036fee931730775f29f72bca4d14648">selectBaseLink</a> (in string linkname)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d96/interfaceOpenHRP_1_1ForwardKinematicsService.html#a6036fee931730775f29f72bca4d14648">selectBaseLink</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> linkname)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">select a link its position of the actual model coincides with that of the reference model.  <a href="#a6036fee931730775f29f72bca4d14648"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d96/interfaceOpenHRP_1_1ForwardKinematicsService.html#a0481790330e175ff4d124051672fb1f0">getReferencePose</a> (in string linkname, out RTC::TimedDoubleSeq pose)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d96/interfaceOpenHRP_1_1ForwardKinematicsService.html#a0481790330e175ff4d124051672fb1f0">getReferencePose</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> linkname, out RTC::TimedDoubleSeq pose)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">get link pose of the reference model.  <a href="#a0481790330e175ff4d124051672fb1f0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d96/interfaceOpenHRP_1_1ForwardKinematicsService.html#ae04d2230361da7e3d7c1b9ebc6b958ee">getCurrentPose</a> (in string linkname, out RTC::TimedDoubleSeq pose)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d96/interfaceOpenHRP_1_1ForwardKinematicsService.html#ae04d2230361da7e3d7c1b9ebc6b958ee">getCurrentPose</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> linkname, out RTC::TimedDoubleSeq pose)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">get link pose of the actual model.  <a href="#ae04d2230361da7e3d7c1b9ebc6b958ee"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d96/interfaceOpenHRP_1_1ForwardKinematicsService.html#ad1df17a31683c9ac5bbbf8cfd513acb1">getRelativeCurrentPosition</a> (in string linknameFrom, in string linknameTo, in <a class="el" href="../../d1/d96/interfaceOpenHRP_1_1ForwardKinematicsService.html#ad41db6d7c6a01536a29b27fd1137b594">position</a> target, out <a class="el" href="../../d1/d96/interfaceOpenHRP_1_1ForwardKinematicsService.html#ad41db6d7c6a01536a29b27fd1137b594">position</a> result)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d96/interfaceOpenHRP_1_1ForwardKinematicsService.html#ad1df17a31683c9ac5bbbf8cfd513acb1">getRelativeCurrentPosition</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> linknameFrom, in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> linknameTo, in <a class="el" href="../../d1/d96/interfaceOpenHRP_1_1ForwardKinematicsService.html#ad41db6d7c6a01536a29b27fd1137b594">position</a> target, out <a class="el" href="../../d1/d96/interfaceOpenHRP_1_1ForwardKinematicsService.html#ad41db6d7c6a01536a29b27fd1137b594">position</a> result)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">get current position of a point on a link expressed in the other link frame  <a href="#ad1df17a31683c9ac5bbbf8cfd513acb1"></a><br/></td></tr>
 </table>
 <hr/><h2>Member Typedef Documentation</h2>
@@ -107,7 +107,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">boolean <a class="el" href="../../d1/d96/interfaceOpenHRP_1_1ForwardKinematicsService.html#ae04d2230361da7e3d7c1b9ebc6b958ee">OpenHRP::ForwardKinematicsService::getCurrentPose</a> </td>
           <td>(</td>
-          <td class="paramtype">in string&#160;</td>
+          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
           <td class="paramname"><em>linkname</em>, </td>
         </tr>
         <tr>
@@ -145,7 +145,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">boolean <a class="el" href="../../d1/d96/interfaceOpenHRP_1_1ForwardKinematicsService.html#a0481790330e175ff4d124051672fb1f0">OpenHRP::ForwardKinematicsService::getReferencePose</a> </td>
           <td>(</td>
-          <td class="paramtype">in string&#160;</td>
+          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
           <td class="paramname"><em>linkname</em>, </td>
         </tr>
         <tr>
@@ -183,13 +183,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">boolean <a class="el" href="../../d1/d96/interfaceOpenHRP_1_1ForwardKinematicsService.html#ad1df17a31683c9ac5bbbf8cfd513acb1">OpenHRP::ForwardKinematicsService::getRelativeCurrentPosition</a> </td>
           <td>(</td>
-          <td class="paramtype">in string&#160;</td>
+          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
           <td class="paramname"><em>linknameFrom</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">in string&#160;</td>
+          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
           <td class="paramname"><em>linknameTo</em>, </td>
         </tr>
         <tr>
@@ -234,7 +234,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">boolean <a class="el" href="../../d1/d96/interfaceOpenHRP_1_1ForwardKinematicsService.html#a6036fee931730775f29f72bca4d14648">OpenHRP::ForwardKinematicsService::selectBaseLink</a> </td>
           <td>(</td>
-          <td class="paramtype">in string&#160;</td>
+          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
           <td class="paramname"><em>linkname</em></td><td>)</td>
           <td></td>
         </tr>
@@ -260,7 +260,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 11 2015 23:25:20 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 12 2015 05:53:49 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

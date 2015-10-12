@@ -76,18 +76,18 @@ Public Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a453c069cad0e07b1959842addf969eed">interpolationMode</a> { <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a453c069cad0e07b1959842addf969eedaf6dce442074a69ba3472db54fb091221">LINEAR</a>, 
 <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a453c069cad0e07b1959842addf969eeda2abc545aedf5c262ac9dc02e9d36080e">HOFFARBIB</a>
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef sequence&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#acf33d7998ac77b145ddd8a44b5846374">StrSequence</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef sequence&lt; <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#acf33d7998ac77b145ddd8a44b5846374">StrSequence</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a69d254b80c4e7c43ddb2cd89401927fa">waitInterpolation</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait until the last goal posture is sent to the robot.  <a href="#a69d254b80c4e7c43ddb2cd89401927fa"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#af1b00c1b8ad0d46e7abe89069f906c3b">waitInterpolationOfGroup</a> (in string gname)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#af1b00c1b8ad0d46e7abe89069f906c3b">waitInterpolationOfGroup</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> gname)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait until the last goal posture is sent to the robot.  <a href="#af1b00c1b8ad0d46e7abe89069f906c3b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#ae02d45ee4c0338f98c037ecaba4adb88">setJointAngles</a> (in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a8fbc66139f3a0604de03b3049c93b164">dSequence</a> jvs, in double tm)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolate all joint angles on robot using duration specified by <em>tm</em>.  <a href="#ae02d45ee4c0338f98c037ecaba4adb88"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#aac3eef47d4fae14cf6cd59d3f3e813cd">setJointAnglesWithMask</a> (in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a8fbc66139f3a0604de03b3049c93b164">dSequence</a> jvs, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#af985bb70ece600011b32d52310cf2fe4">bSequence</a> mask, in double tm)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolate joint angles on robot using duration specified by <em>tm</em>.  <a href="#aac3eef47d4fae14cf6cd59d3f3e813cd"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a853e2101f852dcfbd99001be747a7e44">setJointAngle</a> (in string jname, in double jv, in double tm)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a853e2101f852dcfbd99001be747a7e44">setJointAngle</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> jname, in double jv, in double tm)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolate just one joint angle specified by <em>jname</em> using duration <em>tm</em>.  <a href="#a853e2101f852dcfbd99001be747a7e44"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a12746ae2a539e4aaf770fa34b0edafba">setBasePos</a> (in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a8fbc66139f3a0604de03b3049c93b164">dSequence</a> pos, in double tm)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolate position of the base link.  <a href="#a12746ae2a539e4aaf770fa34b0edafba"></a><br/></td></tr>
@@ -95,11 +95,11 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolate Roll-Pitch-Yaw angles of the base link.  <a href="#ad2af0d172c0ce52890fbbafc656ae001"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#abebbc0f6056a034750ff695c8967be52">setZmp</a> (in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a8fbc66139f3a0604de03b3049c93b164">dSequence</a> zmp, in double tm)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolate ZMP.  <a href="#abebbc0f6056a034750ff695c8967be52"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a0738917d889768654b6a89be73a13822">setTargetPose</a> (in string name, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a8fbc66139f3a0604de03b3049c93b164">dSequence</a> xyz, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a8fbc66139f3a0604de03b3049c93b164">dSequence</a> rpy, in double tm)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a0738917d889768654b6a89be73a13822">setTargetPose</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> name, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a8fbc66139f3a0604de03b3049c93b164">dSequence</a> xyz, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a8fbc66139f3a0604de03b3049c93b164">dSequence</a> rpy, in double tm)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolate X, Y, Z and Roll Pitch Yaw of the target joint/link group, wrt world coords Function returns without waiting for interpolation to finish.  <a href="#a0738917d889768654b6a89be73a13822"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a590d64736527dbb52c62a958a70e937e">isEmpty</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility functions to check whether intepolation is going on.  <a href="#a590d64736527dbb52c62a958a70e937e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#ad6b1cfa16bc8539a09f4c0b84f71fb75">loadPattern</a> (in string basename, in double tm)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#ad6b1cfa16bc8539a09f4c0b84f71fb75">loadPattern</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> basename, in double tm)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">load pattern files and start to playback.  <a href="#ad6b1cfa16bc8539a09f4c0b84f71fb75"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a2ec45b2ffd864f3ff4f59d8329d4ce60">playPattern</a> (in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> pos, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> rpy, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> zmp, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a8fbc66139f3a0604de03b3049c93b164">dSequence</a> tm)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">playback a pattern  <a href="#a2ec45b2ffd864f3ff4f59d8329d4ce60"></a><br/></td></tr>
@@ -111,15 +111,15 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set interpolation mode.  <a href="#add119666f13c7d65a4a1ce8e280f4936"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#af3f96264cbf6d1c4c8d413b793699379">setInitialState</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set to output data port by value of input data port  <a href="#af3f96264cbf6d1c4c8d413b793699379"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#ad13d4e3c2a55402b2091b1c602ad6057">addJointGroup</a> (in string gname, in <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#acf33d7998ac77b145ddd8a44b5846374">StrSequence</a> jnames)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#ad13d4e3c2a55402b2091b1c602ad6057">addJointGroup</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> gname, in <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#acf33d7998ac77b145ddd8a44b5846374">StrSequence</a> jnames)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">add a joint group  <a href="#ad13d4e3c2a55402b2091b1c602ad6057"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a178bf91eca4040cf6a4fbf2dc02b89e0">removeJointGroup</a> (in string gname)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a178bf91eca4040cf6a4fbf2dc02b89e0">removeJointGroup</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> gname)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">remove a joint group  <a href="#a178bf91eca4040cf6a4fbf2dc02b89e0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a92fba97c8a570084ebb7b780dbaa2617">setJointAnglesOfGroup</a> (in string gname, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a8fbc66139f3a0604de03b3049c93b164">dSequence</a> jvs, in double tm)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a92fba97c8a570084ebb7b780dbaa2617">setJointAnglesOfGroup</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> gname, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a8fbc66139f3a0604de03b3049c93b164">dSequence</a> jvs, in double tm)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolate joint angles in a group using duration specified by <em>tm</em>.  <a href="#a92fba97c8a570084ebb7b780dbaa2617"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#ac29afae16930836f41edaf064c731811">clearOfGroup</a> (in string gname, in double tm)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#ac29afae16930836f41edaf064c731811">clearOfGroup</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> gname, in double tm)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">clear pattern data with joint group  <a href="#ac29afae16930836f41edaf064c731811"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a29eb607e09704ef5ce0a4bde9d751d96">playPatternOfGroup</a> (in string gname, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> pos, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a8fbc66139f3a0604de03b3049c93b164">dSequence</a> tm)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a29eb607e09704ef5ce0a4bde9d751d96">playPatternOfGroup</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> gname, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> pos, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a8fbc66139f3a0604de03b3049c93b164">dSequence</a> tm)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">play back apattern with joint group  <a href="#a29eb607e09704ef5ce0a4bde9d751d96"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a96986aef27be796a65cedca7cb8e6e43">setMaxIKError</a> (in double pos, in double rot)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set parameters to solve ik, used in setTargetPose  <a href="#a96986aef27be796a65cedca7cb8e6e43"></a><br/></td></tr>
@@ -131,13 +131,13 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolate all joint angles on robot using duration specified by <em>tm</em>.  <a href="#a62a4451a3a0301315d02c2469e4b3b9c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a8811b144b438bb1882c74cb794ebcbef">setJointAnglesSequenceWithMask</a> (in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> jvss, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#af985bb70ece600011b32d52310cf2fe4">bSequence</a> mask, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a8fbc66139f3a0604de03b3049c93b164">dSequence</a> tms)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolate all joint angles on robot using duration specified by <em>tm</em>.  <a href="#a8811b144b438bb1882c74cb794ebcbef"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#ab4c6c9caa6b78562b594cca087b46741">setJointAnglesSequenceOfGroup</a> (in string gname, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> jvss, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a8fbc66139f3a0604de03b3049c93b164">dSequence</a> tms)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#ab4c6c9caa6b78562b594cca087b46741">setJointAnglesSequenceOfGroup</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> gname, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> jvss, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a8fbc66139f3a0604de03b3049c93b164">dSequence</a> tms)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolate all joint angles in groups, using duration specified by <em>tm</em>.  <a href="#ab4c6c9caa6b78562b594cca087b46741"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#aa4b1da1c7d2a1868d08f553b6f967e89">setJointAnglesSequenceFull</a> (in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> jvss, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> vels, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> torques, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> poss, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> rpys, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> accs, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> zmps, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> wrenchs, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a2c1231dc63cd521c8296c49fc3544e9b">dSequenceSequence</a> optionals, in <a class="el" href="../../d9/d5f/namespaceOpenHRP.html#a8fbc66139f3a0604de03b3049c93b164">dSequence</a> tms)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolate all joint angles, using duration specified by <em>tm</em>.  <a href="#aa4b1da1c7d2a1868d08f553b6f967e89"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#acc092015e0dfbaa16b7912f6441af0b0">clearJointAngles</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">clear current JointAngles  <a href="#acc092015e0dfbaa16b7912f6441af0b0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a85657b5344b3719ddf2d40431d987449">clearJointAnglesOfGroup</a> (in string gname)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a85657b5344b3719ddf2d40431d987449">clearJointAnglesOfGroup</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> gname)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">clear current JointAnglesOfGroup  <a href="#a85657b5344b3719ddf2d40431d987449"></a><br/></td></tr>
 </table>
 <hr/><h2>Member Typedef Documentation</h2>
@@ -146,7 +146,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef sequence&lt;string&gt; <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#acf33d7998ac77b145ddd8a44b5846374">OpenHRP::SequencePlayerService::StrSequence</a></td>
+          <td class="memname">typedef sequence&lt;<a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&gt; <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#acf33d7998ac77b145ddd8a44b5846374">OpenHRP::SequencePlayerService::StrSequence</a></td>
         </tr>
       </table>
 </div>
@@ -186,7 +186,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">boolean <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#ad13d4e3c2a55402b2091b1c602ad6057">OpenHRP::SequencePlayerService::addJointGroup</a> </td>
           <td>(</td>
-          <td class="paramtype">in string&#160;</td>
+          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
           <td class="paramname"><em>gname</em>, </td>
         </tr>
         <tr>
@@ -261,7 +261,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">boolean <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a85657b5344b3719ddf2d40431d987449">OpenHRP::SequencePlayerService::clearJointAnglesOfGroup</a> </td>
           <td>(</td>
-          <td class="paramtype">in string&#160;</td>
+          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
           <td class="paramname"><em>gname</em></td><td>)</td>
           <td></td>
         </tr>
@@ -306,7 +306,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">boolean <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#ac29afae16930836f41edaf064c731811">OpenHRP::SequencePlayerService::clearOfGroup</a> </td>
           <td>(</td>
-          <td class="paramtype">in string&#160;</td>
+          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
           <td class="paramname"><em>gname</em>, </td>
         </tr>
         <tr>
@@ -363,7 +363,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#ad6b1cfa16bc8539a09f4c0b84f71fb75">OpenHRP::SequencePlayerService::loadPattern</a> </td>
           <td>(</td>
-          <td class="paramtype">in string&#160;</td>
+          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
           <td class="paramname"><em>basename</em>, </td>
         </tr>
         <tr>
@@ -449,7 +449,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">boolean <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a29eb607e09704ef5ce0a4bde9d751d96">OpenHRP::SequencePlayerService::playPatternOfGroup</a> </td>
           <td>(</td>
-          <td class="paramtype">in string&#160;</td>
+          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
           <td class="paramname"><em>gname</em>, </td>
         </tr>
         <tr>
@@ -493,7 +493,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">boolean <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a178bf91eca4040cf6a4fbf2dc02b89e0">OpenHRP::SequencePlayerService::removeJointGroup</a> </td>
           <td>(</td>
-          <td class="paramtype">in string&#160;</td>
+          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
           <td class="paramname"><em>gname</em></td><td>)</td>
           <td></td>
         </tr>
@@ -640,7 +640,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">boolean <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a853e2101f852dcfbd99001be747a7e44">OpenHRP::SequencePlayerService::setJointAngle</a> </td>
           <td>(</td>
-          <td class="paramtype">in string&#160;</td>
+          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
           <td class="paramname"><em>jname</em>, </td>
         </tr>
         <tr>
@@ -723,7 +723,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">boolean <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a92fba97c8a570084ebb7b780dbaa2617">OpenHRP::SequencePlayerService::setJointAnglesOfGroup</a> </td>
           <td>(</td>
-          <td class="paramtype">in string&#160;</td>
+          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
           <td class="paramname"><em>gname</em>, </td>
         </tr>
         <tr>
@@ -900,7 +900,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">boolean <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#ab4c6c9caa6b78562b594cca087b46741">OpenHRP::SequencePlayerService::setJointAnglesSequenceOfGroup</a> </td>
           <td>(</td>
-          <td class="paramtype">in string&#160;</td>
+          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
           <td class="paramname"><em>gname</em>, </td>
         </tr>
         <tr>
@@ -1096,7 +1096,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">boolean <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a0738917d889768654b6a89be73a13822">OpenHRP::SequencePlayerService::setTargetPose</a> </td>
           <td>(</td>
-          <td class="paramtype">in string&#160;</td>
+          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -1241,7 +1241,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">boolean <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#af1b00c1b8ad0d46e7abe89069f906c3b">OpenHRP::SequencePlayerService::waitInterpolationOfGroup</a> </td>
           <td>(</td>
-          <td class="paramtype">in string&#160;</td>
+          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
           <td class="paramname"><em>gname</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1266,7 +1266,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 11 2015 23:25:20 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 12 2015 05:53:49 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
