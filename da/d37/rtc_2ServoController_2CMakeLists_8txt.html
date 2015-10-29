@@ -62,12 +62,11 @@
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#ac8323d6c4e0d19b1317600dd02d51a9e">set</a> (comp_sources ServoController.cpp ServoControllerService_impl.cpp) <a class="el" href="../../da/de5/idl_2CMakeLists_8txt.html#a8d2a4e827bf16119cfc351704a21844a">set</a>(libs hrpModel-3.1 hrpCollision-3.1 hrpUtil-3.1 hrpsysBaseStub) <a class="el" href="../../d3/da8/rtc_2Joystick_2CMakeLists_8txt.html#a1427e8cbc75c2e709e8db96523129efb">if</a>(CMAKE_COMPILER_IS_GNUCC) execute_process(COMMAND $</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">dumpversion OUTPUT_VARIABLE <br class="typebreak"/>
-GCC_VERSION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> (REGEX MATCHALL&quot;[0-9]+&quot;GCC_VERSION_COMPONENTS ${GCC_VERSION}) list(GET GCC_VERSION_COMPONENTS 0 GCC_MAJOR) list(GET GCC_VERSION_COMPONENTS 1 GCC_MINOR) <a class="el" href="../../d3/da8/rtc_2Joystick_2CMakeLists_8txt.html#a1427e8cbc75c2e709e8db96523129efb">if</a>(GCC_VERSION VERSION_LESS 4.3) message(STATUS&quot;GCC version ($</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a66f226c4774de04309027c47bd6af061">set</a> (comp_sources ServoController.cpp ServoControllerService_impl.cpp) <a class="el" href="../../da/de5/idl_2CMakeLists_8txt.html#a8d2a4e827bf16119cfc351704a21844a">set</a>(libs hrpModel-3.1 hrpCollision-3.1 hrpUtil-3.1 hrpsysBaseStub) <a class="el" href="../../d2/dae/rtc_2SORFilter_2CMakeLists_8txt.html#ac83e5ea2dd88a4454b6478d9f65534f4">add_library</a>(ServoController SHARED $</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#ad599487ed1499b79045ecc184a9bd388">target_link_libraries</a> (ServoController ${libs}) <a class="el" href="../../d4/d91/rtc_2VirtualCamera_2CMakeLists_8txt.html#a20c78ecfb57ef67db4183adf455e6ba1">set_target_properties</a>(ServoController PROPERTIES PREFIX&quot;&quot;) <a class="el" href="../../d0/d46/rtc_2ImpedanceController_2CMakeLists_8txt.html#ae8e08bc9da9be7b0d74645120eeeb715">add_executable</a>(ServoControllerComp ServoControllerComp.cpp $</td></tr>
 </table>
 <hr/><h2>Function Documentation</h2>
-<a class="anchor" id="ac8323d6c4e0d19b1317600dd02d51a9e"></a><!-- doxytag: member="rtc/ServoController/CMakeLists.txt::set" ref="ac8323d6c4e0d19b1317600dd02d51a9e" args="(comp_sources ServoController.cpp ServoControllerService_impl.cpp) set(libs hrpModel&#45;3.1 hrpCollision&#45;3.1 hrpUtil&#45;3.1 hrpsysBaseStub) if(CMAKE_COMPILER_IS_GNUCC) execute_process(COMMAND $" -->
+<a class="anchor" id="a66f226c4774de04309027c47bd6af061"></a><!-- doxytag: member="rtc/ServoController/CMakeLists.txt::set" ref="a66f226c4774de04309027c47bd6af061" args="(comp_sources ServoController.cpp ServoControllerService_impl.cpp) set(libs hrpModel&#45;3.1 hrpCollision&#45;3.1 hrpUtil&#45;3.1 hrpsysBaseStub) add_library(ServoController SHARED $" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -84,12 +83,12 @@ GCC_VERSION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a class="anchor" id="a22578fe7e3262b3fbfba58bf028bfa19"></a><!-- doxytag: member="rtc/ServoController/CMakeLists.txt::string" ref="a22578fe7e3262b3fbfba58bf028bfa19" args="(REGEX MATCHALL&quot;[0&#45;9]+&quot;GCC_VERSION_COMPONENTS ${GCC_VERSION}) list(GET GCC_VERSION_COMPONENTS 0 GCC_MAJOR) list(GET GCC_VERSION_COMPONENTS 1 GCC_MINOR) if(GCC_VERSION VERSION_LESS 4.3) message(STATUS&quot;GCC version ($" -->
+<a class="anchor" id="ad599487ed1499b79045ecc184a9bd388"></a><!-- doxytag: member="rtc/ServoController/CMakeLists.txt::target_link_libraries" ref="ad599487ed1499b79045ecc184a9bd388" args="(ServoController ${libs}) set_target_properties(ServoController PROPERTIES PREFIX&quot;&quot;) add_executable(ServoControllerComp ServoControllerComp.cpp $" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">dumpversion OUTPUT_VARIABLE GCC_VERSION <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> </td>
+          <td class="memname"><a class="el" href="../../da/d36/rtc_2WavPlayer_2CMakeLists_8txt.html#a74dfd86b7486019d8e4f1d6a9a419b42">target_link_libraries</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -104,7 +103,7 @@ GCC_VERSION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 28 2015 13:22:52 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 29 2015 12:47:29 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

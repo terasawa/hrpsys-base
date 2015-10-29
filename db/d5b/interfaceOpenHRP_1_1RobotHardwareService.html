@@ -88,7 +88,7 @@ Public Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef sequence&lt; octet &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#ac9bc3059c88f9ac697069e58259e176e">OctSequence</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef sequence&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#ac17d26e56dc78cf40385698b326fb295">DblSequence</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef sequence&lt; long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a49f68fc72a8789a4854489830f021a7f">LongSequence</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef sequence&lt; <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a302e44592d218063c9ed6fe93d1854f3">StrSequence</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef sequence&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a302e44592d218063c9ed6fe93d1854f3">StrSequence</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef sequence&lt; <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a49f68fc72a8789a4854489830f021a7f">LongSequence</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#ac0622939777b81270fe67aa34d39461d">LongSequenceSequence</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#ad12726e4fdf788c35942e453fac225bd">DblArray3</a> [3]</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a2ec3f1a57182d1de8aafe60af543898a">DblArray6</a> [6]</td></tr>
@@ -98,21 +98,21 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a0ddb8aaa8375a755f919bf23e9fa63ab">getStatus</a> (out <a class="el" href="../../df/d17/structOpenHRP_1_1RobotHardwareService_1_1RobotState.html">RobotState</a> rs)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">get status of the robot  <a href="#a0ddb8aaa8375a755f919bf23e9fa63ab"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a82b83e8e94407d2a82383ed254e014c9">power</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> name, in <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a964318a5e25b451367366c874005b066">SwitchStatus</a> _ss)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a82b83e8e94407d2a82383ed254e014c9">power</a> (in string name, in <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a964318a5e25b451367366c874005b066">SwitchStatus</a> _ss)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">turn on/off power supply for motor driver  <a href="#a82b83e8e94407d2a82383ed254e014c9"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a78f30b83276f94303d4de94363d6c998">servo</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> name, in <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a964318a5e25b451367366c874005b066">SwitchStatus</a> _ss)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a78f30b83276f94303d4de94363d6c998">servo</a> (in string name, in <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a964318a5e25b451367366c874005b066">SwitchStatus</a> _ss)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">servo on/off  <a href="#a78f30b83276f94303d4de94363d6c998"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#abb35ddcc70d0c6aa39a31778b612f8d0">setServoGainPercentage</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> name, in double percentage)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#abb35ddcc70d0c6aa39a31778b612f8d0">setServoGainPercentage</a> (in string name, in double percentage)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set the parcentage to the default servo gain  <a href="#abb35ddcc70d0c6aa39a31778b612f8d0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a6a2ce2ea1d629fed7184f920f0c18a20">setServoErrorLimit</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> name, in double limit)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a6a2ce2ea1d629fed7184f920f0c18a20">setServoErrorLimit</a> (in string name, in double limit)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set the maximum joint servo error angle  <a href="#a6a2ce2ea1d629fed7184f920f0c18a20"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a67313b97156ca07214ecd3d0ab7a39c1">calibrateInertiaSensor</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">remove offsets on sensor outputs form gyro sensors and accelerometers  <a href="#a67313b97156ca07214ecd3d0ab7a39c1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a9ee32e2e79d79b81b3c5bf6d938c6d58">removeForceSensorOffset</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">remove offsets on sensor outputs form force/torque sensors  <a href="#a9ee32e2e79d79b81b3c5bf6d938c6d58"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#af6d9c244abe2491c651400c9163cf3f9">initializeJointAngle</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> name, in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> <a class="el" href="../../d2/d57/rtc_2Stabilizer_2CMakeLists_8txt.html#aee64d58d1d4cd00a9ceedd66b666201a">option</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#af6d9c244abe2491c651400c9163cf3f9">initializeJointAngle</a> (in string name, in string <a class="el" href="../../d2/d57/rtc_2Stabilizer_2CMakeLists_8txt.html#aee64d58d1d4cd00a9ceedd66b666201a">option</a>)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize joint angle  <a href="#af6d9c244abe2491c651400c9163cf3f9"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#ad66b34fe39cd48d58eea94b2330968d8">addJointGroup</a> (in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a> gname, in <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a302e44592d218063c9ed6fe93d1854f3">StrSequence</a> jnames)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#ad66b34fe39cd48d58eea94b2330968d8">addJointGroup</a> (in string gname, in <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a302e44592d218063c9ed6fe93d1854f3">StrSequence</a> jnames)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">add definition of joint group  <a href="#ad66b34fe39cd48d58eea94b2330968d8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a7c1a7e6482aa21e2148951a283b4e0d0">readDigitalInput</a> (out <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#ac9bc3059c88f9ac697069e58259e176e">OctSequence</a> din)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">get digital input to robot  <a href="#a7c1a7e6482aa21e2148951a283b4e0d0"></a><br/></td></tr>
@@ -251,7 +251,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef sequence&lt;<a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&gt; <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a302e44592d218063c9ed6fe93d1854f3">OpenHRP::RobotHardwareService::StrSequence</a></td>
+          <td class="memname">typedef sequence&lt;string&gt; <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a302e44592d218063c9ed6fe93d1854f3">OpenHRP::RobotHardwareService::StrSequence</a></td>
         </tr>
       </table>
 </div>
@@ -289,7 +289,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">boolean <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#ad66b34fe39cd48d58eea94b2330968d8">OpenHRP::RobotHardwareService::addJointGroup</a> </td>
           <td>(</td>
-          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
+          <td class="paramtype">in string&#160;</td>
           <td class="paramname"><em>gname</em>, </td>
         </tr>
         <tr>
@@ -394,13 +394,13 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#af6d9c244abe2491c651400c9163cf3f9">OpenHRP::RobotHardwareService::initializeJointAngle</a> </td>
           <td>(</td>
-          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
+          <td class="paramtype">in string&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
+          <td class="paramtype">in string&#160;</td>
           <td class="paramname"><em>option</em>&#160;</td>
         </tr>
         <tr>
@@ -468,7 +468,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">boolean <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a82b83e8e94407d2a82383ed254e014c9">OpenHRP::RobotHardwareService::power</a> </td>
           <td>(</td>
-          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
+          <td class="paramtype">in string&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -581,7 +581,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">boolean <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a78f30b83276f94303d4de94363d6c998">OpenHRP::RobotHardwareService::servo</a> </td>
           <td>(</td>
-          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
+          <td class="paramtype">in string&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -624,7 +624,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#a6a2ce2ea1d629fed7184f920f0c18a20">OpenHRP::RobotHardwareService::setServoErrorLimit</a> </td>
           <td>(</td>
-          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
+          <td class="paramtype">in string&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -660,7 +660,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="../../db/d5b/interfaceOpenHRP_1_1RobotHardwareService.html#abb35ddcc70d0c6aa39a31778b612f8d0">OpenHRP::RobotHardwareService::setServoGainPercentage</a> </td>
           <td>(</td>
-          <td class="paramtype">in <a class="el" href="../../da/d37/rtc_2ServoController_2CMakeLists_8txt.html#a22578fe7e3262b3fbfba58bf028bfa19">string</a>&#160;</td>
+          <td class="paramtype">in string&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -890,7 +890,7 @@ Public Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 28 2015 13:22:52 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 29 2015 12:47:30 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
