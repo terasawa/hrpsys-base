@@ -2858,13 +2858,7 @@ NOTE: While this method does not check angle value range,
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>limbs</em> = <code>[&quot;rleg&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>lleg</em>&#160;</td>
+          <td class="paramname"><em>limbs</em> = <code>None</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2878,10 +2872,12 @@ NOTE: While this method does not check angle value range,
 <p>Start AutoBalancer mode. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">limbs</td><td>list of end-effector name to control. rleg and lleg by default. </td></tr>
+    <tr><td class="paramname">limbs</td><td>list of end-effector name to control. If Groups has rarm and larm, rleg, lleg, rarm, larm by default. If Groups is not defined or Groups does not have rarm and larm, rleg and lleg by default. </td></tr>
   </table>
   </dd>
 </dl>
+
+<p>References <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5447b10b79e7eb78539857dff86f3d65">python.hrpsys_config.HrpsysConfigurator.Groups</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5a08043ad5f099474ed9813f4bdff1c5">python.hrpsys_config.HrpsysConfigurator.startDefaultUnstableControllers()</a>.</p>
 
@@ -2913,13 +2909,7 @@ NOTE: While this method does not check angle value range,
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>abc_limbs</em> = <code>[&quot;rleg&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>lleg</em>&#160;</td>
+          <td class="paramname"><em>abc_limbs</em> = <code>None</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2933,7 +2923,7 @@ NOTE: While this method does not check angle value range,
 <p>Start default unstable RTCs controller mode. </p>
 <p>Currently Stabilzier, AutoBalancer, and ImpedanceController are started. </p>
 
-<p>References <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a947ce52b0cfa902f704b412a2f084034">python.hrpsys_config.HrpsysConfigurator.startAutoBalancer()</a>, and <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#af76f90aeb2d6b366b04fc7d4291135d4">python.hrpsys_config.HrpsysConfigurator.startStabilizer()</a>.</p>
+<p>References <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5447b10b79e7eb78539857dff86f3d65">python.hrpsys_config.HrpsysConfigurator.Groups</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a947ce52b0cfa902f704b412a2f084034">python.hrpsys_config.HrpsysConfigurator.startAutoBalancer()</a>, and <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#af76f90aeb2d6b366b04fc7d4291135d4">python.hrpsys_config.HrpsysConfigurator.startStabilizer()</a>.</p>
 
 </div>
 </div>
@@ -3840,7 +3830,7 @@ NOTE: While this method does not check angle value range,
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a65b7097b6e19b648240390342d511a95">python.hrpsys_config.HrpsysConfigurator.flat2Groups()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#adb853615f7016f95dce85308e6b6b61e">python.hrpsys_config.HrpsysConfigurator.getCurrentPose()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ae4c681ad3e419d4d6c7410f352bb4fe0">python.hrpsys_config.HrpsysConfigurator.getCurrentPosition()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a1c1ace4023a299e10c3cc34030d6faa8">python.hrpsys_config.HrpsysConfigurator.getCurrentRotation()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ac8f538c5650752e2906e3159a68b01a4">python.hrpsys_config.HrpsysConfigurator.getCurrentRPY()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#afe8939c17d07b76f7aea4a0943be88da">python.hrpsys_config.HrpsysConfigurator.getReferencePose()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ae5dccd9923276503ab21323b919405cc">python.hrpsys_config.HrpsysConfigurator.getReferencePosition()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aa03ac3cfcd8bc05aa35ca9b72f8583d7">python.hrpsys_config.HrpsysConfigurator.getReferenceRotation()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#abc57d31eb67be2e63d6a9f1f4f01f6be">python.hrpsys_config.HrpsysConfigurator.getReferenceRPY()</a>, and <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a3f293baa2650df980ffedb0fd868f45d">python.hrpsys_config.HrpsysConfigurator.setSelfGroups()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a65b7097b6e19b648240390342d511a95">python.hrpsys_config.HrpsysConfigurator.flat2Groups()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#adb853615f7016f95dce85308e6b6b61e">python.hrpsys_config.HrpsysConfigurator.getCurrentPose()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ae4c681ad3e419d4d6c7410f352bb4fe0">python.hrpsys_config.HrpsysConfigurator.getCurrentPosition()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a1c1ace4023a299e10c3cc34030d6faa8">python.hrpsys_config.HrpsysConfigurator.getCurrentRotation()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ac8f538c5650752e2906e3159a68b01a4">python.hrpsys_config.HrpsysConfigurator.getCurrentRPY()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#afe8939c17d07b76f7aea4a0943be88da">python.hrpsys_config.HrpsysConfigurator.getReferencePose()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ae5dccd9923276503ab21323b919405cc">python.hrpsys_config.HrpsysConfigurator.getReferencePosition()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aa03ac3cfcd8bc05aa35ca9b72f8583d7">python.hrpsys_config.HrpsysConfigurator.getReferenceRotation()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#abc57d31eb67be2e63d6a9f1f4f01f6be">python.hrpsys_config.HrpsysConfigurator.getReferenceRPY()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a3f293baa2650df980ffedb0fd868f45d">python.hrpsys_config.HrpsysConfigurator.setSelfGroups()</a>, <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a947ce52b0cfa902f704b412a2f084034">python.hrpsys_config.HrpsysConfigurator.startAutoBalancer()</a>, and <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a5a08043ad5f099474ed9813f4bdff1c5">python.hrpsys_config.HrpsysConfigurator.startDefaultUnstableControllers()</a>.</p>
 
 </div>
 </div>
@@ -4512,7 +4502,7 @@ NOTE: While this method does not check angle value range,
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 28 2015 08:02:35 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 29 2015 00:34:42 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
