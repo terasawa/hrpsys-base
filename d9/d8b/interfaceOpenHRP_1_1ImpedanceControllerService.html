@@ -93,6 +93,7 @@ Public Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#aaf58b7d6050ea35c315a80390108544d">DetectorTotalWrench</a> { <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#aaf58b7d6050ea35c315a80390108544dafaa0c31eaec81c191f53bea72de75934">TOTAL_FORCE</a>, 
 <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#aaf58b7d6050ea35c315a80390108544daead4027fbcf825c5f25a36e633f4bdce">TOTAL_MOMENT</a>
  }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag for whether total force or total moment is checked.  <a href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#aaf58b7d6050ea35c315a80390108544d">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef sequence&lt; double, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#acd028950c5b95c5612dda1ce5ccc932f">DblSequence3</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a5f8142056f382d1886a83283a944f56c">DblArray3</a> [3]</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef sequence&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a3c17f3d6ca46f3d1f9ec48e059d43b78">DblSequence</a></td></tr>
@@ -123,8 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set object turnaround detector parameters.  <a href="#a14f08ee5223149d1b2212d372829446d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a4c87a247d57d37803a26ac550c176f60">getObjectTurnaroundDetectorParam</a> (out <a class="el" href="../../de/dcf/structOpenHRP_1_1ImpedanceControllerService_1_1objectTurnaroundDetectorParam.html">objectTurnaroundDetectorParam</a> i_param)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">get object turnaround detector parameters.  <a href="#a4c87a247d57d37803a26ac550c176f60"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a4d5566c7338680f0ca2f4ec0280c41e4">getObjectForcesMoments</a> (out <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#ad9e0122d64687c28ac14d5dbdbfd1f8a">Dbl3Sequence</a> o_forces, out <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#ad9e0122d64687c28ac14d5dbdbfd1f8a">Dbl3Sequence</a> o_moments)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">get Current force and moment for object  <a href="#a4d5566c7338680f0ca2f4ec0280c41e4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#aab80a69f525bbe6e5d6e2dc9b95d8f1a">getObjectForcesMoments</a> (out <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#ad9e0122d64687c28ac14d5dbdbfd1f8a">Dbl3Sequence</a> o_forces, out <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#ad9e0122d64687c28ac14d5dbdbfd1f8a">Dbl3Sequence</a> o_moments, out <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#acd028950c5b95c5612dda1ce5ccc932f">DblSequence3</a> o_3dofwrench)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">get Current force and moment for object  <a href="#aab80a69f525bbe6e5d6e2dc9b95d8f1a"></a><br/></td></tr>
 </table>
 <hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="ad9e0122d64687c28ac14d5dbdbfd1f8a"></a><!-- doxytag: member="OpenHRP::ImpedanceControllerService::Dbl3Sequence" ref="ad9e0122d64687c28ac14d5dbdbfd1f8a" args="" -->
@@ -253,6 +254,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Flag for whether total force or total moment is checked. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="aaf58b7d6050ea35c315a80390108544dafaa0c31eaec81c191f53bea72de75934"></a><!-- doxytag: member="TOTAL_FORCE" ref="aaf58b7d6050ea35c315a80390108544dafaa0c31eaec81c191f53bea72de75934" args="" -->TOTAL_FORCE</em>&nbsp;</td><td>
 </td></tr>
@@ -320,12 +323,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4d5566c7338680f0ca2f4ec0280c41e4"></a><!-- doxytag: member="OpenHRP::ImpedanceControllerService::getObjectForcesMoments" ref="a4d5566c7338680f0ca2f4ec0280c41e4" args="(out Dbl3Sequence o_forces, out Dbl3Sequence o_moments)" -->
+<a class="anchor" id="aab80a69f525bbe6e5d6e2dc9b95d8f1a"></a><!-- doxytag: member="OpenHRP::ImpedanceControllerService::getObjectForcesMoments" ref="aab80a69f525bbe6e5d6e2dc9b95d8f1a" args="(out Dbl3Sequence o_forces, out Dbl3Sequence o_moments, out DblSequence3 o_3dofwrench)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">boolean <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#a4d5566c7338680f0ca2f4ec0280c41e4">OpenHRP::ImpedanceControllerService::getObjectForcesMoments</a> </td>
+          <td class="memname">boolean <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#aab80a69f525bbe6e5d6e2dc9b95d8f1a">OpenHRP::ImpedanceControllerService::getObjectForcesMoments</a> </td>
           <td>(</td>
           <td class="paramtype">out <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#ad9e0122d64687c28ac14d5dbdbfd1f8a">Dbl3Sequence</a>&#160;</td>
           <td class="paramname"><em>o_forces</em>, </td>
@@ -334,7 +337,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">out <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#ad9e0122d64687c28ac14d5dbdbfd1f8a">Dbl3Sequence</a>&#160;</td>
-          <td class="paramname"><em>o_moments</em>&#160;</td>
+          <td class="paramname"><em>o_moments</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="../../d9/d8b/interfaceOpenHRP_1_1ImpedanceControllerService.html#acd028950c5b95c5612dda1ce5ccc932f">DblSequence3</a>&#160;</td>
+          <td class="paramname"><em>o_3dofwrench</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -624,7 +633,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 27 2015 22:57:07 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 28 2015 22:11:06 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
