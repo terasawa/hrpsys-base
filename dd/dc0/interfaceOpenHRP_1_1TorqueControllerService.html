@@ -101,8 +101,10 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set torque reference to torque controller in specified joint  <a href="#a2f79f4c0cf413d299dc7feb1ea3928fb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#a6e894842ddc765953828e2077cbc7253">setMultipleReferenceTorques</a> (in <a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#ac6f6431b2b5b53606587cb7070d754bd">StrSequence</a> jnames, in <a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#a847e018c9a4a70a3a1debe0deaa6d793">dSequence</a> tauRefs)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set torque reference to torque controller in specified joint  <a href="#a6e894842ddc765953828e2077cbc7253"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#a60bb1b0ec42d2371f78e461aa4bb6355">setTorqueControllerParam</a> (in <a class="el" href="../../d9/d30/structOpenHRP_1_1TorqueControllerService_1_1torqueControllerParam.html">torqueControllerParam</a> t_param)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set torque controller parameters  <a href="#a60bb1b0ec42d2371f78e461aa4bb6355"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#a27009f175bf49fa98c4d76e6b74a4b37">setTorqueControllerParam</a> (in string jname, in <a class="el" href="../../d9/d30/structOpenHRP_1_1TorqueControllerService_1_1torqueControllerParam.html">torqueControllerParam</a> i_param)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set torque controller parameters  <a href="#a27009f175bf49fa98c4d76e6b74a4b37"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#a30c8af5e9f5c0d748a9749a030e3d248">getTorqueControllerParam</a> (in string jname, out <a class="el" href="../../d9/d30/structOpenHRP_1_1TorqueControllerService_1_1torqueControllerParam.html">torqueControllerParam</a> i_param)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set torque controller parameters  <a href="#a30c8af5e9f5c0d748a9749a030e3d248"></a><br/></td></tr>
 </table>
 <hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="a847e018c9a4a70a3a1debe0deaa6d793"></a><!-- doxytag: member="OpenHRP::TorqueControllerService::dSequence" ref="a847e018c9a4a70a3a1debe0deaa6d793" args="" -->
@@ -236,6 +238,42 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a30c8af5e9f5c0d748a9749a030e3d248"></a><!-- doxytag: member="OpenHRP::TorqueControllerService::getTorqueControllerParam" ref="a30c8af5e9f5c0d748a9749a030e3d248" args="(in string jname, out torqueControllerParam i_param)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#a30c8af5e9f5c0d748a9749a030e3d248">OpenHRP::TorqueControllerService::getTorqueControllerParam</a> </td>
+          <td>(</td>
+          <td class="paramtype">in string&#160;</td>
+          <td class="paramname"><em>jname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="../../d9/d30/structOpenHRP_1_1TorqueControllerService_1_1torqueControllerParam.html">torqueControllerParam</a>&#160;</td>
+          <td class="paramname"><em>i_param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>set torque controller parameters </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_param,:</td><td>new torque controller param (invariant parameters are expected as 0) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if set all successfully, false otherwise </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a6e894842ddc765953828e2077cbc7253"></a><!-- doxytag: member="OpenHRP::TorqueControllerService::setMultipleReferenceTorques" ref="a6e894842ddc765953828e2077cbc7253" args="(in StrSequence jnames, in dSequence tauRefs)" -->
 <div class="memitem">
 <div class="memproto">
@@ -310,16 +348,26 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a60bb1b0ec42d2371f78e461aa4bb6355"></a><!-- doxytag: member="OpenHRP::TorqueControllerService::setTorqueControllerParam" ref="a60bb1b0ec42d2371f78e461aa4bb6355" args="(in torqueControllerParam t_param)" -->
+<a class="anchor" id="a27009f175bf49fa98c4d76e6b74a4b37"></a><!-- doxytag: member="OpenHRP::TorqueControllerService::setTorqueControllerParam" ref="a27009f175bf49fa98c4d76e6b74a4b37" args="(in string jname, in torqueControllerParam i_param)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">boolean <a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#a60bb1b0ec42d2371f78e461aa4bb6355">OpenHRP::TorqueControllerService::setTorqueControllerParam</a> </td>
+          <td class="memname">boolean <a class="el" href="../../dd/dc0/interfaceOpenHRP_1_1TorqueControllerService.html#a27009f175bf49fa98c4d76e6b74a4b37">OpenHRP::TorqueControllerService::setTorqueControllerParam</a> </td>
           <td>(</td>
-          <td class="paramtype">in <a class="el" href="../../d9/d30/structOpenHRP_1_1TorqueControllerService_1_1torqueControllerParam.html">torqueControllerParam</a>&#160;</td>
-          <td class="paramname"><em>t_param</em></td><td>)</td>
+          <td class="paramtype">in string&#160;</td>
+          <td class="paramname"><em>jname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">in <a class="el" href="../../d9/d30/structOpenHRP_1_1TorqueControllerService_1_1torqueControllerParam.html">torqueControllerParam</a>&#160;</td>
+          <td class="paramname"><em>i_param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -328,7 +376,7 @@ Public Member Functions</h2></td></tr>
 <p>set torque controller parameters </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">t_param,:</td><td>new torque controller param (invariant parameters are expected as 0) </td></tr>
+    <tr><td class="paramname">i_param,:</td><td>new torque controller param (invariant parameters are expected as 0) </td></tr>
   </table>
   </dd>
 </dl>
@@ -447,7 +495,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 28 2015 22:15:41 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 1 2016 10:12:17 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
