@@ -171,6 +171,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust <a class="el" href="../../df/d76/structOpenHRP_1_1AutoBalancerService_1_1Footsteps.html" title="Foot step for multi legs.">Footsteps</a>.  <a href="#a1f2c47291515a13c3c6d168bc559192e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#a6012d872e3691cde2ebe0b873cf92f55">getRemainingFootstepSequence</a> (out <a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#a83718d26b5a8d6529ded3f197155d6b1">FootstepSequence</a> o_footstep, out long o_current_fs_idx)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get remaining footstep list.  <a href="#a6012d872e3691cde2ebe0b873cf92f55"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#ac9d5f7a528c985aac7d40f98b60947e9">getGoPosFootstepsSequence</a> (in double x, in double y, in double th, out <a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#a7ce3f644e7e34d1d92bfd3b6031b86dc">FootstepsSequence</a> o_footstep)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get GoPos <a class="el" href="../../d8/d80/structOpenHRP_1_1AutoBalancerService_1_1Footstep.html" title="Foot step for one leg.">Footstep</a> list.  <a href="#ac9d5f7a528c985aac7d40f98b60947e9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#a6488ac76f42bfe984e31bc9c652b7bd5">releaseEmergencyStop</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Release emergency stop mode.  <a href="#a6488ac76f42bfe984e31bc9c652b7bd5"></a><br/></td></tr>
 </table>
@@ -548,6 +550,54 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">i_param</td><td>is output parameters </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac9d5f7a528c985aac7d40f98b60947e9"></a><!-- doxytag: member="OpenHRP::AutoBalancerService::getGoPosFootstepsSequence" ref="ac9d5f7a528c985aac7d40f98b60947e9" args="(in double x, in double y, in double th, out FootstepsSequence o_footstep)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#ac9d5f7a528c985aac7d40f98b60947e9">OpenHRP::AutoBalancerService::getGoPosFootstepsSequence</a> </td>
+          <td>(</td>
+          <td class="paramtype">in double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">in double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">in double&#160;</td>
+          <td class="paramname"><em>th</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="../../d4/d5b/interfaceOpenHRP_1_1AutoBalancerService.html#a7ce3f644e7e34d1d92bfd3b6031b86dc">FootstepsSequence</a>&#160;</td>
+          <td class="paramname"><em>o_footstep</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get GoPos <a class="el" href="../../d8/d80/structOpenHRP_1_1AutoBalancerService_1_1Footstep.html" title="Foot step for one leg.">Footstep</a> list. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_x[m],i_y[m],and</td><td>i_th[deg] are goal x-y-position and z-orientation from the current mid-coords of right foot and left foot. o_footstep is footstep sequence. </td></tr>
   </table>
   </dd>
 </dl>
@@ -964,7 +1014,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 7 2016 11:56:44 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 9 2016 02:46:22 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
