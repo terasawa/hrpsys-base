@@ -178,6 +178,8 @@ Public Attributes</h2></td></tr>
 &lt; <a class="el" href="../../d8/d80/structOpenHRP_1_1AutoBalancerService_1_1Footstep.html">AutoBalancerService::Footstep</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#ac25be8560b4ed93d07448b6069d902c8">end_effector_list</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a0cad5b2ffc8713008bf05a334fd0c5b1">is_estop_while_walking</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">whether an emergency stop is used while walking  <a href="#a0cad5b2ffc8713008bf05a334fd0c5b1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">sequence&lt; sequence&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a483869214d2b60f49ab90a453781297d">ik_optional_weight_vectors</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sequence of joint weight for Inverse Kinematics calculation. Sequence for all end-effectors.  <a href="#a483869214d2b60f49ab90a453781297d"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Stabilizer Parameters. </p>
@@ -780,6 +782,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a483869214d2b60f49ab90a453781297d"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::ik_optional_weight_vectors" ref="a483869214d2b60f49ab90a453781297d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sequence&lt;sequence&lt;double&gt; &gt; <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a483869214d2b60f49ab90a453781297d">OpenHRP::StabilizerService::stParam::ik_optional_weight_vectors</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sequence of joint weight for Inverse Kinematics calculation. Sequence for all end-effectors. </p>
+
+</div>
+</div>
 <a class="anchor" id="a0cad5b2ffc8713008bf05a334fd0c5b1"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::is_estop_while_walking" ref="a0cad5b2ffc8713008bf05a334fd0c5b1" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -952,7 +969,7 @@ Public Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 10 2016 13:23:52 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 10 2016 13:46:34 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
