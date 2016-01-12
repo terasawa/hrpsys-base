@@ -113,6 +113,14 @@ Public Attributes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default GaitType.  <a href="#ae1bdc1a0e04fe9c812859f9ca2239642"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">sequence&lt; sequence&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3a/structOpenHRP_1_1AutoBalancerService_1_1AutoBalancerParam.html#a62bac5b72d83a4643797ab7d1f620ea7">ik_optional_weight_vectors</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sequence of joint weight for Inverse Kinematics calculation. Sequence for all end-effectors.  <a href="#a62bac5b72d83a4643797ab7d1f620ea7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">sequence&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3a/structOpenHRP_1_1AutoBalancerService_1_1AutoBalancerParam.html#afacaa64a78f7da2908430d480aaaad77">sr_gains</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sequence of SR-inverse gain for inverse kinematics. Sequence for all end-effectors.  <a href="#afacaa64a78f7da2908430d480aaaad77"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">sequence&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3a/structOpenHRP_1_1AutoBalancerService_1_1AutoBalancerParam.html#ac600e7ef308e93bce0c3c219a733d2c1">avoid_gains</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sequence of avoid joint limit gain for inverse kinematics. Sequence for all end-effectors.  <a href="#ac600e7ef308e93bce0c3c219a733d2c1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">sequence&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3a/structOpenHRP_1_1AutoBalancerService_1_1AutoBalancerParam.html#a154639ac83d7e24627b01035dd5287f0">reference_gains</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sequence of reference joint angles tracking gain for inverse kinematics. Sequence for all end-effectors.  <a href="#a154639ac83d7e24627b01035dd5287f0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">sequence&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3a/structOpenHRP_1_1AutoBalancerService_1_1AutoBalancerParam.html#a5f163207c0702c6afc172ddf12f3463e">manipulability_limits</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sequence of manipulability limit for inverse kinematics. Sequence for all end-effectors.  <a href="#a5f163207c0702c6afc172ddf12f3463e"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Parameters for AutoBalancer. </p>
@@ -129,6 +137,21 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Transition time [s] for adjust foot step. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac600e7ef308e93bce0c3c219a733d2c1"></a><!-- doxytag: member="OpenHRP::AutoBalancerService::AutoBalancerParam::avoid_gains" ref="ac600e7ef308e93bce0c3c219a733d2c1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sequence&lt;double&gt; <a class="el" href="../../d5/d3a/structOpenHRP_1_1AutoBalancerService_1_1AutoBalancerParam.html#ac600e7ef308e93bce0c3c219a733d2c1">OpenHRP::AutoBalancerService::AutoBalancerParam::avoid_gains</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sequence of avoid joint limit gain for inverse kinematics. Sequence for all end-effectors. </p>
 
 </div>
 </div>
@@ -311,6 +334,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5f163207c0702c6afc172ddf12f3463e"></a><!-- doxytag: member="OpenHRP::AutoBalancerService::AutoBalancerParam::manipulability_limits" ref="a5f163207c0702c6afc172ddf12f3463e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sequence&lt;double&gt; <a class="el" href="../../d5/d3a/structOpenHRP_1_1AutoBalancerService_1_1AutoBalancerParam.html#a5f163207c0702c6afc172ddf12f3463e">OpenHRP::AutoBalancerService::AutoBalancerParam::manipulability_limits</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sequence of manipulability limit for inverse kinematics. Sequence for all end-effectors. </p>
+
+</div>
+</div>
 <a class="anchor" id="a6b4f5c6ca68cab590d550109550d3769"></a><!-- doxytag: member="OpenHRP::AutoBalancerService::AutoBalancerParam::move_base_gain" ref="a6b4f5c6ca68cab590d550109550d3769" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -339,6 +377,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a154639ac83d7e24627b01035dd5287f0"></a><!-- doxytag: member="OpenHRP::AutoBalancerService::AutoBalancerParam::reference_gains" ref="a154639ac83d7e24627b01035dd5287f0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sequence&lt;double&gt; <a class="el" href="../../d5/d3a/structOpenHRP_1_1AutoBalancerService_1_1AutoBalancerParam.html#a154639ac83d7e24627b01035dd5287f0">OpenHRP::AutoBalancerService::AutoBalancerParam::reference_gains</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sequence of reference joint angles tracking gain for inverse kinematics. Sequence for all end-effectors. </p>
+
+</div>
+</div>
 <a class="anchor" id="a8dde1f877e37af17287634e8bf88ed1c"></a><!-- doxytag: member="OpenHRP::AutoBalancerService::AutoBalancerParam::rot_ik_thre" ref="a8dde1f877e37af17287634e8bf88ed1c" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -351,6 +404,21 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>IK rotation threshold [rad]. </p>
+
+</div>
+</div>
+<a class="anchor" id="afacaa64a78f7da2908430d480aaaad77"></a><!-- doxytag: member="OpenHRP::AutoBalancerService::AutoBalancerParam::sr_gains" ref="afacaa64a78f7da2908430d480aaaad77" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sequence&lt;double&gt; <a class="el" href="../../d5/d3a/structOpenHRP_1_1AutoBalancerService_1_1AutoBalancerParam.html#afacaa64a78f7da2908430d480aaaad77">OpenHRP::AutoBalancerService::AutoBalancerParam::sr_gains</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sequence of SR-inverse gain for inverse kinematics. Sequence for all end-effectors. </p>
 
 </div>
 </div>
@@ -404,7 +472,7 @@ Public Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 10 2016 23:24:58 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 12 2016 12:08:06 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
