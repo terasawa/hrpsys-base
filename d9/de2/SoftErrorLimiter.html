@@ -61,6 +61,7 @@ Overview</h2>
 <p>For soft error, this component observes the error between reference joint angle and actual joint angle. If the error exceeds a threshould, this component overwrite output reference joint angles to limit error within the threshould. At the same time, this component makes beep sound 4 times per 1[s].</p>
 <p>For position error, this component checks whether input reference joint angle is within the joint range. If input reference joint angle exceeds the joint range, this component overwrite output reference joint angles to keep output reference joint angle within the range. At the same time, this component makes beep sound 2 times per 1[s].</p>
 <p>If the cause of errors are removed, error flags and beep sound are removed.</p>
+<p>Since this RTC is stable RTC, we support both direct beeping from this RTC and beepring through BeeperRTC.</p>
 <table class="doxtable">
 <tr>
 <th>implementation_id</th><td>NullComponent </td></tr>
@@ -122,7 +123,7 @@ Configuration File</h2>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 1 2016 02:27:30 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 16 2016 22:51:40 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

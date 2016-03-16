@@ -64,6 +64,7 @@ Fail Safe</h3>
 <p>When collision, this component stops robot motion by overwriting reference joint angles, e.g., by modifying qRef and outputting to q. <br/>
  When collision in qRef is resolved, this component sifts to non-overwrite mode.<br/>
  Transition from overwrite mode to non-overwrite mode is implemented as min-jerk interplation by default. Transition time is 1.0[s] by default.</p>
+<p>In collision, this component makes beep sound. If the cause of errors are removed, error flags and beep sound are removed. Since this RTC is stable RTC, we support both direct beeping from this RTC and beepring through BeeperRTC.</p>
 <h2><a class="anchor" id="dataports"></a>
 Data Ports</h2>
 <h3><a class="anchor" id="inports"></a>
@@ -123,7 +124,7 @@ Configuration File</h2>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 1 2016 02:27:30 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 16 2016 22:51:39 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
