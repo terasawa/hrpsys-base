@@ -144,7 +144,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a8613814b3a8152647b54ae5f28e35dd9">waitInterpolationOfGroup</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Lets SequencePlayer wait until the movement currently happening to finish.  <a href="#a8613814b3a8152647b54ae5f28e35dd9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ac0e9ea3258ffbd85fcda40c3e923f427">setInterpolationMode</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">set interpolation mode.  <a href="#ac0e9ea3258ffbd85fcda40c3e923f427"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set interpolation mode.  <a href="#ac0e9ea3258ffbd85fcda40c3e923f427"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ad07f0b1c90c16a9c99311e0b47bf6eb8">getJointAngles</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the commanded joint angle values.  <a href="#ad07f0b1c90c16a9c99311e0b47bf6eb8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#adb853615f7016f95dce85308e6b6b61e">getCurrentPose</a></td></tr>
@@ -2314,10 +2314,11 @@ Static Public Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>set interpolation mode. </p>
+<p>Set interpolation mode. </p>
+<p>You may need to import <a class="el" href="../../d9/d5f/namespaceOpenHRP.html">OpenHRP</a> in order to pass an argument. For more info See <a href="https://github.com/fkanehiro/hrpsys-base/pull/1012#issue-160802911">https://github.com/fkanehiro/hrpsys-base/pull/1012#issue-160802911</a>. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">i_mode_</td><td>new interpolation mode </td></tr>
+    <tr><td class="paramname">mode</td><td>new interpolation mode. Either { <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a453c069cad0e07b1959842addf969eedaf6dce442074a69ba3472db54fb091221" title="linear interpolation">OpenHRP.SequencePlayerService.LINEAR</a>, <a class="el" href="../../d0/df9/interfaceOpenHRP_1_1SequencePlayerService.html#a453c069cad0e07b1959842addf969eeda2abc545aedf5c262ac9dc02e9d36080e" title="minimum jerk interpolation by Hoff &amp; Arbib">OpenHRP.SequencePlayerService.HOFFARBIB</a> }. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2527,6 +2528,7 @@ NOTE: While this method does not check angle value range,
 <div class="memdoc">
 
 <p>Set all joint angles. </p>
+<p>len(angless) should be equal to len(tms). </p>
 <div class="fragment"><pre class="fragment">
 NOTE: While this method does not check angle value range,
       any joints could emit position limit over error, which has not yet
@@ -2534,8 +2536,8 @@ NOTE: While this method does not check angle value range,
       Worthwhile opening an enhancement ticket at designated issue tracker.
 </pre></div> <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">sequence</td><td>angles list of float: In degree. </td></tr>
-    <tr><td class="paramname">tm</td><td>sequence of float: Time to complete, In Second </td></tr>
+    <tr><td class="paramname">sequential</td><td>list of angles in float: In rad </td></tr>
+    <tr><td class="paramname">tm</td><td>sequential list of time in float: Time to complete, In Second </td></tr>
   </table>
   </dd>
 </dl>
@@ -2588,8 +2590,8 @@ NOTE: While this method does not check angle value range,
 </pre></div> <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">gname</td><td>str: Name of the joint group. </td></tr>
-    <tr><td class="paramname">sequence</td><td>angles list of float: In degree. </td></tr>
-    <tr><td class="paramname">tm</td><td>sequence of float: Time to complete, In Second </td></tr>
+    <tr><td class="paramname">sequential</td><td>list of angles in float: In rad </td></tr>
+    <tr><td class="paramname">tm</td><td>sequential list of time in float: Time to complete, In Second </td></tr>
   </table>
   </dd>
 </dl>
@@ -4664,7 +4666,7 @@ NOTE: While this method does not check angle value range,
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 22 2016 09:59:21 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 10 2016 13:48:37 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
