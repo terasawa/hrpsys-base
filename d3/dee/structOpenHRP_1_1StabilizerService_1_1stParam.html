@@ -152,6 +152,16 @@ Public Attributes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sequence of vertices for all end effectors.  <a href="#a199c068ef6ddf8be7019f40062bf0932"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#ab83f46b3ebba3ef7bdc4ce269e6b2d1f">eefm_use_force_difference_control</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Use force difference control or each limb force control. True by default.  <a href="#ab83f46b3ebba3ef7bdc4ce269e6b2d1f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#ae171faa4c13eee82ea0a1625b088b0d5">eefm_use_swing_damping</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Use damping control for swing leg.  <a href="#ae171faa4c13eee82ea0a1625b088b0d5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a5325dfcbac93f46a78246021a04e155c">eefm_swing_damping_force_thre</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Swing damping control force threshold [N].  <a href="#a5325dfcbac93f46a78246021a04e155c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a78d71b0a02bbb8b6b2e1ea4cc6395831">eefm_swing_damping_moment_thre</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Swing damping control moment threshold [Nm].  <a href="#a78d71b0a02bbb8b6b2e1ea4cc6395831"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#a7a6dc2173d00fb0fe6c449aa3fdc5f07">DblArray3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a3e5a86530435fd9da7f41dd02cb66e28">eefm_swing_rot_damping_gain</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotation damping gain for swing leg [Nm/(rad/s)] (r,p,y)  <a href="#a3e5a86530435fd9da7f41dd02cb66e28"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#a7a6dc2173d00fb0fe6c449aa3fdc5f07">DblArray3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#aabec6a047f7c525e7be648918736670c">eefm_swing_pos_damping_gain</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Position damping gain for swing leg [N/(m/s)] (x,y,z)  <a href="#aabec6a047f7c525e7be648918736670c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">sequence&lt; sequence&lt; double, 6 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a233a4a2701a8741a38cf22e29d86fc36">eefm_ee_forcemoment_distribution_weight</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sequence of all end-effector force/moment distribution weight.  <a href="#a233a4a2701a8741a38cf22e29d86fc36"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#a4b982d83bcae44b2d304a6425cef5204">STAlgorithm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a24a9083c44fb2e97b9b3a5d0308a73bb">st_algorithm</a></td></tr>
@@ -687,6 +697,51 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5325dfcbac93f46a78246021a04e155c"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::eefm_swing_damping_force_thre" ref="a5325dfcbac93f46a78246021a04e155c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a5325dfcbac93f46a78246021a04e155c">OpenHRP::StabilizerService::stParam::eefm_swing_damping_force_thre</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Swing damping control force threshold [N]. </p>
+
+</div>
+</div>
+<a class="anchor" id="a78d71b0a02bbb8b6b2e1ea4cc6395831"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::eefm_swing_damping_moment_thre" ref="a78d71b0a02bbb8b6b2e1ea4cc6395831" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a78d71b0a02bbb8b6b2e1ea4cc6395831">OpenHRP::StabilizerService::stParam::eefm_swing_damping_moment_thre</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Swing damping control moment threshold [Nm]. </p>
+
+</div>
+</div>
+<a class="anchor" id="aabec6a047f7c525e7be648918736670c"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::eefm_swing_pos_damping_gain" ref="aabec6a047f7c525e7be648918736670c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#a7a6dc2173d00fb0fe6c449aa3fdc5f07">DblArray3</a> <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#aabec6a047f7c525e7be648918736670c">OpenHRP::StabilizerService::stParam::eefm_swing_pos_damping_gain</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Position damping gain for swing leg [N/(m/s)] (x,y,z) </p>
+
+</div>
+</div>
 <a class="anchor" id="ad96b536c95fdecc11945d225fd31a197"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::eefm_swing_pos_spring_gain" ref="ad96b536c95fdecc11945d225fd31a197" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -714,6 +769,21 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Sequence of all swing leg end-effector position spring time constant [s] (x,y,z). </p>
+
+</div>
+</div>
+<a class="anchor" id="a3e5a86530435fd9da7f41dd02cb66e28"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::eefm_swing_rot_damping_gain" ref="a3e5a86530435fd9da7f41dd02cb66e28" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#a7a6dc2173d00fb0fe6c449aa3fdc5f07">DblArray3</a> <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a3e5a86530435fd9da7f41dd02cb66e28">OpenHRP::StabilizerService::stParam::eefm_swing_rot_damping_gain</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Rotation damping gain for swing leg [Nm/(rad/s)] (r,p,y) </p>
 
 </div>
 </div>
@@ -759,6 +829,21 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Use force difference control or each limb force control. True by default. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae171faa4c13eee82ea0a1625b088b0d5"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::eefm_use_swing_damping" ref="ae171faa4c13eee82ea0a1625b088b0d5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#ae171faa4c13eee82ea0a1625b088b0d5">OpenHRP::StabilizerService::stParam::eefm_use_swing_damping</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Use damping control for swing leg. </p>
 
 </div>
 </div>
@@ -1037,7 +1122,7 @@ Public Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 22 2016 21:55:08 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 24 2016 05:37:21 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
