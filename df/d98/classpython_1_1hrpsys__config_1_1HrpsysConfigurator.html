@@ -237,6 +237,10 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">setFootSteps  <a href="#aafcd2a6e1b6faf4a9a6023e800d1c261"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a614be5e1e6527ebc52ee9b785fa650c5">setFootStepsWithParam</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">setFootSteps  <a href="#a614be5e1e6527ebc52ee9b785fa650c5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a6df0c901e8a03ac141765bf2e485c15b">clearJointAngles</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels the commanded sequence of joint angle, by overwriting the command by the values of instant the method was invoked.  <a href="#a6df0c901e8a03ac141765bf2e485c15b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a7279694cee4834b1cdd88221b7c541f2">clearJointAnglesOfGroup</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels the commanded sequence of joint angle for the specified joint group, by overwriting the command by the values of instant the method was invoked.  <a href="#a7279694cee4834b1cdd88221b7c541f2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aaa5eac878da20d174d8e171d39f1f102">init</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls init from its superclass, which tries to connect RTCManager, looks for ModelLoader, and starts necessary RTC components.  <a href="#aaa5eac878da20d174d8e171d39f1f102"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#aea38aea442c7f0ae757ef2e6274362b5">__init__</a></td></tr>
@@ -501,6 +505,64 @@ Static Public Attributes</h2></td></tr>
 <p>Works for joint groups too. </p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#ada2c78801370e83914ad7d4cd53ea2b2" title="Clears the Sequencer&#39;s current operation.">HrpsysConfigurator.clear</a></dd></dl>
 <p>Discussed in <a href="https://github.com/fkanehiro/hrpsys-base/issues/158">https://github.com/fkanehiro/hrpsys-base/issues/158</a> Examples is found in a unit test: <a href="https://github.com/start-jsk/rtmros_hironx/blob/bb0672be3e03e5366e03fe50520e215302b8419f/hironx_ros_bridge/test/test_hironx.py#L293">https://github.com/start-jsk/rtmros_hironx/blob/bb0672be3e03e5366e03fe50520e215302b8419f/hironx_ros_bridge/test/test_hironx.py#L293</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="a6df0c901e8a03ac141765bf2e485c15b"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::clearJointAngles" ref="a6df0c901e8a03ac141765bf2e485c15b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a6df0c901e8a03ac141765bf2e485c15b">python.hrpsys_config.HrpsysConfigurator.clearJointAngles</a> </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Cancels the commanded sequence of joint angle, by overwriting the command by the values of instant the method was invoked. </p>
+<p>Note that this only cancels the queue once. Icoming commands after this method is called will be processed as usual. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7279694cee4834b1cdd88221b7c541f2"></a><!-- doxytag: member="python::hrpsys_config::HrpsysConfigurator::clearJointAnglesOfGroup" ref="a7279694cee4834b1cdd88221b7c541f2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def <a class="el" href="../../df/d98/classpython_1_1hrpsys__config_1_1HrpsysConfigurator.html#a7279694cee4834b1cdd88221b7c541f2">python.hrpsys_config.HrpsysConfigurator.clearJointAnglesOfGroup</a> </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>gname</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Cancels the commanded sequence of joint angle for the specified joint group, by overwriting the command by the values of instant the method was invoked. </p>
+<p>Note that this only cancels the queue once. Icoming commands after this method is called will be processed as usual. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gname,:</td><td>Name of the joint group. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
 </div>
 </div>
@@ -4710,7 +4772,7 @@ NOTE: While this method does not check angle value range,
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 29 2016 02:42:03 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 30 2016 21:37:43 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
