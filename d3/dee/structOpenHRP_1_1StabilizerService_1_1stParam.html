@@ -198,6 +198,14 @@ Public Attributes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">whether an emergency stop is used while walking  <a href="#a0cad5b2ffc8713008bf05a334fd0c5b1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">sequence&lt; <a class="el" href="../../d3/d0a/structOpenHRP_1_1StabilizerService_1_1IKLimbParameters.html">IKLimbParameters</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#ac30ee46cd8795768a63c1bb80e11a8e8">ik_limb_parameters</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sequence for all end-effectors' ik limb parameters.  <a href="#ac30ee46cd8795768a63c1bb80e11a8e8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a95522a8fe7b921e1211f41fef387d05b">use_limb_stretch_avoidance</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether change root link height for avoiding limb stretch.  <a href="#a95522a8fe7b921e1211f41fef387d05b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#ae0041e37c59c539ffd18c98eaee3025c">limb_stretch_avoidance_time_const</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Limb stretch avoidance time constant [s].  <a href="#ae0041e37c59c539ffd18c98eaee3025c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#ad92adefd999b8d6606673674199e607d">DblArray2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#ad55608ed645b5c64e10f19ac74b94011">limb_stretch_avoidance_vlimit</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Root link height change limitation for avoiding limb stretch [m/s] (lower, upper)  <a href="#ad55608ed645b5c64e10f19ac74b94011"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">sequence&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#ae67b1e01bf83805b8504cc3c5c1f2db6">limb_length_margin</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sequence of limb length margin from max limb length [m].  <a href="#ae67b1e01bf83805b8504cc3c5c1f2db6"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Stabilizer Parameters. </p>
@@ -1055,6 +1063,51 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae67b1e01bf83805b8504cc3c5c1f2db6"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::limb_length_margin" ref="ae67b1e01bf83805b8504cc3c5c1f2db6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sequence&lt;double&gt; <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#ae67b1e01bf83805b8504cc3c5c1f2db6">OpenHRP::StabilizerService::stParam::limb_length_margin</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sequence of limb length margin from max limb length [m]. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae0041e37c59c539ffd18c98eaee3025c"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::limb_stretch_avoidance_time_const" ref="ae0041e37c59c539ffd18c98eaee3025c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#ae0041e37c59c539ffd18c98eaee3025c">OpenHRP::StabilizerService::stParam::limb_stretch_avoidance_time_const</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Limb stretch avoidance time constant [s]. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad55608ed645b5c64e10f19ac74b94011"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::limb_stretch_avoidance_vlimit" ref="ad55608ed645b5c64e10f19ac74b94011" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dc8/interfaceOpenHRP_1_1StabilizerService.html#ad92adefd999b8d6606673674199e607d">DblArray2</a> <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#ad55608ed645b5c64e10f19ac74b94011">OpenHRP::StabilizerService::stParam::limb_stretch_avoidance_vlimit</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Root link height change limitation for avoiding limb stretch [m/s] (lower, upper) </p>
+
+</div>
+</div>
 <a class="anchor" id="aa2cd7ba074a9052270bf81e9e48029ce"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::ref_capture_point" ref="aa2cd7ba074a9052270bf81e9e48029ce" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -1115,6 +1168,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a95522a8fe7b921e1211f41fef387d05b"></a><!-- doxytag: member="OpenHRP::StabilizerService::stParam::use_limb_stretch_avoidance" ref="a95522a8fe7b921e1211f41fef387d05b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="../../d3/dee/structOpenHRP_1_1StabilizerService_1_1stParam.html#a95522a8fe7b921e1211f41fef387d05b">OpenHRP::StabilizerService::stParam::use_limb_stretch_avoidance</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Whether change root link height for avoiding limb stretch. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="../../d6/d1e/StabilizerService_8idl.html">StabilizerService.idl</a></li>
 </ul>
@@ -1122,7 +1190,7 @@ Public Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 4 2016 07:28:28 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 9 2016 02:26:40 for Basic RT components and utilities by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
