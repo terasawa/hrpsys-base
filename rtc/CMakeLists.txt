@@ -55,6 +55,8 @@ add_subdirectory(Beeper)
 add_subdirectory(ReferenceForceUpdater)
 add_subdirectory(AccelerationFilter)
 
+add_subdirectory(ShmAccessor)
+
 if (NOT APPLE AND USE_HRPSYSUTIL)
   add_subdirectory(VideoCapture)
 endif()
