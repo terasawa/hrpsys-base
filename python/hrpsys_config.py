@@ -202,6 +202,11 @@ class HrpsysConfigurator(object):
     abc_version = None
     st_version = None
 
+    # ShmAccessor
+    sa = None
+    sa_svc = None
+    sa_version = None
+
     # EmergencyStopper
     es = None
     es_svc = None
@@ -728,6 +733,7 @@ class HrpsysConfigurator(object):
             ['rmfo', "RemoveForceSensorLinkOffset"],
             ['es', "EmergencyStopper"],
             ['rfu', "ReferenceForceUpdater"],
+            ['sa', "ShmAccessor"],
             ['ic', "ImpedanceController"],
             ['abc', "AutoBalancer"],
             ['st', "Stabilizer"],

@@ -32,8 +32,8 @@
 // for hrpmodel
 #include <hrpModel/Body.h>
 
-// for simple_shm
-#include "servo_shm.h"
+// for shm
+#include "online_trajectory_modification_shm.h"
 
 using namespace RTC;
 
@@ -141,8 +141,11 @@ class ShmAccessor
   // </rtc-template>
 
  private:
-  struct servo_shm *m_s_shm;
+  struct otm_shm *m_s_shm;
   hrp::BodyPtr m_robot; // for numJoints
+  std::vector<std::vector<double> > ref_angle_vector_buf;
+  int period_counter;
+  std::vector<double> ref_q_old;
 };
 
 
