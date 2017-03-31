@@ -752,7 +752,7 @@ class HrpsysConfigurator(object):
         '''!@brief
         Get list of controller list that need to control joint angles
         '''
-        controller_list = [self.es, self.ic, self.gc, self.abc, self.st, self.co,
+        controller_list = [self.es, self.sa, self.ic, self.gc, self.abc, self.st, self.co,
                            self.tc, self.hes, self.el]
         return filter(lambda c: c != None, controller_list)  # only return existing controllers
 

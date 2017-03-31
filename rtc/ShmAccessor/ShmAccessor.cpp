@@ -167,64 +167,61 @@ RTC::ReturnCode_t ShmAccessor::onExecute(RTC::UniqueId ec_id)
   }
 
   std::vector<double> ref_q(n, 0.0);
-  for (i = 0; i < n; i++) {
+  for (i = 0; i < n; ++i) {
       ref_q[i] = m_data.data[i];
   }
 
   std::cout << "cycle = " << period_counter << std::endl;
   std::cout << "m_s_shm->otm_flag = " << m_s_shm->otm_flag << std::endl;
-  std::cout << "n = " << n << std::endl;
 
   if (m_s_shm->otm_flag != SA_DISABLE) {
       switch (m_s_shm->otm_flag) {
+      case SA_ENABLE:
+          period_counter = OTM_STEP_COUNT;
+          m_s_shm->otm_flag = EUS_TRIGGER;
+          // std::cout << "m_s_shm->otm_flag = EUS_TRIGGER!! : " << m_s_shm->otm_flag << std::endl;
+          break;
       case EUS_ACCESSIBLE:
-          if (--period_counter == 0) {
-              // std::cout << "m_s_shm->otm_flag = " << m_s_shm->otm_flag << std::endl;
+          if (--period_counter <= 0) {
               period_counter = OTM_STEP_COUNT;
               std::cout << "m_s_shm->otm_flag = " << m_s_shm->otm_flag << std::endl;
-              for (i = 0; i < OTM_STEP_COUNT; i++) {
-                  //std::vector<double> tmp_ref_angle(m_s_shm->ref_angle_buf[i], std::end(m_s_shm->ref_angle_buf[i]));
-                  // std::vector<double> tmp_ref_angle(m_s_shm->ref_angle_buf[i], m_s_shm->ref_angle_buf[i]+n);
+              for (i = 0; i < OTM_STEP_COUNT; ++i) {
                   std::vector<double> tmp_ref_angle(n, 0.0);
-                  for (int j = 0; j < n; j++) {
+                  for (int j = 0; j < n; ++j) {
                       tmp_ref_angle[j] = m_s_shm->ref_angle_buf[i][j];
                   }
                   ref_angle_vector_buf.push_back(tmp_ref_angle);
               }
               // CAUTION!! you should adjust joint angles if you change flag 0 from eus
               // m_s_shm->otm_flag = 0; // false
+              m_s_shm->otm_flag = EUS_TRIGGER;
           }
           break;
+      case EUS_TRIGGER:
+          --period_counter;
+          break;
       case EUS_DISABLE:
+          period_counter = OTM_STEP_COUNT;
           break;
       default:
           break;
       }
 
       if (!ref_angle_vector_buf.empty()) {
-          for (i = 0; i < n; i++) {
+          for (i = 0; i < n; ++i) {
               ref_q[i] = ref_angle_vector_buf.front()[i];
           }
-          std::cerr << "cycle " << period_counter << ": ";
-          for (i = 0; i < n; i++) {
-              std::cerr << ref_q[i] << ", ";
-          }
-          std::cerr << std::endl;
           ref_angle_vector_buf.erase(ref_angle_vector_buf.begin());
       }
   } else {
-      // if (m_s_shm->otm_flag != 0) {
-      //     std::cout << "Reset:" << std::endl;
-      //     std::cout << "cycle = " << period_counter << std::endl;
-      //     std::cout << "m_s_shm->otm_flag = " << m_s_shm->otm_flag << std::endl;
-      // }
       period_counter = OTM_STEP_COUNT;
   }
 
 
-  for (i = 0; i < n; i++) {
+  for (i = 0; i < n; ++i) {
       m_data.data[i] = ref_q[i];
   }
+
 
   // output ref_angle from shm
   m_dataOut.write();
